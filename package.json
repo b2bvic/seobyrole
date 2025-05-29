@@ -1,0 +1,11 @@
+{
+  "name": "seobyrole",
+  "version": "1.0.0",
+  "description": "SEO Playbook static site generator",
+  "main": "generate-static-pages.js",
+  "scripts": {
+    "build": "node generate-static-pages.js"
+  },
+  "author": "",
+  "license": "MIT"
+}
