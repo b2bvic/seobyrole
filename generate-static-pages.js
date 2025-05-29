@@ -58,6 +58,9 @@ const results = collectResults(appData.content);
 const outputDir = path.join(__dirname, 'dist');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
 
+// Copy the main index.html to dist to serve as the entry point
+fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(outputDir, 'index.html'));
+
 const pagePaths = [];
 
 results.forEach(({ pathParts, data }) => {
