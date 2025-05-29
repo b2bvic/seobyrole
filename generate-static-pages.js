@@ -48,6 +48,7 @@ if (fs.existsSync(topicalAuthorityPath)) {
     topicalAttributes = Array.from(new Set(attributeMatches.map(a => a.replace(/\*/g, '').trim())));
     topicalConcepts = Array.from(new Set(conceptMatches.map(c => c.replace(/\*/g, '').trim())));
 }
+const topicalTerms = [...new Set([...topicalEntities, ...topicalAttributes, ...topicalConcepts])].join(', ');
 
 const results = collectResults(appData.content);
 
@@ -159,7 +160,6 @@ if (topicalAuthorityMd) {
     fs.writeFileSync(path.join(outputDir, 'topical-authority-lessons.html'), taHtml, 'utf8');
 }
 
-// Ensure appData.json is copied to dist for static hosting
 fs.copyFileSync(path.join(__dirname, 'appData.json'), path.join(outputDir, 'appData.json'));
 
 console.log('Static page generation complete!');
