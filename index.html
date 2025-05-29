@@ -303,54 +303,36 @@
           }
         }
 
-        // Initialize appData in global scope
-        window.appData = window.appData || { content: {}, uiState: {} };
-        
-        // Function to initialize the app once data is loaded
-        function initializeApp(data) {
-            if (!data) {
-                console.error('No data provided to initializeApp');
-                return;
-            }
-            
-            // Deep merge the loaded data into the global appData
-            if (data.content) {
-                window.appData.content = { ...window.appData.content, ...data.content };
-            }
-            if (data.uiState) {
-                window.appData.uiState = { ...window.appData.uiState, ...data.uiState };
-            }
-            if (data.meta) {
-                window.appData.meta = { ...window.appData.meta, ...data.meta };
-            }
-            if (data.questionnaire) {
-                window.appData.questionnaire = { ...window.appData.questionnaire, ...data.questionnaire };
-            }
-            
-            // Initialize the application
-            if (typeof initApp === 'function') {
-                try {
-                    initApp();
-                } catch (e) {
-                    console.error('Error in initApp:', e);
-                }
-            } else {
-                console.error('initApp is not a function');
-            }
-        }
-        
+        // Global app data
+        window.appData = {
+            content: {},
+            uiState: {
+                activeSection: 'welcomeSection',
+                selections: {}
+            },
+            meta: {},
+            questionnaire: {}
+        };
+
         // Load data when DOM is ready
         document.addEventListener('DOMContentLoaded', () => {
             fetch('/appData.json')
                 .then(response => {
-                    if (!response.ok) {
-                        throw new Error(`HTTP error! status: ${response.status}`);
-                    }
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                     return response.json();
                 })
                 .then(data => {
                     if (!data) throw new Error('No data received');
-                    initializeApp(data);
+                    
+                    // Directly assign the loaded data
+                    Object.assign(window.appData, data);
+                    
+                    // Initialize the application
+                    if (typeof initApp === 'function') {
+                        initApp();
+                    } else {
+                        console.error('initApp is not a function');
+                    }
                 })
                 .catch(err => {
                     console.error('Failed to load appData.json:', err);
@@ -358,6 +340,9 @@
                     errorDiv.style.cssText = 'color:red;padding:2em;font-size:1.2em;';
                     errorDiv.textContent = 'Error loading application data. Please check the console for details.';
                     document.body.insertBefore(errorDiv, document.body.firstChild);
+                    
+                    // Initialize app even if data load fails
+                    if (typeof initApp === 'function') initApp();
                 });
         });
 
@@ -393,25 +378,21 @@
         }
 
         function initApp() {
+            // Update current year in footer
             const currentYear = document.getElementById('currentYear');
             if (currentYear) currentYear.textContent = new Date().getFullYear();
             
-            // Ensure required objects exist
-            if (!window.appData) window.appData = {};
-            if (!window.appData.uiState) window.appData.uiState = { activeSection: 'welcomeSection' };
-            if (!window.appData.content) window.appData.content = {};
-            
+            // Initialize navigation
             setupNavigation();
+            
+            // Load and display content
             loadStaticContent();
             
-            // Navigate to the active section or default to welcome
-            const activeSection = (appData.uiState && appData.uiState.activeSection) || 'welcomeSection';
-            navigateToSection(activeSection);
+            // Navigate to the active section
+            navigateToSection(window.appData.uiState.activeSection);
             
-            // Initialize breadcrumbs if needed
-            if (typeof updateBreadcrumbs === 'function') {
-                updateBreadcrumbs();
-            }
+            // Update breadcrumbs
+            updateBreadcrumbs();
         }
 
         function loadStaticContent() {
