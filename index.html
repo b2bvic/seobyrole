@@ -147,6 +147,7 @@
     </style>
 </head>
 <body class="bg-slate-100 brand-dark-text">
+<script>fetch('/appData.json').then(r=>r.json()).then(d=>{window.appData=d;initApp&&initApp();}).catch(()=>{document.body.innerHTML='<p style="color:red;font-size:1.5em;text-align:center;margin-top:2em;">Error loading appData.json. Please ensure the file exists and is valid.</p>';});</script>
 
     <header class="bg-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
