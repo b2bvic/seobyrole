@@ -303,7 +303,32 @@
           }
         }
 
-        let appData;
+        // Initialize appData in global scope
+        window.appData = window.appData || {};
+        
+        // Function to initialize the app once data is loaded
+        function initializeApp(data) {
+            if (!data) {
+                console.error('No data provided to initializeApp');
+                return;
+            }
+            
+            // Merge the loaded data into the global appData
+            window.appData = { ...window.appData, ...data };
+            
+            // Initialize the application
+            if (typeof initApp === 'function') {
+                try {
+                    initApp();
+                } catch (e) {
+                    console.error('Error in initApp:', e);
+                }
+            } else {
+                console.error('initApp is not a function');
+            }
+        }
+        
+        // Load data when DOM is ready
         document.addEventListener('DOMContentLoaded', () => {
             fetch('/appData.json')
                 .then(response => {
@@ -314,19 +339,12 @@
                 })
                 .then(data => {
                     if (!data) throw new Error('No data received');
-                    window.appData = data;
-                    if (typeof initApp === 'function') {
-                        initApp();
-                    } else {
-                        console.error('initApp is not a function');
-                    }
+                    initializeApp(data);
                 })
                 .catch(err => {
                     console.error('Failed to load appData.json:', err);
                     const errorDiv = document.createElement('div');
-                    errorDiv.style.color = 'red';
-                    errorDiv.style.padding = '2em';
-                    errorDiv.style.fontSize = '1.2em';
+                    errorDiv.style.cssText = 'color:red;padding:2em;font-size:1.2em;';
                     errorDiv.textContent = 'Error loading application data. Please check the console for details.';
                     document.body.insertBefore(errorDiv, document.body.firstChild);
                 });
