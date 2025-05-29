@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Strategic SEO Playbook — Learn SEO by Role</title>
@@ -13,14 +14,14 @@
     <style>
         body {
             font-family: 'DM Sans', sans-serif;
-            font-weight: 500; /* Medium weight for DM Sans */
+            font-weight: 500;  Medium weight for DM Sans */
         }
-        .font-display { /* For "Cruiser" - user needs to ensure this font is available */
-            font-family: 'Cruiser', 'Faster One', sans-serif; /* Fallback to Faster One then generic */
+        .font-display {  For "Cruiser" - user needs to ensure this font is available */
+            font-family: 'Cruiser', 'Faster One', sans-serif;  Fallback to Faster One then generic */
         }
         .font-heading {
             font-family: 'Bebas Neue', sans-serif;
-            font-weight: 900; /* Bebas Neue is typically bold, using a common value for "Black" feel */
+            font-weight: 900;  Bebas Neue is typically bold, using a common value for "Black" feel */
             letter-spacing: 0.05em;
         }
 
@@ -29,7 +30,7 @@
         .question-step { display: none; }
         .question-step.active { display: block; }
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .accordion-content.open { max-height: 1000px; /* Adjust as needed */ transition: max-height 0.5s ease-in; }
+        .accordion-content.open { max-height: 1000px;  Adjust as needed */ transition: max-height 0.5s ease-in; }
         .breadcrumb-link { cursor: pointer; }
         .chart-container {
             position: relative;
@@ -46,78 +47,78 @@
             }
         }
 
-        /* Custom styles for new branding */
+         Custom styles for new branding */
         .brand-pink-bg { background-color: #FA4091; }
-        .brand-pink-bg-hover:hover { background-color: #F3207E; /* Darker pink */ }
+        .brand-pink-bg-hover:hover { background-color: #F3207E;  Darker pink */ }
         .brand-text-pink { color: #FA4091; }
         .brand-text-pink-hover:hover { color: #F3207E; }
 
         .brand-blue-bg { background-color: #4877F8; }
-        .brand-blue-bg-hover:hover { background-color: #3A66E4; /* Darker blue */ }
+        .brand-blue-bg-hover:hover { background-color: #3A66E4;  Darker blue */ }
         .brand-text-blue { color: #4877F8; }
         .brand-text-blue-hover:hover { color: #3A66E4; }
         
-        .brand-light-blue-bg { background-color: #E0E7FF; /* Lighter variant of the blue for backgrounds */ }
-        .brand-dark-text { color: #1F2937; /* Slate 800 */ }
-        .brand-secondary-text { color: #4B5563; /* Slate 600 */ }
+        .brand-light-blue-bg { background-color: #E0E7FF;  Lighter variant of the blue for backgrounds */ }
+        .brand-dark-text { color: #1F2937;  Slate 800 */ }
+        .brand-secondary-text { color: #4B5563;  Slate 600 */ }
 
         .brand-button-primary {
-            background-color: #FA4091; /* New Pink */
+            background-color: #FA4091;  New Pink */
             color: white;
             transition: background-color 0.2s ease-in-out;
         }
         .brand-button-primary:hover {
-            background-color: #F3207E; /* Darker Pink */
+            background-color: #F3207E;  Darker Pink */
         }
         .brand-button-secondary {
-            background-color: #4877F8; /* New Blue */
+            background-color: #4877F8;  New Blue */
             color: white;
             transition: background-color 0.2s ease-in-out;
         }
         .brand-button-secondary:hover {
-            background-color: #3A66E4; /* Darker Blue */
+            background-color: #3A66E4;  Darker Blue */
         }
          .brand-button-reset {
-            background-color: #EF4444; /* Red 500 */
+            background-color: #EF4444;  Red 500 */
             color: white;
             transition: background-color 0.2s ease-in-out;
         }
         .brand-button-reset:hover {
-            background-color: #DC2626; /* Red 600 */
+            background-color: #DC2626;  Red 600 */
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Bebas Neue', sans-serif;
              letter-spacing: 0.05em;
         }
-        .prose h1, .prose h2, .prose h3, .prose h4 { /* Tailwind Prose overrides */
+        .prose h1, .prose h2, .prose h3, .prose h4 {  Tailwind Prose overrides */
              font-family: 'Bebas Neue', sans-serif !important;
              letter-spacing: 0.05em !important;
         }
         .prose {
-            color: #374151; /* Default prose text color (gray-700) */
+            color: #374151;  Default prose text color (gray-700) */
         }
         .prose strong {
-            color: #111827; /* Darker for strong text (gray-900) */
+            color: #111827;  Darker for strong text (gray-900) */
         }
         .execution-steps-list {
             list-style-type: decimal;
-            padding-left: 1.5rem; /* Indent list */
+            padding-left: 1.5rem;  Indent list */
         }
         .execution-steps-list li {
-            margin-bottom: 0.75rem; /* Space between steps */
+            margin-bottom: 0.75rem;  Space between steps */
         }
         .execution-steps-list strong {
-            display: block; /* Make step title block for better separation */
-            color: #1F2937; /* brand-dark-text */
-            font-family: 'Bebas Neue', sans-serif; /* Apply heading font */
-            font-size: 1.125rem; /* text-lg */
+            display: block;  Make step title block for better separation */
+            color: #1F2937;  brand-dark-text */
+            font-family: 'Bebas Neue', sans-serif;  Apply heading font */
+            font-size: 1.125rem;  text-lg */
             letter-spacing: 0.05em;
             margin-bottom: 0.25rem;
         }
         .execution-steps-list p {
-            font-size: 0.95rem; /* Slightly smaller for details */
-            color: #4B5563; /* brand-secondary-text */
-            margin-left: 0; /* Align with list item */
+            font-size: 0.95rem;  Slightly smaller for details */
+            color: #4B5563;  brand-secondary-text */
+            margin-left: 0;  Align with list item */
             line-height: 1.6;
         }
 
@@ -159,13 +160,55 @@
             </div>
 
         <section id="welcomeSection" class="content-section active">
-            <div class="brand-blue-bg text-white p-8 sm:p-16 rounded-xl shadow-2xl text-center">
-                <h2 class="font-heading text-4xl sm:text-6xl font-black mb-6">Welcome to the Strategic SEO Playbook</h2>
-                <p class="text-lg sm:text-xl text-blue-100 mb-12 leading-relaxed">Empowering Every Role for Organic Growth. Discover personalized SEO strategies tailored to your position, goals, tools, processes, industry, and CMS.</p>
-                <button id="startQuestionnaireButton" class="brand-button-primary font-heading text-xl tracking-wider py-4 px-12 rounded-lg shadow-md transform hover:scale-105">
-                    Find Your SEO Strategy
-                </button>
-                <p class="mt-10 text-base text-blue-200">Or, explore our <button data-section="corePrinciplesSection" class="nav-button brand-text-pink-hover font-semibold underline">Core SEO Principles</button> or <button data-section="allRolesSection" class="nav-button brand-text-pink-hover font-semibold underline">Browse All Roles</button> directly.</p>
+            <div class="brand-blue-bg text-white p-10 sm:p-20 rounded-2xl shadow-2xl text-center flex flex-col items-center gap-8">
+                <h2 class="font-heading text-5xl sm:text-7xl font-black mb-4 animate__animated animate__fadeInDown">Unlock SEO Success for Every Role</h2>
+                <p class="text-xl sm:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed animate__animated animate__fadeInUp animate__fast">Get personalized, actionable SEO strategies tailored to your role, goals, and industry. Start your journey or jump straight to expert playbooks.</p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center mb-6 animate__animated animate__fadeIn animate__fast">
+                    <button id="startQuestionnaireButton" class="brand-button-primary font-heading text-2xl tracking-wider py-5 px-14 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none animate__animated animate__fadeInUp animate__fast">
+                        Personalize My SEO Strategy
+                    </button>
+                    <button data-section="allRolesSection" class="brand-button-secondary font-heading text-2xl tracking-wider py-5 px-14 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none animate__animated animate__fadeInUp animate__fast">
+                        Browse SEO Playbooks by Role
+                    </button>
+                </div>
+                <div class="w-full max-w-4xl mx-auto mt-10 animate__animated animate__fadeInUp animate__fast">
+                    <h3 class="font-heading text-3xl text-white mb-6">Popular Paths</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <button class="bg-white text-slate-800 rounded-xl p-6 shadow-lg flex flex-col items-start hover:brand-blue-bg hover:text-white transition transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__fast" onclick="navigateToSection('contentDisplaySection'); renderContent('Sales.entry.basePlaybook')">
+                            <span class="font-heading text-xl mb-2">Sales</span>
+                            <span class="text-sm">Boost pipeline & close more deals with SEO.</span>
+                        </button>
+                        <button class="bg-white text-slate-800 rounded-xl p-6 shadow-lg flex flex-col items-start hover:brand-blue-bg hover:text-white transition transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__fast" onclick="navigateToSection('contentDisplaySection'); renderContent('Marketing.entry.basePlaybook')">
+                            <span class="font-heading text-xl mb-2">Marketing</span>
+                            <span class="text-sm">Drive demand and brand visibility at scale.</span>
+                        </button>
+                        <button class="bg-white text-slate-800 rounded-xl p-6 shadow-lg flex flex-col items-start hover:brand-blue-bg hover:text-white transition transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__fast" onclick="navigateToSection('contentDisplaySection'); renderContent('Product.entry.basePlaybook')">
+                            <span class="font-heading text-xl mb-2">Product</span>
+                            <span class="text-sm">Grow adoption and launch with SEO best practices.</span>
+                        </button>
+                        <button class="bg-white text-slate-800 rounded-xl p-6 shadow-lg flex flex-col items-start hover:brand-blue-bg hover:text-white transition transition-all duration-300 hover:scale-105 hover:shadow-2xl animate__animated animate__fadeInUp animate__fast" onclick="navigateToSection('contentDisplaySection'); renderContent('Csuite.entry.basePlaybook')">
+                            <span class="font-heading text-xl mb-2">C-Suite</span>
+                            <span class="text-sm">Lead your organization with data-driven search strategy.</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="w-full max-w-3xl mx-auto mt-16 animate__animated animate__fadeInUp animate__fast">
+                    <h3 class="font-heading text-2xl text-white mb-4">How It Works</h3>
+                    <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg></div>
+                            <span class="font-heading text-lg">1. Choose Role or Take Quiz</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 00-8 0v4a4 4 0 008 0V7z"/></svg></div>
+                            <span class="font-heading text-lg">2. Get Your Playbook</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+                            <span class="font-heading text-lg">3. Apply &amp; Win</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -710,7 +753,7 @@
                 },
                 "CSuite": {
                     "introduction": "The C-Suite's understanding and endorsement of SEO are crucial for its successful integration into the overall business strategy and for securing necessary resources and cross-departmental support. Executives typically ask strategic questions about SEO's value, profitability, ROI, and its role in achieving competitive differentiation and sustainable growth.",
-                    "entry": { /* C-Suite typically doesn't have 'entry' in this context, using 'director' level for all C-Suite roles */
+                    "entry": {  C-Suite typically doesn't have 'entry' in this context, using 'director' level for all C-Suite roles */
                         "basePlaybook": {
                              title: "Strategic SEO Considerations for C-Suite Executives",
                              focus: "Understanding SEO's contribution to overall business growth, profitability, market share, and competitive advantage. Championing a company-wide SEO culture and ensuring appropriate strategic investment.",
@@ -730,8 +773,8 @@
                              keyTakeaway: "For C-Suite executives, understanding and championing SEO as a strategic business driver is paramount. Your endorsement elevates SEO from a siloed function to a core business pillar, ensuring sustained investment, company-wide alignment, and the realization of its full potential for long-term growth, profitability, and competitive differentiation. Focus on its ROI, contribution to market share, and its value as a strategic digital asset."
                         }
                     },
-                    "manager": { "basePlaybook": { /* Same as CSuite director/entry for this simplified model */ title: "Strategic SEO Considerations for C-Suite Executives", focus: "...", actionableUnderstanding: [], executionSteps: [], keyTakeaway: "..."} },
-                    "director": { "basePlaybook": { /* Same as CSuite entry for this simplified model */ title: "Strategic SEO Considerations for C-Suite Executives", focus: "...", actionableUnderstanding: [], executionSteps: [], keyTakeaway: "..."} }
+                    "manager": { "basePlaybook": {  Same as CSuite director/entry for this simplified model */ title: "Strategic SEO Considerations for C-Suite Executives", focus: "...", actionableUnderstanding: [], executionSteps: [], keyTakeaway: "..."} },
+                    "director": { "basePlaybook": {  Same as CSuite entry for this simplified model */ title: "Strategic SEO Considerations for C-Suite Executives", focus: "...", actionableUnderstanding: [], executionSteps: [], keyTakeaway: "..."} }
                 },
                 "corePrinciples": {
                     title: "Core SEO Principles: The Foundation for All Strategies",
@@ -928,7 +971,7 @@
                     if (deptKey !== "corePrinciples" && deptKey !== "vision" && appData.content[deptKey] && appData.content[deptKey].introduction) {
                         const department = appData.content[deptKey];
                         allRolesHtml += `<div class="mb-6 p-6 border border-slate-200 rounded-xl bg-white shadow-lg"><h3 class="font-heading text-2xl font-black brand-text-blue mb-4">${deptKey}</h3><ul class="space-y-2">`;
-                        Object.keys(department).forEach(roleKey => { // roleKey is now 'entry', 'manager', 'director'
+                        Object.keys(department).forEach(roleKey => {  roleKey is now 'entry', 'manager', 'director'
                             if (roleKey !== "introduction" && department[roleKey] && department[roleKey].basePlaybook && department[roleKey].basePlaybook.title) {
                                  allRolesHtml += `<li><button class="brand-text-pink brand-text-pink-hover underline font-medium" data-rolepath="${deptKey}.${roleKey}.basePlaybook">${department[roleKey].basePlaybook.title}</button></li>`;
                             }
@@ -1187,7 +1230,7 @@
                             if(ultimateFallbackContent) ultimateFallbackPath = deptBasePath;
                         }
                     }
-                    if(ultimateFallbackContent) renderContent(ultimateFallbackPath); else if (dynamicContentContainer.innerHTML.includes('Playbook Not Found')) {/* avoid double message */}
+                    if(ultimateFallbackContent) renderContent(ultimateFallbackPath); else if (dynamicContentContainer.innerHTML.includes('Playbook Not Found')) { avoid double message */}
 
                 }
                 navigateToSection('contentDisplaySection', appData.uiState.selections);
@@ -1308,7 +1351,7 @@
             }
 
             container.innerHTML = html;
-            setupAccordions(); // Still needed for Actionable Tasks
+            setupAccordions();  Still needed for Actionable Tasks
         }
 
         function setupAccordions() {
