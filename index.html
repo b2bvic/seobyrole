@@ -14,14 +14,14 @@
     <style>
         body {
             font-family: 'DM Sans', sans-serif;
-            font-weight: 500;  Medium weight for DM Sans */
+            font-weight: 500; 
         }
-        .font-display {  For "Cruiser" - user needs to ensure this font is available */
-            font-family: 'Cruiser', 'Faster One', sans-serif;  Fallback to Faster One then generic */
+        .font-display { 
+            font-family: 'Cruiser', 'Faster One', sans-serif; /* Fallback to Faster One then generic */
         }
         .font-heading {
             font-family: 'Bebas Neue', sans-serif;
-            font-weight: 900;  Bebas Neue is typically bold, using a common value for "Black" feel */
+            font-weight: normal; 
             letter-spacing: 0.05em;
         }
 
@@ -30,7 +30,7 @@
         .question-step { display: none; }
         .question-step.active { display: block; }
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .accordion-content.open { max-height: 1000px;  Adjust as needed */ transition: max-height 0.5s ease-in; }
+        .accordion-content.open { max-height: 1000px;  transition: max-height 0.5s ease-in; }
         .breadcrumb-link { cursor: pointer; }
         .chart-container {
             position: relative;
@@ -47,78 +47,100 @@
             }
         }
 
-         Custom styles for new branding */
-        .brand-pink-bg { background-color: #FA4091; }
-        .brand-pink-bg-hover:hover { background-color: #F3207E;  Darker pink */ }
-        .brand-text-pink { color: #FA4091; }
-        .brand-text-pink-hover:hover { color: #F3207E; }
-
-        .brand-blue-bg { background-color: #4877F8; }
-        .brand-blue-bg-hover:hover { background-color: #3A66E4;  Darker blue */ }
-        .brand-text-blue { color: #4877F8; }
-        .brand-text-blue-hover:hover { color: #3A66E4; }
         
-        .brand-light-blue-bg { background-color: #E0E7FF;  Lighter variant of the blue for backgrounds */ }
-        .brand-dark-text { color: #1F2937;  Slate 800 */ }
-        .brand-secondary-text { color: #4B5563;  Slate 600 */ }
+        .brand-pink-bg { 
+            background-color: #FA4091; 
+        }
+        .brand-pink-bg:hover { 
+            background-color: #F3207E; 
+        }
+        .brand-text-pink { 
+            color: #FA4091; 
+        }
+        .brand-text-pink:hover { 
+            color: #F3207E; 
+        }
+
+        .brand-blue-bg { 
+            background-color: #4877F8; 
+        }
+        .brand-blue-bg:hover { 
+            background-color: #3A66E4; 
+        }
+        .brand-text-blue { 
+            color: #4877F8; 
+        }
+        .brand-text-blue:hover { 
+            color: #3A66E4; 
+        }
+        
+        .brand-light-blue-bg { 
+            background-color: #E0E7FF; 
+        }
+        .brand-dark-text { 
+            color: #1F2937; 
+        }
+        .brand-secondary-text { 
+            color: #4B5563; 
+        }
 
         .brand-button-primary {
-            background-color: #FA4091;  New Pink */
+            background-color: #FA4091;
             color: white;
             transition: background-color 0.2s ease-in-out;
         }
         .brand-button-primary:hover {
-            background-color: #F3207E;  Darker Pink */
+            background-color: #F3207E;
         }
         .brand-button-secondary {
-            background-color: #4877F8;  New Blue */
+            background-color: #4877F8;
             color: white;
             transition: background-color 0.2s ease-in-out;
         }
         .brand-button-secondary:hover {
-            background-color: #3A66E4;  Darker Blue */
+            background-color: #3A66E4;
         }
-         .brand-button-reset {
-            background-color: #EF4444;  Red 500 */
+        .brand-button-reset {
+            background-color: #EF4444;
             color: white;
             transition: background-color 0.2s ease-in-out;
         }
         .brand-button-reset:hover {
-            background-color: #DC2626;  Red 600 */
+            background-color: #DC2626;
         }
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Bebas Neue', sans-serif;
-             letter-spacing: 0.05em;
+            letter-spacing: 0.05em;
         }
-        .prose h1, .prose h2, .prose h3, .prose h4 {  Tailwind Prose overrides */
-             font-family: 'Bebas Neue', sans-serif !important;
-             letter-spacing: 0.05em !important;
+        .prose h1, .prose h2, .prose h3, .prose h4 {
+            font-family: 'Bebas Neue', sans-serif !important;
+            letter-spacing: 0.05em !important;
         }
         .prose {
-            color: #374151;  Default prose text color (gray-700) */
+            color: #374151; 
         }
         .prose strong {
-            color: #111827;  Darker for strong text (gray-900) */
+            color: #111827; 
         }
         .execution-steps-list {
             list-style-type: decimal;
-            padding-left: 1.5rem;  Indent list */
+            padding-left: 1.5rem;  
         }
         .execution-steps-list li {
-            margin-bottom: 0.75rem;  Space between steps */
+            margin-bottom: 0.75rem;  
         }
         .execution-steps-list strong {
-            display: block;  Make step title block for better separation */
-            color: #1F2937;  brand-dark-text */
-            font-family: 'Bebas Neue', sans-serif;  Apply heading font */
-            font-size: 1.125rem;  text-lg */
+            display: block;  
+            color: #1F2937;  
+            font-family: 'Bebas Neue', sans-serif;  
+            font-size: 1.125rem;  
             letter-spacing: 0.05em;
             margin-bottom: 0.25rem;
         }
         .execution-steps-list p {
-            font-size: 0.95rem;  Slightly smaller for details */
-            color: #4B5563;  brand-secondary-text */
-            margin-left: 0;  Align with list item */
+            font-size: 0.95rem;  
+            color: #4B5563;  
+            margin-left: 0;  
             line-height: 1.6;
         }
 
@@ -140,7 +162,7 @@
                 </nav>
                 <div class="md:hidden">
                     <button id="mobileMenuButton" class="text-slate-700 hover:brand-text-pink focus:outline-none">
-                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     </button>
@@ -157,17 +179,17 @@
 
     <main class="container mx-auto p-4 sm:p-6 lg:p-8 min-h-screen">
         <div id="breadcrumbContainer" class="mb-6 text-sm text-slate-500">
-            </div>
+        </div>
 
         <section id="welcomeSection" class="content-section active">
             <div class="brand-blue-bg text-white p-10 sm:p-20 rounded-2xl shadow-2xl text-center flex flex-col items-center gap-8">
                 <h2 class="font-heading text-5xl sm:text-7xl font-black mb-4 animate__animated animate__fadeInDown">Unlock SEO Success for Every Role</h2>
                 <p class="text-xl sm:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto leading-relaxed animate__animated animate__fadeInUp animate__fast">Get personalized, actionable SEO strategies tailored to your role, goals, and industry. Start your journey or jump straight to expert playbooks.</p>
                 <div class="flex flex-col sm:flex-row gap-6 justify-center mb-6 animate__animated animate__fadeIn animate__fast">
-                    <button id="startQuestionnaireButton" class="brand-button-primary font-heading text-2xl tracking-wider py-5 px-14 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none animate__animated animate__fadeInUp animate__fast">
+                    <button id="startQuestionnaireButton" class="brand-button-primary font-heading text-2xl tracking-wider py-5 px-14 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none animate__animated animate__fadeInUp animate__fast" aria-label="Start SEO Personalization Questionnaire">
                         Personalize My SEO Strategy
                     </button>
-                    <button data-section="allRolesSection" class="brand-button-secondary font-heading text-2xl tracking-wider py-5 px-14 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none animate__animated animate__fadeInUp animate__fast">
+                    <button data-section="allRolesSection" class="brand-button-secondary font-heading text-2xl tracking-wider py-5 px-14 rounded-xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none animate__animated animate__fadeInUp animate__fast" aria-label="Browse SEO Playbooks by Role">
                         Browse SEO Playbooks by Role
                     </button>
                 </div>
@@ -196,15 +218,21 @@
                     <h3 class="font-heading text-2xl text-white mb-4">How It Works</h3>
                     <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
                         <div class="flex flex-col items-center">
-                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg></div>
+                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                            </svg></div>
                             <span class="font-heading text-lg">1. Choose Role or Take Quiz</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 00-8 0v4a4 4 0 008 0V7z"/></svg></div>
+                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 00-8 0v4a4 4 0 008 0V7z" />
+                            </svg></div>
                             <span class="font-heading text-lg">2. Get Your Playbook</span>
                         </div>
                         <div class="flex flex-col items-center">
-                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-8 h-8"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg></div>
+                            <div class="bg-white text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-2 shadow"><svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" focusable="false">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg></div>
                             <span class="font-heading text-lg">3. Apply &amp; Win</span>
                         </div>
                     </div>
@@ -216,7 +244,7 @@
             <div class="bg-white p-6 sm:p-10 rounded-xl shadow-xl">
                 <h2 class="font-heading text-3xl sm:text-4xl font-black brand-text-pink mb-10 text-center">Let's Personalize Your SEO Strategy</h2>
                 <div id="questionContainer">
-                    </div>
+                </div>
                 <div class="mt-10 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 sm:space-x-6">
                     <button id="prevQuestionButton" class="w-full sm:w-auto bg-slate-300 hover:bg-slate-400 text-slate-800 font-heading tracking-wider py-3 px-8 rounded-lg hidden shadow hover:shadow-md">Previous</button>
                     <button id="resetQuestionnaireButton" class="w-full sm:w-auto brand-button-reset font-heading tracking-wider py-3 px-8 rounded-lg shadow hover:shadow-md">Start Over</button>
@@ -226,14 +254,14 @@
 
         <section id="contentDisplaySection" class="content-section">
             <div id="dynamicContent" class="bg-white p-6 sm:p-10 rounded-xl shadow-xl prose prose-slate max-w-none lg:prose-lg prose-headings:font-heading prose-headings:brand-text-blue prose-h2:text-3xl prose-h2:mb-6 prose-h3:text-2xl prose-h3:mb-4 prose-strong:text-slate-700">
-                </div>
+            </div>
         </section>
 
         <section id="corePrinciplesSection" class="content-section">
-             <div class="bg-white p-6 sm:p-10 rounded-xl shadow-xl">
+            <div class="bg-white p-6 sm:p-10 rounded-xl shadow-xl">
                 <h2 class="font-heading text-3xl sm:text-4xl font-black brand-text-pink mb-8 text-center">Core SEO Principles</h2>
                 <div id="corePrinciplesContent">
-                    </div>
+                </div>
             </div>
         </section>
 
@@ -242,7 +270,7 @@
                 <h2 class="font-heading text-3xl sm:text-4xl font-black brand-text-pink mb-8 text-center">Browse All SEO Playbooks by Role</h2>
                 <p class="brand-secondary-text mb-8 text-center text-lg">Explore general SEO strategies tailored for different professional roles and seniority levels. For highly specific strategies, please use the questionnaire.</p>
                 <div id="allRolesContent" class="space-y-8">
-                    </div>
+                </div>
             </div>
         </section>
 
@@ -250,7 +278,7 @@
             <div class="bg-white p-6 sm:p-10 rounded-xl shadow-xl">
                 <h2 class="font-heading text-3xl sm:text-4xl font-black brand-text-pink mb-8 text-center">Our Vision</h2>
                 <div id="visionContent" class="prose prose-slate max-w-none lg:prose-lg prose-headings:font-heading prose-headings:brand-text-blue">
-                    </div>
+                </div>
             </div>
         </section>
 
@@ -274,627 +302,18 @@
           }
         }
 
-        <!-- appData is now loaded from appData.json -->
-            meta: {
-                title: "The Strategic SEO Playbook",
-                welcomeMessage: "Empowering Every Role for Organic Growth. Discover personalized SEO strategies tailored to your position.",
-                ctaButton: "Find Your SEO Strategy"
-            },
-            questionnaire: {
-                initialQuestionId: "q_department",
-                questions: {
-                    "q_department": {
-                        text: "What is your primary professional department or area of work?",
-                        options: [
-                            { text: "Sales", value: "Sales", dimension: "department", nextQuestionId: "q_seniority" },
-                            { text: "Marketing", value: "Marketing", dimension: "department", nextQuestionId: "q_seniority" },
-                            { text: "Development/Tech", value: "Development", dimension: "department", nextQuestionId: "q_seniority" },
-                            { text: "Creative/Design", value: "Creative", dimension: "department", nextQuestionId: "q_seniority" },
-                            { text: "Product Management", value: "Product", dimension: "department", nextQuestionId: "q_seniority" },
-                            { text: "Human Resources", value: "HR", dimension: "department", nextQuestionId: "q_seniority" },
-                            { text: "C-Suite/Executive", value: "CSuite", dimension: "department", nextQuestionId: "q_seniority" }
-                        ]
-                    },
-                    "q_seniority": { 
-                        text: "Which of the following best describes your current seniority level?",
-                        dimensionName: "Seniority",
-                        options: [
-                            { text: "Individual Contributor / Entry-Level", value: "entry", dimension: "seniority", nextQuestionId: "q_common_goal" },
-                            { text: "Manager / Team Lead", value: "manager", dimension: "seniority", nextQuestionId: "q_common_goal" },
-                            { text: "Director / VP / Executive", value: "director", dimension: "seniority", nextQuestionId: "q_common_goal" }
-                        ]
-                    },
-                    "q_common_goal": {
-                        text: "What is your primary SEO-related goal?",
-                        dimensionName: "Goal",
-                        options: [
-                            { text: "Increase Website Traffic", value: "IncreaseTraffic", dimension: "goal", nextQuestionId: "q_common_niche" },
-                            { text: "Improve Search Rankings", value: "ImproveRankings", dimension: "goal", nextQuestionId: "q_common_niche" },
-                            { text: "Generate More Leads", value: "GenerateLeads", dimension: "goal", nextQuestionId: "q_common_niche" },
-                            { text: "Enhance Brand Visibility", value: "EnhanceVisibility", dimension: "goal", nextQuestionId: "q_common_niche" }
-                        ]
-                    },
-                    "q_common_niche": {
-                        text: "Which niche, industry, or business model best describes your focus?",
-                        dimensionName: "Niche/Industry",
-                        options: [
-                            { text: "E-commerce", value: "Ecommerce", dimension: "niche", nextQuestionId: "q_common_cms" },
-                            { text: "SaaS / Technology", value: "SaaS", dimension: "niche", nextQuestionId: "q_common_cms" },
-                            { text: "Local Business", value: "LocalBusiness", dimension: "niche", nextQuestionId: "q_common_cms" },
-                            { text: "B2B Services", value: "B2B", dimension: "niche", nextQuestionId: "q_common_cms" },
-                            { text: "Content Publisher / Blog", value: "Publisher", dimension: "niche", nextQuestionId: "q_common_cms" },
-                            { text: "General / Not Specific", value: "GeneralNiche", dimension: "niche", nextQuestionId: "q_common_cms" }
-                        ]
-                    },
-                    "q_common_cms": {
-                        text: "Which Content Management System (CMS) are you primarily using or concerned with?",
-                        dimensionName: "CMS Platform",
-                        options: [
-                            { text: "WordPress", value: "WordPress", dimension: "cms", isFinal: true },
-                            { text: "Shopify", value: "Shopify", dimension: "cms", isFinal: true },
-                            { text: "HubSpot CMS", value: "HubSpotCMS", dimension: "cms", isFinal: true },
-                            { text: "Custom Built / Other", value: "Custom", dimension: "cms", isFinal: true },
-                            { text: "Not Applicable / Don't Know", value: "NotApplicable", dimension: "cms", isFinal: true }
-                        ]
-                    }
-                }
-            },
-            content: { 
-                 "Sales": {
-                    "introduction": "Sales teams are pivotal in the customer journey, possessing direct insights into prospect language and pain points which are invaluable for SEO, particularly for keyword research and understanding user intent. They are also direct beneficiaries of high-quality leads generated through effective SEO.",
-                    "entry": { 
-                        "basePlaybook": {
-                            title: "SEO for Entry-Level Sales Professionals",
-                            focus: "For entry-level sales professionals, the primary SEO focus is on becoming a valuable source of 'voice of customer' data. This involves actively listening during prospect and customer interactions to capture the exact language, questions, pain points, and objections they use. This raw data is gold for keyword research and content strategy. Additionally, for businesses with a local presence, entry-level sales can play a role in basic local SEO hygiene, like verifying Google Business Profile information and encouraging reviews.",
-                            actionableTasks: [
-                                { title: "Master Active Listening for Keyword Intelligence", description: "During every call, demo, and email exchange, pay close attention to the specific terminology prospects use to describe their problems, the solutions they're seeking, and their objections. Don't paraphrase in your notes; capture their exact wording. These are potential long-tail keywords and content ideas." },
-                                { title: "Systematic Logging of Customer Language", description: "Develop a consistent habit of logging these customer phrases, questions, and pain points. Use a shared document (e.g., Google Sheet), a dedicated CRM field, or a team communication channel specifically for this purpose. Aim for 3-5 unique insights per day." },
-                                { title: "Contribute to Local SEO Accuracy (If Applicable)", description: "If your company serves local customers, periodically check your company's Google Business Profile (GBP) listing for accuracy (name, address, phone, hours, services). Report any discrepancies to your manager or the marketing team. Also, understand the process for encouraging satisfied local customers to leave online reviews." },
-                                { title: "Provide Granular Feedback on Organic Lead Quality", description: "When following up on leads generated through organic search, provide specific feedback to marketing/SEO about lead quality. Note if the lead's understanding aligns with the content they found, if their needs match your offerings, and any common misconceptions that might stem from search results." }
-                            ],
-                            executionSteps: [
-                                { step: "Develop a 'Customer Language' Capture Template", details: "Create a simple template with columns for: Date, Customer/Prospect, Key Phrase/Question, Context/Product Discussed, Potential Keyword Idea. Use this for your daily logging." },
-                                { step: "Participate in (or Initiate) Sales-Marketing Syncs on Keywords", details: "Actively participate in any meetings where sales and marketing discuss customer insights. If these don't exist, suggest a brief monthly check-in to share your compiled customer language log." },
-                                { step: "Learn to Identify High-Intent Phrases", details: "Start to recognize phrases that signal strong purchase intent (e.g., 'pricing for X solution', 'compare Y and Z features', 'best software for [specific problem]'). Highlight these in your logs."}
-                            ],
-                            keyTakeaway: "As an entry-level sales professional, you are on the front lines of customer interaction. Your ability to capture and relay the authentic voice of the customer provides an invaluable, real-time feed of keyword intelligence and content ideas that can significantly boost SEO effectiveness and lead quality. Your observations are direct market research."
-                        },
-                        "Goal_GenerateLeads": {
-                            "Niche_B2B": {
-                                "CMS_WordPress": {
-                                    "playbook": {
-                                        title: "Sales (Entry): B2B Lead Gen with WordPress",
-                                        focus: "Leveraging CRM data and understanding WordPress content capabilities to identify B2B-specific keywords for lead generation and support content efforts.",
-                                        actionableTasks: [ 
-                                            { title: "Analyze CRM Notes for High-Intent B2B Keywords", description: "Regularly review notes from won and lost deals in your CRM to find common customer language, questions, and pain points that signal strong B2B purchase intent. Focus on industry-specific jargon and problem/solution phrases." },
-                                            { title: "Understand WordPress Content Structure for B2B", description: "Familiarize yourself with how your company's WordPress site uses categories, tags, and custom post types (if any) to organize content relevant to B2B leads (e.g., case studies, whitepapers, industry solutions pages)." },
-                                            { title: "Relay Keyword & Content Ideas for WordPress", description: "When you identify strong B2B keywords or content gaps from customer interactions, provide these specific suggestions to the marketing team, noting how they might fit into the existing WordPress content structure or warrant new posts/pages."}
-                                        ],
-                                        executionSteps: [
-                                            { step: "1. Identify B2B Problem/Solution Keywords from CRM", details: "Focus on phrases from successful deals that describe a specific business problem and the type of solution sought. For example, 'automating B2B client onboarding' or 'secure data sharing platform for enterprise'." },
-                                            { step: "2. Suggest WordPress Content Formats for Keywords", details: "When relaying keywords, also suggest potential WordPress content formats that would best address the user intent, e.g., a blog post for an informational query, a case study for a solution-aware query, or a dedicated landing page for a high-intent transactional query." },
-                                            { step: "3. Learn Basic WordPress SEO Plugin Insights", details: "Ask marketing for a brief overview of how they use the SEO plugin (e.g., Yoast, Rank Math) on WordPress. Understand how to check if a page is optimized for a focus keyphrase and how meta descriptions are set. This helps you provide more informed suggestions." },
-                                            { step: "4. Propose Internal Links between Relevant WordPress B2B Content", details: "When new B2B-focused content is published, or if you notice existing related pieces, suggest internal linking opportunities to marketing, including the specific anchor text that would be most relevant." },
-                                            { step: "5. Share Targeted WordPress Content with B2B Prospects", details: "When a B2B prospect asks a question that is directly and comprehensively answered by a specific blog post, case study, or page on your WordPress site, share the link. This positions you as a helpful resource and drives qualified traffic." }
-                                        ],
-                                        keyTakeaway: "By actively feeding real-world B2B customer language and needs into your company's WordPress content strategy, you directly contribute to creating more relevant assets that attract and convert high-quality B2B leads."
-                                    }
-                                }
-                            }
-                        }
-                    },
-                    "manager": { 
-                        "basePlaybook": {
-                            title: "SEO for Sales Managers & Team Leads",
-                            focus: "For Sales Managers and Team Leads, the SEO focus shifts to enabling and systematizing the flow of customer intelligence from the sales team to marketing/SEO. This includes training the team on the importance of SEO and how their insights contribute, establishing processes for capturing and leveraging CRM data for keyword and content strategy, overseeing local SEO efforts where applicable, and ensuring sales enablement content is aligned with SEO insights to support the entire sales cycle.",
-                            actionableTasks: [
-                                { title: "Train Sales Team on SEO Fundamentals & Value", description: "Develop and deliver concise training for your sales team on what SEO is, how it generates qualified leads, why their customer insights are crucial for keyword research, and the importance of online reputation (reviews, GBP accuracy for local sales)." },
-                                { title: "Implement a Systematic CRM Data > SEO Feedback Loop", description: "Work with marketing/SEO and CRM administrators to establish a formal process for regularly extracting, analyzing, and sharing customer language, frequently asked questions, objections, and competitor mentions from CRM data to inform keyword strategy and content creation." },
-                                { title: "Oversee and Optimize Local SEO Efforts (If Applicable)", description: "If your business has a local component, ensure your team understands their role in maintaining accurate Google Business Profile listings for their territories, encouraging local reviews, and reporting on local search performance or issues." },
-                                { title: "Collaborate on SEO-Informed Sales Enablement Content", description: "Partner with the marketing team to ensure that sales enablement materials (product sheets, case studies, presentation decks, email templates) are informed by SEO insights, using relevant keywords and addressing customer pain points identified through search data." },
-                                { title: "Monitor and Report on Organic Lead Quality and Conversion", description: "Track the quality of leads generated from organic search and their conversion rates through the sales funnel. Provide regular feedback to marketing/SEO on what's working and what's not, to help refine targeting and content." }
-                            ],
-                             executionSteps: [
-                                { step: "Develop a Sales-Focused SEO Training Deck & Resources", details: "Create a short presentation and a one-page handout for your team covering: 1) SEO basics (what it is, why it matters to sales), 2. How to identify and log customer keywords/questions, 3. Process for sharing insights with marketing." },
-                                { step: "Define CRM Fields/Tags for SEO Insights", details: "Collaborate with CRM admin/marketing ops to create specific fields or tags in the CRM for sales reps to log: 'Customer Keywords', 'Prospect Questions', 'Competitor Mentions', 'Content Gaps Identified'." },
-                                { step: "Establish a Recurring Sales & SEO Strategy Meeting", details: "Schedule a monthly or bi-monthly meeting with key marketing/SEO personnel to review the insights gathered from CRM, discuss organic lead performance, and align on upcoming content or SEO initiatives that can support sales goals." },
-                                { step: "Create a Shared Dashboard for Organic Lead Performance", details: "Work with marketing to develop a simple, shared dashboard that tracks key metrics for organic leads, such as volume, lead score (if applicable), conversion rate to MQL/SQL, and top-performing content that generated these leads." }
-                            ],
-                            keyTakeaway: "As a Sales Manager, your role is to operationalize the collection of valuable customer insights and ensure they effectively inform SEO and content strategy. By training your team and fostering strong collaboration with marketing, you transform sales from a passive recipient of leads into an active contributor to organic growth and lead quality."
-                        }
-                    },
-                    "director": { 
-                        "basePlaybook": {
-                            title: "Strategic SEO for Sales Directors & VPs",
-                            focus: "For Sales Directors and VPs, the SEO focus is on strategic alignment and advocacy. This involves ensuring that the overall sales strategy fully leverages the potential of organic search, using SEO-derived market and competitor insights to inform sales planning and market penetration, integrating organic lead performance into sales forecasting and revenue targets, and championing the necessary investment and cross-departmental collaboration for sustained SEO success.",
-                            actionableTasks: [ 
-                                { title: "Integrate SEO Performance & Insights into Strategic Sales Planning", description: "Ensure that sales strategies, revenue targets, market expansion plans, and territory planning explicitly consider and leverage insights from organic search performance, keyword trends, and SEO-driven competitive analysis." },
-                                { title: "Champion Data-Driven Lead Qualification & Scoring for Organic Leads", description: "Collaborate with marketing leadership to define and refine lead qualification criteria and scoring models for organically generated leads, ensuring sales efforts are prioritized on the most promising prospects identified through search intent and online behavior." },
-                                { title: "Incorporate Organic Lead Projections into Sales Forecasting & Revenue Models", description: "Work with marketing and finance to integrate reliable projections for organic lead generation (based on SEO performance, targets, and market potential) into overall sales forecasts, pipeline management, and revenue models." },
-                                { title: "Advocate for Strategic SEO Investment and Resources", description: "Articulate the ROI and strategic business value of SEO to C-suite peers and executive leadership to secure adequate budget, resources, and cross-departmental support for critical SEO initiatives." },
-                                { title: "Foster a Culture of Sales & Marketing Alignment Around SEO", description: "Drive alignment between sales and marketing teams on shared KPIs that reflect SEO's contribution to revenue. Promote processes for continuous feedback and data sharing between sales (customer insights) and marketing/SEO (performance data, content strategy)." }
-                            ],
-                            executionSteps: [
-                                { step: "Include SEO Metrics in Sales Leadership Dashboards & QBRs", details: "Ensure that key SEO performance indicators related to lead generation and quality (e.g., organic MQLs, SQLs, conversion rates by organic source) are part of regular sales leadership dashboards and are discussed in Quarterly Business Reviews." },
-                                { step: "Utilize SEO Competitive Intelligence for Sales Strategy", details: "Request and review SEO competitive intelligence reports from marketing to understand competitors' online positioning, content strengths, and keyword strategies. Use these insights to inform sales messaging, identify market gaps, and refine competitive positioning." },
-                                { step: "Develop Joint Sales & Marketing OKRs for Organic Growth", details: "Collaborate with marketing leadership to set shared Objectives and Key Results (OKRs) focused on organic channel growth, lead quality from SEO, and revenue contribution from organic search." },
-                                { step: "Present the Business Case for SEO to Executive Leadership", details: "Periodically, prepare and present a concise business case to the executive team highlighting SEO's ROI, its contribution to strategic business goals (e.g., market expansion, new customer acquisition), and any needs for further investment or support." }
-                            ],
-                            keyTakeaway: "For sales leadership, SEO is not just a marketing function but a critical strategic input for market understanding, competitive differentiation, and sustainable revenue growth. Your role is to champion its integration, ensure strategic alignment, and advocate for the resources that allow SEO to deliver its full potential to the sales organization and the business at large."
-                        }
-                    }
-                },
-                "Marketing": {
-                    "introduction": "Marketing departments are typically the custodians of a company's content and digital footprint, making their proficiency in and application of SEO principles absolutely critical for organic success.",
-                    "entry": { 
-                        "basePlaybook": { 
-                            title: "SEO for Entry-Level Marketing Professionals", 
-                            focus: "For entry-level marketing roles, the SEO focus involves diligent execution of foundational on-page SEO tasks, supporting keyword research efforts, ensuring content is formatted for both readability and search engine crawlers, and gaining familiarity with basic SEO analytics to understand content performance. It's about building good SEO habits from the ground up.", 
-                            actionableTasks: [
-                                { title: "Assist with Keyword Research and Analysis", description: "Under the guidance of senior team members, use SEO tools to find relevant keywords for content topics. Learn to analyze keyword volume, difficulty, and, most importantly, user intent behind search queries." },
-                                { title: "Implement On-Page SEO Best Practices", description: "When preparing content for publication, meticulously implement on-page SEO elements: craft clear and keyword-inclusive title tags and meta descriptions, ensure proper use of header tags (H1-H6) for structure, naturally integrate keywords into body copy, and add descriptive alt text to all images." },
-                                { title: "Format Content for Optimal Readability and SEO", description: "Structure content with short paragraphs, bullet points, numbered lists, and bold text for key phrases. This improves user experience, dwell time, and helps search engines understand content hierarchy and important information." },
-                                { title: "Execute Internal Linking Strategy", description: "Based on the site's internal linking plan, identify and implement relevant internal links from new content to existing authoritative pages and from existing pages to new content, using descriptive, keyword-relevant anchor text." },
-                                { title: "Track Basic Content Performance Metrics", description: "Learn to use Google Analytics and Google Search Console to monitor organic traffic to pages you've worked on, identify top-performing organic landing pages, and view basic reports on keyword impressions and clicks for specific content pieces." }
-                            ],
-                            executionSteps: [
-                                { step: "Develop an On-Page SEO Pre-Publish Checklist", details: "Create and consistently use a checklist for all new content, covering: Title Tag (length, keyword), Meta Description (length, keyword, CTR focus), H1 (one per page, primary keyword), H2/H3s (structure, secondary keywords), Image Alt Text, Internal Links, URL slug." },
-                                { step: "Analyze Top 3 Competitor Pages for Target Keywords", details: "For each new piece of content, research the top 3-5 ranking pages for the primary target keyword. Analyze their content structure, depth, keyword usage, and unique selling propositions. Share these insights with the content creator/strategist." },
-                                { step: "Practice Writing Multiple Title & Meta Options", details: "For key pages, draft 2-3 variations of title tags and meta descriptions. Focus on both keyword relevance and click-through rate (CTR) appeal. Get feedback from senior team members." },
-                                { step: "Build a Habit of Proactive Internal Linking", details: "When new content is published, immediately identify at least 2-3 existing relevant pages to link *to* the new content, and find 1-2 opportunities within the new content to link *out* to other important internal pages." }
-                            ], 
-                            keyTakeaway: "As an entry-level marketer, your attention to detail in executing on-page SEO fundamentals and your willingness to learn from data are crucial. Building strong SEO habits now will make you a more effective marketer and a valuable asset to any team focused on organic growth." 
-                        }
-                    },
-                    "manager": { 
-                        "basePlaybook": { 
-                            title: "SEO for Marketing Managers", 
-                            focus: "For Marketing Managers (especially those not specializing solely in SEO), the focus is on strategically integrating SEO across all marketing initiatives. This includes leading content strategy with a strong SEO lens, ensuring campaigns are built on solid keyword foundations, interpreting SEO analytics to drive decisions, effectively collaborating with SEO specialists or agencies, and ensuring the entire marketing team understands and applies SEO best practices.", 
-                            actionableTasks: [
-                                { title: "Lead SEO-Driven Content Strategy and Planning", description: "Oversee the development and execution of a content strategy that is deeply rooted in keyword research, user intent analysis, topic clustering, and competitive insights. Ensure the editorial calendar aligns with SEO objectives." },
-                                { title: "Integrate SEO into All Marketing Campaign Briefs and Execution", description: "Ensure that SEO considerations (target keywords, on-page optimization, technical requirements for landing pages) are integral parts of all marketing campaign planning and execution, not an afterthought." },
-                                { title: "Conduct Regular Content Audits for SEO Performance & Gaps", description: "Establish a process for periodically auditing existing website content to assess its SEO performance (traffic, rankings, engagement, conversions). Identify content to update, consolidate, repurpose, or remove, and uncover content gaps based on keyword research and competitor analysis." },
-                                { title: "Analyze SEO Data to Inform Marketing Strategy and Measure ROI", description: "Utilize Google Analytics, Search Console, and SEO platform data to understand organic performance, track KPIs, identify trends, and measure the ROI of SEO efforts. Use these insights to refine overall marketing strategy." },
-                                { title: "Foster SEO Knowledge and Best Practices Within the Marketing Team", description: "Provide training, resources, and clear guidelines to ensure all members of the marketing team (copywriters, social media managers, campaign managers, designers) understand and apply core SEO principles in their respective roles." },
-                                { title: "Manage Relationships and Drive Results with SEO Specialists/Agencies", description: "If working with in-house SEOs or an external agency, clearly define goals, ensure effective communication, facilitate the implementation of recommendations, and hold them accountable for performance against SEO KPIs." }
-                            ],
-                            executionSteps: [
-                                { step: "Develop Standard Operating Procedures (SOPs) for SEO in Content Creation", details: "Create SOPs that outline the process for keyword research, on-page optimization, internal linking, and content formatting for all new content produced by the team." },
-                                { step: "Implement a Quarterly SEO Review and Planning Cycle", details: "Dedicate time each quarter to review overall SEO performance, analyze competitor SEO strategies, identify new opportunities, and plan key SEO initiatives for the upcoming quarter, aligning with broader marketing goals." },
-                                { step: "Create a Centralized SEO Performance Dashboard", details: "Work with your SEO team/agency to build a comprehensive dashboard (e.g., in Google Data Studio or your SEO platform) that tracks key SEO metrics and their impact on marketing goals. Review this regularly with your team." },
-                                { step: "Incorporate SEO Metrics into Campaign Reporting", details: "Ensure that reports for all major marketing campaigns include data on organic traffic, keyword performance, and conversions generated or influenced by the campaign's SEO components." }
-                            ], 
-                            keyTakeaway: "As a Marketing Manager, your role is to champion SEO as a fundamental component of a successful, integrated marketing strategy. By ensuring SEO is woven into content planning, campaign execution, and performance analysis, you drive sustainable organic growth and maximize the ROI of all marketing efforts."
-                        }
-                    },
-                    "director": { 
-                        "basePlaybook": { 
-                            title: "Strategic SEO for Marketing Directors / VPs / CMOs", 
-                            focus: "For Marketing Directors, VPs, and CMOs, the SEO focus is on setting the overarching organic growth strategy, ensuring deep alignment between SEO initiatives and core business objectives, securing and allocating budget for SEO, building and nurturing an SEO-proficient marketing organization, and effectively communicating SEO's strategic value and ROI to executive leadership and the board.", 
-                            actionableTasks: [
-                                { title: "Define and Own the Strategic Vision for Organic Search", description: "Develop and champion a clear, long-term strategic vision for organic search as a primary, sustainable, and profitable customer acquisition and brand-building channel. Ensure this vision is understood and supported across the organization." },
-                                { title: "Align SEO Strategy with Overarching Business Goals and Revenue Targets", description: "Ensure that all SEO strategies, objectives, and KPIs are directly tied to and supportive of the company's broader business goals, such as revenue growth, market share expansion, new market entry, or customer retention." },
-                                { title: "Secure, Allocate, and Optimize SEO Budget and Resources", description: "Advocate for and secure an appropriate budget for SEO initiatives, including talent (in-house or agency), tools, technology, and content creation. Ensure resources are strategically allocated to areas with the highest potential ROI." },
-                                { title: "Build and Lead a High-Performing, SEO-Aware Marketing Organization", description: "Foster a culture of SEO awareness and competency within the marketing department and across collaborating teams. Invest in training, development, and the right organizational structure to support SEO excellence." },
-                                { title: "Measure and Communicate SEO's Business Impact and ROI to the C-Suite", description: "Establish robust measurement frameworks to track and clearly articulate the tangible business impact and ROI of SEO investments to executive leadership, focusing on metrics like organic revenue contribution, customer acquisition cost (CAC) via SEO, and market share gains." },
-                                { title: "Drive Cross-Functional Collaboration for Holistic SEO Success", description: "Champion and facilitate deep, ongoing collaboration between marketing, product, engineering/IT, sales, and customer support teams to ensure a unified and holistic approach to maximizing the company's organic search presence and performance." },
-                                { title: "Stay Abreast of and Strategize for Evolving Search Landscape & Technologies", description: "Maintain a strategic understanding of major search engine algorithm changes, emerging SEO trends (e.g., AI in search, voice search, visual search), and the competitive landscape to guide long-term SEO strategy and ensure the company remains agile and competitive." }
-                            ],
-                            executionSteps: [
-                                { step: "Integrate SEO into Annual and Quarterly Marketing & Business Planning", details: "Ensure SEO is a core component of strategic planning sessions, with clear objectives, initiatives, and budget allocations defined." },
-                                { step: "Develop an Executive-Level SEO Dashboard", details: "Create a concise dashboard for the C-suite that highlights top-line SEO performance and its direct contribution to key business metrics (e.g., organic revenue, market share, lead value)." },
-                                { step: "Establish an SEO Steering Committee or Center of Excellence", details: "If appropriate for the organization's size, form a cross-functional group to oversee SEO strategy, promote best practices, and ensure alignment across departments." },
-                                { step: "Invest in Advanced SEO Training for Key Marketing Leaders", details: "Provide opportunities for key marketing leaders and strategists to attend advanced SEO training, workshops, and industry conferences to stay at the forefront of SEO knowledge." },
-                                { step: "Regularly Benchmark SEO Performance Against Key Competitors", details: "Oversee periodic, in-depth competitive SEO analysis to identify strategic opportunities and threats, and to ensure your organization is maintaining or gaining a competitive edge in organic search." }
-                            ], 
-                            keyTakeaway: "As a senior marketing leader, your role is to elevate SEO from a specialized tactic to a core strategic driver of business growth, brand equity, and competitive advantage. Your leadership in setting the vision, securing investment, fostering an SEO-centric culture, and demonstrating its business value is paramount to long-term organic success." 
-                        }
-                    }
-                },
-                "Development": {
-                    "introduction": "Developers and technical teams are the architects and maintainers of a website's infrastructure, making their role in implementing and preserving technical SEO absolutely critical. Their work directly impacts how search engines crawl, index, and rank a site.",
-                    "entry": { 
-                        "basePlaybook": { 
-                            title: "SEO for Junior Developers & Entry-Level Tech Roles", 
-                            focus: "For junior developers and entry-level technical roles, the SEO focus is on understanding and correctly implementing fundamental technical SEO elements as specified by senior team members or SEO specialists. This includes writing clean, semantic HTML, ensuring basic page elements are SEO-friendly, and being aware of how coding practices can impact site crawlability, indexability, and performance.", 
-                            actionableTasks: [
-                                { title: "Implement HTML Elements with SEO Best Practices", description: "Accurately code title tags, meta descriptions, and header tags (H1-H6) in page templates and components based on specifications from the SEO or content team. Ensure proper semantic HTML usage (e.g., `<nav>`, `<article>`, `<aside>`)." },
-                                { title: "Basic Image Optimization in Code", description: "Ensure all functional images have descriptive `alt` text attributes implemented in the HTML. Verify that image file names are descriptive and that images are reasonably compressed before deployment to aid page speed." },
-                                { title: "Adhere to URL Structure and Redirect Guidelines", description: "When developing new pages or features, ensure URLs are clean, descriptive, lowercase, and use hyphens for separation, following established site patterns. Correctly implement 301 redirects for moved or deleted content as per instructions." },
-                                { title: "Contribute to Mobile-Responsive Design", description: "Write front-end code that ensures web pages and features render correctly and are fully usable across various screen sizes (desktop, tablet, mobile), contributing to the site's overall mobile-friendliness." },
-                                { title: "Understand Basic `robots.txt` and XML Sitemap Functionality", description: "Become familiar with the purpose of the `robots.txt` file (guiding crawlers) and XML sitemaps (listing URLs for discovery). Be able to identify the location of these files and understand their basic syntax." }
-                            ],
-                            executionSteps: [
-                                { step: "Follow a 'Technical SEO for Devs' Checklist", details: "Use or help develop a simple checklist for new components/pages covering: one H1 tag, appropriate use of H2-H6, alt text for all images, no broken internal links, valid HTML, and basic mobile rendering tests." },
-                                { step: "Test Page Rendering and Functionality on Key Mobile Devices/Emulators", details: "Before merging code, use browser developer tools to emulate various mobile devices and test that new features are fully accessible and functional on smaller screens." },
-                                { step: "Validate Redirects After Implementation", details: "Use a browser extension or online tool to check that any implemented 301 redirects are working correctly, pointing to the right destination with the correct status code." },
-                                { step: "Review Pull Requests for Basic SEO Elements", details: "When reviewing peers' code, include a quick check for basic SEO elements like alt text, proper heading structure, and valid links." }
-                            ], 
-                            keyTakeaway: "As an entry-level developer, your diligence in implementing fundamental technical SEO best practices is crucial for preventing SEO issues that can be costly to fix later. Clean code, attention to on-page HTML elements, and mobile-first thinking are key contributions." 
-                        }
-                    },
-                    "manager": { 
-                        "basePlaybook": { 
-                            title: "SEO for Development Managers & Team Leads", 
-                            focus: "For Development Managers and Team Leads, the SEO focus is on ensuring that development processes and the technical architecture of the website inherently support SEO best practices. This includes fostering SEO knowledge within the development team, collaborating effectively with SEO specialists to translate requirements into technical solutions, prioritizing technical SEO tasks in development sprints, and overseeing the implementation of a performant, crawlable, and indexable website.", 
-                            actionableTasks: [
-                                { title: "Integrate Technical SEO into Development Lifecycle (SDLC)", description: "Establish processes to include technical SEO considerations and requirements at all stages of the software development lifecycle, from planning and design through development, testing, and deployment." },
-                                { title: "Champion Site Performance and Core Web Vitals", description: "Lead efforts to optimize website speed and achieve good Core Web Vitals scores (LCP, INP, CLS). Prioritize performance optimization tasks in the backlog and ensure developers are equipped with tools and knowledge to build performant code." },
-                                { title: "Oversee Implementation of SEO-Friendly Architecture and JavaScript Handling", description: "Ensure the website's architecture (including URL structure, internal linking, and navigation) is logical and supports SEO. For JavaScript-heavy sites, guide the implementation of appropriate rendering strategies (SSR, dynamic rendering, hybrid) to ensure content is accessible to search engines." },
-                                { title: "Facilitate Effective Collaboration Between Development and SEO Teams", description: "Act as a bridge between the development team and SEO specialists/consultants. Ensure clear communication, mutual understanding of requirements and constraints, and efficient translation of SEO needs into actionable development tickets." },
-                                { title: "Prioritize and Manage Technical SEO Debt", description: "Work with product and SEO teams to identify, prioritize, and schedule the resolution of existing technical SEO debt (e.g., legacy redirect issues, crawl errors, suboptimal site structure elements)." },
-                                { title: "Ensure Robust Testing for SEO Impact Before Releases", description: "Implement testing procedures (manual and automated where possible) to check for potential negative SEO impacts before deploying new features or site updates (e.g., checking for new crawl errors, ensuring redirects are in place, verifying canonical tags)." }
-                            ],
-                            executionSteps: [
-                                { step: "Include SEO in Sprint Planning & Retrospectives", details: "Ensure technical SEO tasks are properly estimated and included in sprint planning. Discuss SEO-related successes and challenges in sprint retrospectives to foster continuous improvement." },
-                                { step: "Develop and Maintain Technical SEO Guidelines for Developers", details: "Create or adopt a comprehensive set of technical SEO guidelines and best practices specifically for your development team, covering topics like JavaScript SEO, schema implementation, URL parameters, etc." },
-                                { step: "Implement Automated SEO Checks in CI/CD Pipeline", details: "Explore tools that can automate certain technical SEO checks (e.g., for broken links, missing alt text, Lighthouse scores) and integrate them into your continuous integration/continuous deployment (CI/CD) pipeline." },
-                                { step: "Conduct Regular Technical SEO Knowledge Sharing Sessions", details: "Organize periodic internal workshops or knowledge-sharing sessions for the development team on important technical SEO topics and new developments in the field." }
-                            ], 
-                            keyTakeaway: "As a Development Manager or Team Lead, your leadership in embedding SEO best practices into the development culture and technical architecture is fundamental to building a website that can achieve and maintain strong organic search visibility. Proactive collaboration with SEO stakeholders is key."
-                        }
-                    },
-                    "director": { 
-                        "basePlaybook": { 
-                            title: "Strategic SEO for Engineering Directors / VPs / CTOs", 
-                            focus: "For Engineering Directors, VPs, or CTOs, the SEO focus is on ensuring the entire technology stack, infrastructure, and development methodology are architected to support and scale SEO efforts effectively. This includes championing technical SEO excellence, making strategic technology choices with SEO implications in mind, fostering a deep collaboration between engineering and SEO/marketing, and ensuring the long-term technical health and performance of the company's digital assets for optimal search visibility.", 
-                            actionableTasks: [
-                                { title: "Champion a 'Performance-First' and 'SEO-by-Design' Engineering Culture", description: "Instill a culture where website performance (Core Web Vitals, load times) and technical SEO considerations are non-negotiable aspects of quality engineering, integrated from the initial design and architecture phases of any project." },
-                                { title: "Strategic Oversight of Technology Stack for SEO Compatibility and Scalability", description: "Ensure that choices regarding CMS platforms, JavaScript frameworks, hosting infrastructure, CDNs, and third-party services are evaluated for their SEO implications, scalability, and ability to support current and future SEO best practices." },
-                                { title: "Drive Robust Technical SEO Governance and Standards", description: "Establish and enforce clear technical SEO standards, guidelines, and architectural principles across all development teams to ensure consistency, prevent regressions, and maintain a high level of technical SEO hygiene for all web properties." },
-                                { title: "Facilitate Deep Collaboration and Shared Goals Between Engineering and SEO/Marketing", description: "Build strong partnerships and shared objectives between engineering leadership and SEO/marketing leadership. Ensure engineering teams understand the business impact of SEO and are empowered to contribute to SEO success." },
-                                { title: "Invest in Tools, Training, and Infrastructure for Technical SEO Excellence", description: "Advocate for and secure resources for advanced technical SEO tools (e.g., log file analyzers, enterprise crawling software, performance monitoring solutions), specialized training for engineers, and infrastructure that supports optimal SEO performance (e.g., robust caching, prerendering solutions)." },
-                                { title: "Oversee Technical Strategy for Large-Scale SEO Challenges", description: "Provide strategic technical guidance for complex SEO challenges such as international SEO (hreflang, ccTLDs vs subdirectories), large-scale website migrations, crawl budget optimization for massive sites, and ensuring indexability of complex web applications." }
-                            ],
-                            executionSteps: [
-                                { step: "Incorporate Technical SEO into Architectural Design Reviews", details: "Ensure that technical SEO experts are involved in the architectural design reviews for new platforms, major site redesigns, or significant feature developments to identify and mitigate potential SEO issues early." },
-                                { step: "Establish Key Technical SEO Health Metrics and Monitoring", details: "Define and regularly monitor key technical SEO health metrics (e.g., crawl error rates, indexation rates for important page types, Core Web Vitals performance across site sections) and establish alerting for significant negative changes." },
-                                { step: "Allocate Dedicated Engineering Resources/Time for Proactive Technical SEO Improvements", details: "Ensure that engineering roadmaps include dedicated time and resources for proactive technical SEO enhancements and addressing technical SEO debt, not just reactive bug fixing." },
-                                { step: "Champion a Data-Driven Approach to Technical SEO", details: "Promote the use of data (log files, crawl stats, performance metrics, analytics) to identify technical SEO opportunities, diagnose issues, and measure the impact of technical changes on SEO performance." }
-                            ], 
-                            keyTakeaway: "As a senior engineering leader, your commitment to building and maintaining a technically sound, performant, and scalable web infrastructure is the bedrock of sustainable SEO success. By fostering an engineering culture that values SEO and collaborates closely with marketing, you enable the entire organization to maximize its organic search potential."
-                        }
-                    }
-                },
-                "Creative": {
-                    "introduction": "Creative teams craft the visual and textual content, directly influencing on-page SEO, user engagement, usability, and E-E-A-T signals. Their work is pivotal in making content appealing and understandable to both users and search engines.",
-                    "entry": { 
-                        "basePlaybook": { 
-                            title: "SEO for Junior/Entry-Level Creative Professionals (Design & Copy)", 
-                            focus: "For junior creative roles (both design and copy), the SEO focus is on understanding and applying fundamental on-page optimization principles to their work. This means creating visual and textual content that is not only engaging and on-brand but also search-engine friendly and accessible. Key areas include image optimization, natural keyword integration in copy, writing for web readability, and drafting effective meta elements.", 
-                            actionableTasks: [
-                                { title: "Implement Image SEO Best Practices (Designers)", description: "Ensure all images are properly optimized for the web: use descriptive file names, provide meaningful alt text (collaborating with copywriters if needed), compress images to balance quality and file size, and choose appropriate file formats (JPG, PNG, WebP)." },
-                                { title: "Practice Natural Keyword Integration (Copywriters)", description: "Learn to skillfully weave target keywords (provided by SEOs or through basic research) into headlines, subheadings, and body copy in a way that reads naturally and provides value to the user, avoiding keyword stuffing." },
-                                { title: "Write for Web Readability and User Experience (All)", description: "Create content (both visual and textual) that is easy to scan and digest online. Use clear headings, short paragraphs/sentences, bullet points, and ample white space. Ensure text has good contrast against backgrounds." },
-                                { title: "Draft SEO-Friendly Title Tags & Meta Descriptions (Copywriters)", description: "Practice writing compelling and concise title tags (50-60 characters) and meta descriptions (155-160 characters) that include target keywords and encourage clicks from search results pages." },
-                                { title: "Understand and Apply Basic Accessibility Principles", description: "Learn how creative choices (e.g., color contrast, font sizes, alt text for images, clear link text) impact website accessibility, which is crucial for user experience and can indirectly benefit SEO." }
-                            ],
-                            executionSteps: [
-                                { step: "Use an Image Optimization Checklist", details: "For every image: Is the file name descriptive? Is alt text provided and accurate? Is the image compressed? Is it the right format and dimensions?" },
-                                { step: "Review Top-Ranking Content for Keyword Usage", details: "When given a target keyword, search for it and analyze how the top-ranking pages use that keyword and related terms naturally within their content." },
-                                { step: "Test Content Readability", details: "Use online tools (e.g., Hemingway App) to check the readability score of your copy and identify areas for simplification." },
-                                { step: "Collaborate on Alt Text and Meta Data", details: "Designers and copywriters should collaborate to ensure alt text is descriptive and meta data is compelling and keyword-relevant." }
-                            ], 
-                            keyTakeaway: "As an entry-level creative, your contribution to SEO lies in making your beautiful designs and compelling copy discoverable and accessible. Mastering these foundational on-page SEO practices will make your creative work even more impactful." 
-                        }
-                    },
-                    "manager": { 
-                        "basePlaybook": { 
-                            title: "SEO for Creative Managers & Team Leads", 
-                            focus: "For Creative Managers and Team Leads, the SEO focus is on guiding the creative team to produce assets (both visual and textual) that are not only aesthetically pleasing and on-brand but also strategically optimized for search engines and user engagement. This involves instilling SEO best practices within the team, ensuring creative briefs include SEO considerations, fostering collaboration with SEO specialists, and balancing creative vision with SEO requirements.", 
-                            actionableTasks: [
-                                { title: "Integrate SEO Requirements into Creative Briefs and Workflows", description: "Ensure that all creative briefs for web content (copy, design, video) include clear SEO objectives, target keywords, user intent considerations, and E-E-A-T requirements. Incorporate SEO checkpoints into the creative workflow." },
-                                { title: "Train and Mentor Creative Team on SEO Best Practices", description: "Provide ongoing training and resources to designers and copywriters on relevant SEO principles, such as image optimization, on-page copy optimization, writing for the web, accessibility, and the importance of E-E-A-T signals in content." },
-                                { title: "Champion the Creation of SEO-Friendly Visual Content", description: "Encourage the development of unique, high-quality visual assets (infographics, custom illustrations, optimized photography, video with transcripts) that can enhance user engagement, attract backlinks, and perform well in image/video search." },
-                                { title: "Collaborate with SEO Specialists on Content Strategy and Optimization", description: "Work closely with SEO specialists or agencies to align creative content production with overall SEO strategy, get input on keyword targeting for creative assets, and ensure content is optimized before and after launch." },
-                                { title: "Balance Creative Excellence with SEO and UX Needs", description: "Guide the team in finding the right balance between innovative creative execution and the practical requirements of SEO, user experience (e.g., page speed, readability), and accessibility." }
-                            ],
-                            executionSteps: [
-                                { step: "Develop SEO Guidelines for Creatives", details: "Create a concise set of SEO guidelines specifically for your creative team, covering image optimization standards, on-page copy best practices, and tips for creating shareable/linkable visual content." },
-                                { step: "Include SEO Review in Creative Approval Process", details: "Add an 'SEO Review' step to your creative approval workflow, where an SEO specialist or a trained team member checks assets for basic SEO hygiene before they go live." },
-                                { step: "Showcase Examples of Successful SEO-Creative Collaboration", details: "Share internal or external examples of how great creative work combined with smart SEO led to improved engagement, rankings, and traffic to inspire your team." },
-                                { step: "Encourage Creatives to Use SEO Data for Inspiration", details: "Help your team understand how keyword research, 'People Also Ask' data, and competitor content analysis can be a source of inspiration for new creative ideas and angles." }
-                            ], 
-                            keyTakeaway: "As a Creative Manager, your leadership is key to ensuring that the team's exceptional creative output also achieves maximum visibility and impact through search. By embedding SEO awareness into the creative process, you amplify the reach and effectiveness of your brand's storytelling." 
-                        }
-                    },
-                    "director": { 
-                        "basePlaybook": { 
-                            title: "Strategic SEO for Creative Directors & VPs", 
-                            focus: "For Creative Directors and VPs, the SEO focus is on ensuring the overall brand creative strategy, visual identity, and content narrative actively support and enhance the company's SEO performance and online authority. This means championing user-centric and accessible design at a strategic level, ensuring creative campaigns are conceived with an understanding of search behavior and E-E-A-T principles, and fostering a culture where creative excellence and SEO effectiveness are seen as synergistic.", 
-                            actionableTasks: [
-                                { title: "Align High-Level Brand Creative Strategy with SEO & E-E-A-T", description: "Ensure that the overarching brand narrative, visual identity, and content pillars are developed in a way that inherently supports strong E-E-A-T signals (Experience, Expertise, Authoritativeness, Trustworthiness) and aligns with how target audiences search for and consume information online." },
-                                { title: "Champion User-Centric Design and Accessibility as Core Creative Principles", description: "Advocate for and enforce user-centric design principles and web accessibility standards across all digital creative output, recognizing their direct impact on user engagement, brand perception, and indirect benefits to SEO." },
-                                { title: "Integrate Search Insights into Major Creative Campaign Concepts", description: "Ensure that insights from SEO (e.g., search trends, audience query language, competitor online strategies) are considered during the conceptualization phase of major creative campaigns and brand initiatives to maximize their online discoverability and resonance." },
-                                { title: "Oversee the Creation of Signature Visual Assets for SEO Impact", description: "Direct the creation of high-quality, original, and strategically valuable visual assets (e.g., flagship video content, interactive data visualizations, iconic brand imagery) that can differentiate the brand, attract significant backlinks, and enhance overall online authority." },
-                                { title: "Foster a Culture of Innovation in SEO-Friendly Creative Storytelling", description: "Encourage and empower creative teams to explore innovative and engaging ways to tell the brand's story and present information visually and textually, while adhering to SEO best practices and ensuring content is discoverable and shareable." },
-                                { title: "Collaborate with Marketing and Product Leadership on Holistic Digital Experience", description: "Work closely with heads of Marketing and Product to ensure a cohesive and SEO-friendly user experience across all digital touchpoints, from initial search discovery through to on-site engagement and conversion." }
-                            ],
-                            executionSteps: [
-                                { step: "Incorporate 'Search Discoverability' into Creative Strategy Reviews", details: "During strategic reviews of creative direction and brand messaging, explicitly discuss how the proposed creative will be discovered and perceived through search engines." },
-                                { step: "Define Brand Guidelines for Visual E-E-A-T", details: "Develop specific guidelines within the brand manual on how visual elements (e.g., use of original photography, expert endorsements, clear sourcing for data visualizations) should be used to reinforce E-E-A-T." },
-                                { step: "Invest in Tools and Training for Creatives on Digital Best Practices", details: "Allocate resources for tools that help creatives optimize assets for the web (e.g., image compression, video optimization) and for training on topics like accessible design, UX for web, and visual SEO." },
-                                { step: "Measure the Impact of Creative on SEO-Related Engagement Metrics", details: "Work with analytics teams to understand how different creative approaches and visual assets impact user engagement metrics that are relevant to SEO (e.g., time on page, bounce rate on key landing pages, video view duration for SEO-targeted videos)." }
-                            ], 
-                            keyTakeaway: "As a senior creative leader, your vision shapes how the brand is perceived and discovered online. By strategically aligning creative excellence with user-centric design, accessibility, and an understanding of search, you build a powerful and authoritative brand presence that drives organic growth and deepens customer engagement." 
-                        }
-                    }
-                },
-                "Product": {
-                    "introduction": "Product Managers are central to defining, building, and evolving digital products. Their decisions regarding features, functionality, and UX significantly bear on SEO and product discoverability.",
-                    "entry": { 
-                        "basePlaybook": { 
-                            title: "SEO for Associate/Junior Product Managers", 
-                            focus: "For Associate or Junior Product Managers, the SEO focus is on understanding how product features and content can be discovered through search, incorporating basic SEO considerations into feature specifications, and facilitating communication between product, SEO, and development teams. It's about learning to ask the right SEO-related questions early in the product lifecycle.", 
-                            actionableTasks: [
-                                { title: "Gather User Search Behavior Insights for Product Features", description: "When researching new features, include analysis of how users might search for such functionality or related information. Use simple keyword research tools or analyze internal site search data if available." },
-                                { title: "Include Basic SEO Considerations in User Stories/Feature Specs", description: "For new features that generate content or have dedicated URLs, ensure specifications include notes on: URL structure (descriptive, user-friendly), if content should be indexable, and basic on-page elements like potential H1 tags or key phrases." },
-                                { title: "Assist in Documenting Technical SEO Requirements for Product Changes", description: "Support senior PMs or SEO specialists in translating SEO needs (e.g., for new page templates, handling of user-generated content, URL parameter management) into clear requirements for the development team." },
-                                { title: "Track Organic Traffic to New Product Features/Pages", description: "After a new feature or product section launches, learn to use Google Analytics (or product analytics) to monitor how much organic search traffic these new areas are receiving and how users engage with them." },
-                                { title: "Facilitate Communication on SEO Between Product and Other Teams", description: "Help relay questions and information about SEO between the product team, SEO specialists, and developers, ensuring everyone is aware of how product changes might impact search visibility." }
-                            ],
-                            executionSteps: [
-                                { step: "Add an 'SEO Impact' Section to Feature Definition Templates", details: "Suggest adding a small section to your team's feature definition or user story template: 'Potential SEO Impact: (e.g., New URLs created? Content to be indexed? Target keywords?)'." },
-                                { step: "Ask 'How Will Users Find This?' During Design/Spec Reviews", details: "In feature review meetings, make it a habit to ask how users are expected to discover the new feature, including through organic search." },
-                                { step: "Review Google Search Console for Product-Related Queries", details: "If you have access, explore Google Search Console to see what search queries are already bringing users to your product pages. This can provide ideas for feature enhancements or related content." },
-                                { step: "Learn About Common Technical SEO Issues Related to Products", details: "Familiarize yourself with common issues like duplicate content on product listings (e.g., from faceted navigation), non-indexable feature descriptions, or poor mobile experience for product pages." }
-                            ], 
-                            keyTakeaway: "As a junior PM, your curiosity about how users discover product information via search and your diligence in incorporating basic SEO considerations into feature development can significantly improve product visibility and user acquisition from organic channels." 
-                        }
-                    },
-                    "manager": { 
-                        "basePlaybook": { 
-                            title: "SEO for Product Managers", 
-                            focus: "For Product Managers, the SEO focus is on strategically integrating SEO into the product roadmap and lifecycle to maximize organic discoverability and user acquisition for their product or feature set. This involves owning the product's SEO performance, defining SEO-related product requirements, prioritizing SEO initiatives within the backlog, and leading cross-functional efforts to build and optimize SEO-friendly product experiences.", 
-                            actionableTasks: [
-                                { title: "Define and Drive Product-Specific SEO Strategy & Goals", description: "Develop a clear SEO strategy for your product that aligns with overall product goals and user needs. Define measurable SEO KPIs (e.g., organic traffic to key product sections, keyword rankings for product-related terms, organic conversion rates for product sign-ups/purchases)." },
-                                { title: "Incorporate SEO into Product Discovery and User Research", description: "Use keyword research, search trend analysis, and competitor SEO analysis as inputs during product discovery to understand user language, identify unmet needs discoverable via search, and inform feature prioritization and design." },
-                                { title: "Prioritize SEO Technical Requirements and Features in the Backlog", description: "Work with engineering and SEO specialists to identify, scope, and prioritize technical SEO improvements (e.g., site speed, mobile-friendliness, crawlability of product content, schema markup for product information) and SEO-driven features within the product backlog." },
-                                { title: "Ensure New Product Features and Content are SEO-Optimized from Launch", description: "Establish processes to ensure that all new product features, landing pages, and significant content updates are designed and developed with SEO best practices in mind from the outset (e.g., indexable content, logical URL structures, optimized on-page elements)." },
-                                { title: "Collaborate with Marketing on Product-Related Content and Go-To-Market SEO", description: "Partner closely with marketing teams to align product SEO efforts with broader content marketing and go-to-market strategies. Ensure product launch communications and supporting content are optimized for relevant search terms." },
-                                { title: "Monitor, Analyze, and Iterate on Product SEO Performance", description: "Regularly track your product's SEO KPIs, analyze performance data to identify areas for improvement, and iterate on your product SEO strategy and tactics based on these insights and evolving market conditions." }
-                            ],
-                            executionSteps: [
-                                { step: "Create 'SEO User Stories' for Product Features", details: "Frame SEO requirements as user stories from the perspective of a search engine or a user trying to find the product via search (e.g., 'As a search engine, I want to be able to crawl and index product descriptions so I can show them in results.')." },
-                                { step: "Conduct Pre-Launch SEO Audits for Major Product Releases", details: "Before major product launches or redesigns, conduct a thorough SEO audit to identify and address any potential issues that could negatively impact search visibility." },
-                                { step: "Map Product Features to Target Keywords and User Intent", details: "For key product features, identify the primary keywords and user intents they serve. Ensure product pages and related content effectively target these." },
-                                { step: "Use Product Analytics to Understand Organic User Behavior", details: "Analyze how users arriving from organic search interact with your product pages. Identify drop-off points or areas of confusion that could be improved for both UX and SEO." }
-                            ], 
-                            keyTakeaway: "As a Product Manager, treating SEO as a core product requirement, not just a marketing task, is crucial for building discoverable and successful products. By integrating SEO into your entire product lifecycle, you drive sustainable organic growth and ensure your product reaches its target audience effectively through search." 
-                        }
-                    },
-                    "director": { 
-                        "basePlaybook": { 
-                            title: "Strategic SEO for Product Directors / VPs", 
-                            focus: "For Product Directors and VPs, the SEO focus is on establishing an overarching vision for how the entire product portfolio leverages organic search for growth and market leadership. This involves ensuring SEO is a strategic pillar in product strategy, fostering an SEO-proficient product organization, allocating resources effectively for product SEO, and aligning product SEO initiatives with the company's highest-level business objectives.", 
-                            actionableTasks: [
-                                { title: "Define and Champion the SEO Strategy for the Entire Product Portfolio", description: "Develop and articulate a clear, compelling SEO vision and strategy that spans all products, aligning with the company's overall business goals, market positioning, and long-term growth ambitions. Ensure this strategy is understood and embraced by all product teams." },
-                                { title: "Integrate SEO into Strategic Product Planning and Roadmapping", description: "Ensure that SEO considerations, opportunities, and objectives are integral components of the strategic product planning process and are reflected in multi-year product roadmaps and resource allocation." },
-                                { title: "Drive Investment in SEO-Friendly Technology and Product Infrastructure", description: "Advocate for and secure investment in technology platforms, CMS solutions, and product architectures that are inherently SEO-friendly, scalable, and support best-in-class technical SEO and performance." },
-                                { title: "Build SEO Competency and an SEO-Aware Culture Within the Product Organization", description: "Foster a culture where Product Managers and their teams understand the strategic importance of SEO and are equipped with the knowledge, tools, and processes to build SEO into their products from the ground up. Invest in training and development." },
-                                { title: "Establish Portfolio-Level SEO KPIs and Reporting Mechanisms", description: "Define key SEO performance indicators that roll up across the product portfolio to provide a holistic view of organic search performance and its contribution to business objectives. Implement reporting mechanisms to track these KPIs for executive leadership." },
-                                { title: "Ensure Tight Alignment and Collaboration Between Product, Engineering, and Marketing on SEO", description: "Facilitate and mandate strong collaboration and shared goals between product leadership, engineering leadership (CTO), and marketing leadership (CMO) to ensure a unified and highly effective company-wide SEO strategy." }
-                            ],
-                            executionSteps: [
-                                { step: "Make SEO a Standard Component of Product Strategy Reviews", details: "Incorporate a review of SEO strategy, performance, and opportunities into regular product portfolio and strategy review meetings with executive leadership." },
-                                { step: "Allocate Budget for Foundational Product SEO Initiatives", details: "Ensure that budgets for product development include line items for foundational SEO work, such as platform migrations to more SEO-friendly systems, major technical SEO enhancements, or development of SEO-driven product features (e.g., programmatic landing pages)." },
-                                { step: "Develop an 'SEO for Product Managers' Training Program", details: "Create or commission a specialized training program to upskill all Product Managers and relevant product team members on SEO principles, tools, and best practices as they apply to product development." },
-                                { step: "Benchmark Product SEO Performance Against Competitors at a Portfolio Level", details: "Oversee periodic analysis of how your company's various products perform in organic search compared to direct competitors. Identify systemic strengths, weaknesses, and strategic opportunities across the portfolio." }
-                            ], 
-                            keyTakeaway: "As a senior product leader, your role is to ensure that organic search visibility and acquisition are fundamental strategic considerations in how all products are conceived, built, and managed. By embedding SEO into the DNA of the product organization, you create a powerful, sustainable engine for growth and market leadership." 
-                        }
-                    }
-                },
-                "HR": {
-                    "introduction": "Human Resources and recruitment teams play a vital role in attracting talent. Optimizing career pages, job postings, and employer branding content for search engines can significantly enhance opportunity visibility, attract qualified candidates, and build a stronger employer brand online.",
-                    "entry": { 
-                        "basePlaybook": { 
-                            title: "SEO for HR Coordinators & Entry-Level Recruiters", 
-                            focus: "For HR Coordinators and entry-level recruiters, the SEO focus is on ensuring job postings are discoverable and that basic career page content supports talent attraction. This involves understanding how candidates search for jobs, using relevant keywords in job descriptions, and being aware of how Applicant Tracking Systems (ATS) interact with search engines.", 
-                            actionableTasks: [
-                                { title: "Optimize Job Titles and Descriptions with Candidate-Focused Keywords", description: "Research common job titles and skills-based keywords that candidates use when searching for roles similar to those you're hiring for. Integrate these naturally into job titles and throughout the job description. Avoid internal jargon." },
-                                { title: "Ensure Job Postings are Clear, Comprehensive, and Formatted for Readability", description: "Write detailed and engaging job descriptions. Use clear headings for sections like 'Responsibilities,' 'Qualifications,' and 'Benefits.' Use bullet points for easy scanning. Ensure the language accurately reflects the role and company culture." },
-                                { title: "Contribute to SEO-Friendly Content on Career Pages", description: "When assisting with content for the company's career site (e.g., 'Life at [Company]' sections, employee testimonials), ensure it uses language that reflects your employer brand and incorporates keywords potential candidates might search for when researching places to work." },
-                                { title: "Understand Your ATS's SEO Capabilities and Limitations", description: "Familiarize yourself with how your Applicant Tracking System (ATS) publishes job listings online. Understand if it allows for custom job titles for external posting, how it handles location information, and if it supports schema markup for jobs. Report any limitations that might hinder SEO to your manager." },
-                                { title: "Verify Mobile-Friendliness of Job Postings and Application Process", description: "Many candidates search and apply for jobs on mobile devices. Check that your job postings are easy to read and that the application process is seamless on various mobile screen sizes." }
-                            ],
-                            executionSteps: [
-                                { step: "Use Google Search to See How Similar Jobs are Titled", details: "Before posting a new role, search on Google for '[Job Title] jobs in [City]' to see common variations and keywords used by other companies." },
-                                { step: "Review Job Descriptions for Keyword Density and Natural Language", details: "After drafting a job description, reread it to ensure keywords are included but don't make the text sound unnatural or stuffed. The primary audience is the candidate." },
-                                { step: "Check for JobPosting Schema on Your Live Job Ads", details: "Use Google's Rich Results Test tool on a live job posting from your career site to see if `JobPosting` schema markup is correctly implemented (often handled by the ATS or web team, but good to be aware of)." },
-                                { step: "Test the Mobile Application Experience", details: "Periodically, go through the application process for one ofyour jobs on a smartphone to identify any pain points or usability issues." }
-                            ], 
-                            keyTakeaway: "As an HR coordinator or entry-level recruiter, your attention to detail in crafting clear, keyword-informed job postings and understanding the basics of how candidates find jobs online can significantly improve the visibility of your open roles and the quality of applicants." 
-                        }
-                    },
-                    "manager": { 
-                        "basePlaybook": { 
-                            title: "SEO for HR Managers", 
-                            focus: "For HR Managers, the SEO focus is on developing and executing a strategy to enhance the company's employer brand online and optimize the entire talent acquisition funnel for organic search. This includes overseeing the SEO of the career site and job postings, leveraging content marketing for employer branding, training the recruitment team on SEO best practices, and using analytics to measure the effectiveness of recruitment SEO efforts.", 
-                            actionableTasks: [
-                                { title: "Develop and Implement an SEO Strategy for the Career Site", description: "Audit your company's career site for technical SEO issues, on-page optimization opportunities, and content gaps. Develop a strategy to improve its visibility for relevant employer brand and job-related keywords." },
-                                { title: "Create an Employer Branding Content Strategy with an SEO Lens", description: "Plan and oversee the creation of content (blog posts, employee stories, videos, 'Life at [Company]' pages) that showcases your company culture, values, and employee value proposition, optimized for keywords that candidates use when researching employers." },
-                                { title: "Ensure All Job Postings Adhere to SEO Best Practices", description: "Establish guidelines and provide training to your recruitment team on how to write SEO-friendly job titles and descriptions, including keyword research, proper formatting, and ensuring ATS compatibility with SEO." },
-                                { title: "Optimize for Google for Jobs and Other Job Aggregators", description: "Ensure your job postings are correctly structured (using `JobPosting` schema markup, often via your ATS) to maximize visibility within Google for Jobs and other major job search platforms." },
-                                { title: "Leverage Local SEO for Recruitment in Specific Geographies (If Applicable)", description: "If hiring for multiple physical locations, implement local SEO tactics for your career site and job postings, including location-specific career pages and optimizing Google Business Profile listings for recruitment purposes." },
-                                { title: "Track and Analyze Recruitment SEO Performance", description: "Use Google Analytics, Google Search Console, and ATS analytics to track key metrics like organic traffic to career pages, applications from organic search, keyword rankings for recruitment terms, and cost-per-hire from organic channels. Use this data to refine your strategy." }
-                            ],
-                            executionSteps: [
-                                { step: "Conduct a Career Site SEO Audit", details: "Use SEO audit tools or work with an SEO specialist to identify technical issues, content gaps, and on-page optimization opportunities for your career site." },
-                                { step: "Perform Keyword Research for Employer Brand and Recruitment Terms", details: "Identify keywords candidates use when looking for jobs in your industry, roles you hire for, and information about company culture (e.g., 'best software companies for work-life balance', 'remote software engineer jobs', 'benefits at [YourCompany]')." },
-                                { step: "Develop an Employer Branding Content Calendar Aligned with SEO", details: "Plan content that targets your identified employer brand keywords, such as employee spotlights, articles on company culture or D&I initiatives, and guides for candidates." },
-                                { step: "Train Recruitment Team on Writing SEO-Optimized Job Descriptions", details: "Conduct a workshop for your recruiters on keyword research for job titles, writing compelling and keyword-rich descriptions, and understanding the basics of how search engines rank job postings." },
-                                { step: "Set Up Conversion Tracking for Applications from Organic Search in GA", details: "Ensure goals are set up in Google Analytics to track when candidates submit applications originating from organic search traffic to your career site." }
-                            ], 
-                            keyTakeaway: "As an HR Manager, by strategically applying SEO principles to your career site, job postings, and employer branding content, you can significantly enhance your ability to attract top talent organically, reduce recruitment costs, and build a stronger, more visible employer brand."
-                        }
-                    },
-                    "director": { 
-                        "basePlaybook": { 
-                            title: "Strategic SEO for HR Directors / VPs / CHROs", 
-                            focus: "For HR Directors, VPs, and CHROs, the SEO focus is on establishing and championing a comprehensive digital talent attraction strategy where organic search (SEO) is a core, sustainable, and cost-effective pillar. This involves aligning recruitment SEO with overall business and talent strategy, advocating for necessary investments in technology and expertise, fostering a data-driven and digitally fluent HR organization, and measuring the strategic impact of SEO on talent acquisition and employer brand equity.", 
-                            actionableTasks: [
-                                { title: "Integrate SEO into the Overall Talent Acquisition and Employer Branding Strategy", description: "Ensure that SEO is not an afterthought but a foundational component of the company's long-term talent acquisition strategy and employer brand development. Align SEO objectives with workforce planning and diversity & inclusion goals." },
-                                { title: "Advocate for Investment in SEO-Capable HR Technology and Expertise", description: "Champion the need for and secure investment in modern Applicant Tracking Systems (ATS) with robust SEO features, an optimized career portal, analytics tools, and potentially specialized SEO talent or agency support for HR." },
-                                { title: "Foster a Data-Driven Culture for Recruitment Marketing and SEO", description: "Promote the use of analytics and data to inform recruitment marketing decisions, measure the effectiveness of SEO initiatives, and continuously optimize the talent acquisition funnel. Ensure the HR team is comfortable interpreting and acting on this data." },
-                                { title: "Measure and Communicate the Strategic ROI of Recruitment SEO", description: "Develop frameworks to measure and articulate the return on investment (ROI) and strategic business impact of recruitment SEO efforts to executive leadership. Focus on metrics like reduction in cost-per-hire, improvement in quality-of-hire from organic sources, and enhanced employer brand sentiment." },
-                                { title: "Champion Cross-Functional Collaboration for Employer Brand Visibility", description: "Drive collaboration between HR, Marketing, Corporate Communications, and IT to ensure a consistent and powerful employer brand message across all digital channels, amplified by coordinated SEO efforts." },
-                                { title: "Stay Abreast of Trends in Digital Recruitment and Candidate Search Behavior", description: "Understand how evolving technologies (e.g., AI in job search, social recruiting platforms) and changing candidate behaviors impact how potential hires search for and evaluate job opportunities, and adapt the SEO strategy accordingly." }
-                            ],
-                            executionSteps: [
-                                { step: "Define Clear KPIs for Recruitment SEO Tied to Business Objectives", details: "Establish high-level KPIs for recruitment SEO, such as 'Percentage of hires from organic channels,' 'Cost-per-hire via organic vs. paid,' 'Glassdoor/Indeed rating improvements,' and 'Organic traffic growth to career site.'" },
-                                { step: "Develop a Business Case for Strategic SEO Investment in HR", details: "Create a compelling business case outlining the long-term benefits and ROI of investing in a dedicated recruitment SEO strategy, including technology, training, and potentially headcount or agency support." },
-                                { step: "Establish Regular Reporting on Recruitment SEO Performance to Leadership", details: "Implement a system for regular (e.g., quarterly) reporting to executive leadership on the performance and strategic impact of recruitment SEO initiatives." },
-                                { step: "Benchmark Your Employer Brand's Online Presence and SEO Against Competitors", details: "Periodically commission or conduct an analysis of your employer brand's visibility and SEO performance in comparison to key talent competitors. Identify strategic gaps and opportunities." }
-                            ], 
-                            keyTakeaway: "As a senior HR leader, your strategic vision and advocacy for SEO as a core component of talent attraction can transform how your organization finds, attracts, and hires top talent. By building a digitally savvy HR function and demonstrating SEO's ROI, you create a sustainable competitive advantage in the war for talent." 
-                        }
-                    }
-                },
-                "CSuite": {
-                    "introduction": "The C-Suite's understanding and endorsement of SEO are crucial for its successful integration into the overall business strategy and for securing necessary resources and cross-departmental support. Executives typically ask strategic questions about SEO's value, profitability, ROI, and its role in achieving competitive differentiation and sustainable growth.",
-                    "entry": {  C-Suite typically doesn't have 'entry' in this context, using 'director' level for all C-Suite roles */
-                        "basePlaybook": {
-                             title: "Strategic SEO Considerations for C-Suite Executives",
-                             focus: "Understanding SEO's contribution to overall business growth, profitability, market share, and competitive advantage. Championing a company-wide SEO culture and ensuring appropriate strategic investment.",
-                             actionableUnderstanding: [
-                                 { point: "SEO as a Strategic Growth Lever & Profitability Driver:", explanation: "Recognize SEO not just as a marketing tactic, but as a fundamental driver of sustainable organic growth, high-quality lead generation, customer acquisition, and ultimately, profitability. Understand its potential for a high ROI compared to other channels." },
-                                 { point: "SEO for Competitive Advantage and Market Share:", explanation: "Appreciate how a strong, strategic SEO presence allows the company to capture greater organic visibility, attract customers from competitors, and increase market share in key segments. Understand SEO's role in brand discoverability and preference." },
-                                 { point: "SEO as a Long-Term, Appreciating Digital Asset:", explanation: "View the outcomes of consistent SEO efforts (e.g., strong keyword rankings, established domain authority, high-quality content library) as valuable, appreciating digital assets that deliver ongoing returns and build a moat against competitors." },
-                                 { point: "Strategic Resource Allocation and Investment in SEO:", explanation: "Ensure that SEO initiatives are adequately resourced (budget, talent, technology) based on clear strategic objectives and ROI projections. Understand that SEO requires sustained investment for long-term success." },
-                                 { point: "Fostering an SEO-Aware and Collaborative Culture:", explanation: "Actively encourage and champion a culture where SEO is understood and valued across departments (marketing, product, sales, IT). Promote cross-functional collaboration to maximize SEO impact and ensure SEO is considered in key strategic decisions." }
-                             ],
-                             executionSteps: [
-                                 { step: "Request Regular, High-Level SEO Performance Reports Tied to Business Outcomes", details: "Ask for concise reports (quarterly or bi-annually) from marketing/SEO leadership that clearly tie SEO performance directly to key business outcomes like revenue growth, market share, customer acquisition cost, and brand visibility, rather than just traffic or ranking metrics alone." },
-                                 { step: "Include SEO as a Topic in Strategic Business Reviews", details: "Ensure that organic search strategy, performance, and its potential impact on business goals are discussed during annual and quarterly strategic planning sessions alongside other key business initiatives and market considerations." },
-                                 { step: "Champion and Recognize SEO Successes Internally", details: "When significant SEO achievements lead to tangible business benefits (e.g., major new client acquired via organic search, substantial increase in organic revenue), highlight these successes to the wider organization to build understanding, morale, and continued support for SEO efforts." },
-                                 { step: "Empower a Cross-Functional SEO Lead or Steering Committee", details: "Appoint a senior individual with clear accountability or form a steering committee with representatives from Marketing, Product, and Engineering/IT, responsible for overseeing the company's overall SEO strategy, ensuring cross-departmental alignment, and driving execution." }
-                             ],
-                             keyTakeaway: "For C-Suite executives, understanding and championing SEO as a strategic business driver is paramount. Your endorsement elevates SEO from a siloed function to a core business pillar, ensuring sustained investment, company-wide alignment, and the realization of its full potential for long-term growth, profitability, and competitive differentiation. Focus on its ROI, contribution to market share, and its value as a strategic digital asset."
-                        }
-                    },
-                    "manager": { "basePlaybook": {  Same as CSuite director/entry for this simplified model */ title: "Strategic SEO Considerations for C-Suite Executives", focus: "...", actionableUnderstanding: [], executionSteps: [], keyTakeaway: "..."} },
-                    "director": { "basePlaybook": {  Same as CSuite entry for this simplified model */ title: "Strategic SEO Considerations for C-Suite Executives", focus: "...", actionableUnderstanding: [], executionSteps: [], keyTakeaway: "..."} }
-                },
-                "corePrinciples": {
-                    title: "Core SEO Principles: The Foundation for All Strategies",
-                    introduction: "Effective Search Engine Optimization (SEO) is a multifaceted discipline crucial for enhancing online visibility and driving organic traffic. It's not about quick tricks but a sustained effort to provide value to users and make it easy for search engines to understand and rank your content. These core principles form the bedrock of any successful SEO strategy.",
-                    sections: [
-                        { 
-                            id: "onPage", 
-                            title: "1. On-Page SEO: Optimizing Your Content and HTML", 
-                            description: "On-page SEO involves optimizing elements directly within your website's pages to improve their ranking for target keywords and enhance user experience. It's about making your content clear, relevant, and easily understandable for both users and search engine crawlers.", 
-                            elements: [
-                                "Keyword Research & Implementation: Identifying relevant terms users search for and naturally integrating them into content, titles, headings, and meta descriptions.",
-                                "High-Quality, Relevant Content: Creating comprehensive, original, and valuable content that fully addresses user intent and provides a superior experience.",
-                                "Title Tag Optimization: Crafting unique, compelling, and keyword-rich title tags (typically 50-60 characters) for each page.",
-                                "Meta Description Optimization: Writing engaging meta descriptions (around 155-160 characters) that accurately summarize page content and encourage clicks from SERPs.",
-                                "Header Tags (H1-H6): Using header tags to structure content logically, with one H1 per page for the main topic and subsequent headers for subtopics.",
-                                "URL Structure: Creating clean, descriptive, and user-friendly URLs that include relevant keywords.",
-                                "Image Optimization: Using descriptive file names, compressing images for speed, and providing meaningful alt text for accessibility and search engine understanding.",
-                                "Internal Linking: Strategically linking to other relevant pages on your own site to distribute link equity, improve navigation, and help search engines discover content."
-                            ] 
-                        },
-                        { 
-                            id: "offPage", 
-                            title: "2. Off-Page SEO: Building Authority and Trust", 
-                            description: "Off-page SEO refers to actions taken outside of your own website to impact your rankings within search engine results pages (SERPs). These activities help build your website's authority, relevance, and trustworthiness in the eyes of search engines and users.", 
-                            elements: [
-                                "High-Quality Backlinks: Earning editorially given links from reputable, relevant websites. Quality trumps quantity.",
-                                "Brand Mentions: Increasing mentions of your brand across the web, even without direct links, can contribute to authority.",
-                                "Local SEO (Citations & GBP): For local businesses, managing Google Business Profile and ensuring consistent NAP (Name, Address, Phone) citations on relevant directories.",
-                                "Social Media Marketing: While social signals may not directly impact rankings heavily, an active social presence can increase content visibility and indirectly lead to links and brand awareness.",
-                                "Guest Blogging/Content Marketing: Publishing valuable content on other relevant sites to reach new audiences and potentially earn backlinks.",
-                                "Online Reviews & Reputation Management: Positive reviews and a strong online reputation can influence user trust and click-through rates from SERPs.",
-                                "Influencer Marketing: Collaborating with relevant influencers can amplify content reach and build brand credibility."
-                            ] 
-                        },
-                        { 
-                            id: "technicalSeo", 
-                            title: "3. Technical SEO: Ensuring a Solid Foundation", 
-                            description: "Technical SEO focuses on optimizing your website's infrastructure to ensure search engines can efficiently crawl, index, and render your content, and that users have a good experience. A technically sound website is the foundation for all other SEO efforts.", 
-                            elements: [
-                                "Website Speed & Performance (Core Web Vitals): Optimizing page load times and interactivity (Largest Contentful Paint, First Input Delay/Interaction to Next Paint, Cumulative Layout Shift).",
-                                "Mobile-Friendliness: Ensuring your website provides an excellent experience on all devices, especially mobile, as Google uses mobile-first indexing.",
-                                "Crawlability: Making sure search engine bots can easily access and crawl all important content on your site (e.g., logical site structure, no broken links).",
-                                "Indexability: Ensuring search engines can understand and add your important pages to their index (e.g., proper use of `robots.txt`, meta robots tags, and XML sitemaps).",
-                                "Site Architecture: Organizing your website content logically with a clear hierarchy to help users and search engines navigate easily.",
-                                "HTTPS Security: Using HTTPS to secure your website, which is a confirmed ranking signal and essential for user trust.",
-                                "Structured Data (Schema Markup): Implementing schema markup to help search engines understand the context of your content and enable rich snippets in SERPs.",
-                                "Duplicate Content Management: Addressing and resolving duplicate content issues using canonical tags or 301 redirects to consolidate link equity.",
-                                "XML Sitemaps: Providing an XML sitemap to help search engines discover all important pages on your site.",
-                                "Robots.txt Management: Using `robots.txt` to guide search engine crawlers on which parts of your site to access or ignore."
-                            ] 
-                        },
-                        { 
-                            id: "contentSeo", 
-                            title: "4. Content SEO: Creating for Users and Search Engines", 
-                            description: "Content SEO is the art and science of creating and optimizing content so that it ranks well in search engines for relevant keywords and, most importantly, satisfies user intent. High-quality content is the cornerstone of modern SEO.", 
-                            elements: [
-                                "Understanding User Intent: Determining what users are truly looking for when they type a query (informational, navigational, commercial, transactional).",
-                                "Comprehensive Keyword Research: Identifying primary, secondary, and long-tail keywords that your target audience uses throughout their journey.",
-                                "Topic Clusters & Pillar Pages: Organizing content around core topics (pillar pages) supported by in-depth articles on specific subtopics (cluster content) to build topical authority.",
-                                "High-Quality Writing: Producing well-written, engaging, accurate, and error-free content.",
-                                "Content Structure & Readability: Using headings, subheadings, short paragraphs, bullet points, and visuals to make content easy to scan and digest.",
-                                "Originality and Value (Information Gain): Providing unique insights, data, or perspectives that offer more value than existing content ranking for the same queries.",
-                                "Multimedia Integration: Using relevant images, videos, and other multimedia to enhance engagement and understanding.",
-                                "Regular Content Audits & Updates: Periodically reviewing and refreshing existing content to ensure it remains accurate, relevant, and performs well."
-                            ] 
-                        },
-                        { 
-                            id: "localSeo", 
-                            title: "5. Local SEO: Connecting with Your Community", 
-                            description: "Local SEO is a specialized branch of SEO focused on optimizing a business's online presence to attract more customers from relevant local searches. It's vital for businesses with physical locations or those serving specific geographic areas.", 
-                            elements: [
-                                "Google Business Profile (GBP) Optimization: Creating, verifying, and fully optimizing your GBP listing with accurate information, photos, posts, Q&A, and services/products.",
-                                "Local Keyword Research: Identifying keywords with local intent (e.g., '[service] near me', '[product] in [city]').",
-                                "NAP Consistency: Ensuring your Name, Address, and Phone number (NAP) are consistent across all online directories and citations.",
-                                "Local Citations: Getting listed in relevant local and industry-specific online directories.",
-                                "Online Customer Reviews: Encouraging and managing customer reviews on GBP and other relevant platforms.",
-                                "Localized Content Creation: Developing content that is relevant to your local audience (e.g., blog posts about local events, location-specific service pages).",
-                                "On-Page Local Signals: Including city/region names in title tags, meta descriptions, headings, and content where appropriate.",
-                                "Local Link Building: Earning links from other local businesses, organizations, and community websites."
-                            ] 
-                        },
-                        { 
-                            id: "eeat_ux", 
-                            title: "6. E-E-A-T & User Experience (UX): Building Trust and Engagement", 
-                            description: "E-E-A-T stands for Experience, Expertise, Authoritativeness, and Trustworthiness. These are quality criteria Google uses, especially for 'Your Money or Your Life' (YMYL) topics. A positive User Experience (UX) is also critical, as it keeps users engaged and signals content quality to search engines.", 
-                            elements: [
-                                "Demonstrating Experience: Showcasing first-hand or life experience in the content, where relevant.",
-                                "Showcasing Expertise: Clearly indicating the author's or organization's expertise on the topic.",
-                                "Building Authoritativeness: Establishing your website and authors as go-to sources in your industry (e.g., through mentions, links from authoritative sites, comprehensive content).",
-                                "Ensuring Trustworthiness: Making your site secure (HTTPS), providing clear contact information, transparent author bios, and citing credible sources.",
-                                "Intuitive Site Navigation: Ensuring users can easily find what they're looking for.",
-                                "Fast Page Load Speed: Optimizing for quick loading to prevent user frustration (overlaps with Technical SEO).",
-                                "Mobile Responsiveness: Providing a seamless experience on all devices (overlaps with Technical SEO).",
-                                "Clear Calls-to-Action (CTAs): Guiding users on what to do next.",
-                                "High Readability & Accessibility: Making content easy to read, understand, and accessible to all users, including those with disabilities."
-                            ] 
-                        }
-                    ],
-                    conclusion: "Mastering these core SEO principles is an ongoing journey. Search engines continuously evolve, and so should your strategies. However, a consistent focus on providing genuine value to users, creating high-quality content, and ensuring a technically sound and authoritative website will always be central to SEO success. Each role within an organization can contribute to these principles in unique and impactful ways."
-                },
-                "vision": {
-                    title: "Our Vision: An Intelligent SEO Resource Hub",
-                    paragraphs: [
-                        "The digital landscape is saturated with Search Engine Optimization (SEO) advice, yet much of it remains generic or hyper-specialized, targeting only dedicated SEO professionals. A significant opportunity exists for a resource that democratizes SEO knowledge, tailoring guidance to the unique responsibilities and perspectives of individuals across all departments and seniority levels within an organization. This website's core value proposition lies in its ability to transform SEO from a siloed function into an integrated, company-wide competency. By providing personalized strategies through a deductive questioning system, it empowers every employee—from an entry-level sales representative to a C-suite executive—to understand their specific role in enhancing the organization's online visibility and to take actionable steps within their own domain.",
-                        "The current market often treats SEO as a purely technical or marketing-centric discipline, overlooking the cumulative impact that SEO-aware employees across diverse functions can achieve. When individuals in sales, development, creative fields, product management, and HR understand how their daily tasks intersect with SEO principles, they can collectively build more search-friendly digital assets and make more informed decisions. This approach moves beyond simply 'doing SEO' to fostering an SEO-conscious organizational culture. The website will serve as a catalyst for this transformation, offering a unique value that differentiates it from standard SEO blogs or courses. It aims to translate complex SEO concepts into practical, role-specific actions, making SEO accessible and relevant to everyone.",
-                        "This democratization of SEO knowledge offers a distinct competitive advantage. Companies fostering such widespread SEO awareness are inherently better positioned to create and maintain a strong organic presence. Furthermore, the personalized learning paths are designed to drive higher engagement and more effective application of SEO principles. By guiding users to highly relevant strategies for *their* job, the website will foster deeper understanding and more practical, impactful SEO contributions from every corner of an organization."
-                    ]
-                }
-            },
-            uiState: {
-                currentQuestionId: null,
-                selections: {}, 
-                questionHistory: [],
-                activeSection: "welcomeSection",
-                breadcrumbs: [{ text: "Home", section: "welcomeSection" }]
-            }
-        };
-        
+        let appData;
         document.addEventListener('DOMContentLoaded', () => {
-            initApp();
+            fetch('appData.json')
+                .then(response => response.json())
+                .then(data => {
+                    appData = data;
+                    initApp();
+                })
+                .catch(err => {
+                    console.error('Failed to load appData.json:', err);
+                    document.body.innerHTML = '<div style="color:red;padding:2em;font-size:1.2em;">Error loading appData.json. Please ensure the file exists and is valid.</div>';
+                });
         });
 
         function initApp() {
@@ -971,7 +390,7 @@
                     if (deptKey !== "corePrinciples" && deptKey !== "vision" && appData.content[deptKey] && appData.content[deptKey].introduction) {
                         const department = appData.content[deptKey];
                         allRolesHtml += `<div class="mb-6 p-6 border border-slate-200 rounded-xl bg-white shadow-lg"><h3 class="font-heading text-2xl font-black brand-text-blue mb-4">${deptKey}</h3><ul class="space-y-2">`;
-                        Object.keys(department).forEach(roleKey => {  roleKey is now 'entry', 'manager', 'director'
+                        Object.keys(department).forEach(roleKey => {  
                             if (roleKey !== "introduction" && department[roleKey] && department[roleKey].basePlaybook && department[roleKey].basePlaybook.title) {
                                  allRolesHtml += `<li><button class="brand-text-pink brand-text-pink-hover underline font-medium" data-rolepath="${deptKey}.${roleKey}.basePlaybook">${department[roleKey].basePlaybook.title}</button></li>`;
                             }
@@ -1230,7 +649,7 @@
                             if(ultimateFallbackContent) ultimateFallbackPath = deptBasePath;
                         }
                     }
-                    if(ultimateFallbackContent) renderContent(ultimateFallbackPath); else if (dynamicContentContainer.innerHTML.includes('Playbook Not Found')) { avoid double message */}
+                    if(ultimateFallbackContent) { renderContent(ultimateFallbackPath); } else if (dynamicContentContainer.innerHTML.includes('Playbook Not Found')) { /* avoid double message */ }
 
                 }
                 navigateToSection('contentDisplaySection', appData.uiState.selections);
@@ -1351,7 +770,7 @@
             }
 
             container.innerHTML = html;
-            setupAccordions();  Still needed for Actionable Tasks
+            setupAccordions(); // Still needed for Actionable Tasks
         }
 
         function setupAccordions() {

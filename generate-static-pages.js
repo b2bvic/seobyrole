@@ -1,4 +1,4 @@
-
+-
 
 
 
@@ -48,9 +48,9 @@ if (fs.existsSync(topicalAuthorityPath)) {
     const entityMatches = topicalAuthorityMd.match(/\*\*Central Entity\*\*|Entity[- ]?oriented|entities?/gi) || [];
     const attributeMatches = topicalAuthorityMd.match(/attributes?/gi) || [];
     const conceptMatches = topicalAuthorityMd.match(/Topical Authority|Topical Map|Semantic SEO|Supplementary Content|Macro Semantics|Micro Semantics|Contextual|Relevance|Responsiveness/gi) || [];
-    topicalEntities = Array.from(new Set(entityMatches.map(e => e.replace(/\*\*/g, '').trim())));
-    topicalAttributes = Array.from(new Set(attributeMatches.map(a => a.replace(/\*\*/g, '').trim())));
-    topicalConcepts = Array.from(new Set(conceptMatches.map(c => c.replace(/\*\*/g, '').trim())));
+    topicalEntities = Array.from(new Set(entityMatches.map(e => e.replace(/\*/g, '').trim())));
+    topicalAttributes = Array.from(new Set(attributeMatches.map(a => a.replace(/\*/g, '').trim())));
+    topicalConcepts = Array.from(new Set(conceptMatches.map(c => c.replace(/\*/g, '').trim())));
 }
 
 const results = collectResults(appData.content);
@@ -58,7 +58,6 @@ const results = collectResults(appData.content);
 const outputDir = path.join(__dirname, 'dist');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
 
-// Copy the main index.html to dist to serve as the entry point
 fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(outputDir, 'index.html'));
 
 const pagePaths = [];
@@ -91,9 +90,6 @@ results.forEach(({ pathParts, data }) => {
         }).join('');
     const supplementarySection = relatedLinks ? `<section class="mt-12"><h2 class="font-heading text-xl mb-2">Related Playbooks</h2><ul>${relatedLinks}</ul></section>` : '';
 
-    const centralEntityDef = `The entity that appears in every subsection of the semantic content network whether in main content and macro context, or supplementary content and micro context. Example: 'SEO Playbook'.`;
-    const sourceContextDef = `The purpose of the source (website, brand), how the brand monetizes its content, and how it turns search engine users into customers and clients. Example: 'Strategic SEO Playbook for B2B'.`;
-    const centralSearchIntentDef = `The purpose or goal behind the search query related to the central entity. Example: 'How can a sales manager use SEO to generate B2B leads?'.`;
     const eavTriples = [
         { entity: 'SEO Playbook', attribute: 'Purpose', value: 'Guide professionals in applying advanced SEO and topical authority' },
         { entity: 'SEO Playbook', attribute: 'Audience', value: 'B2B teams and decision makers' },
@@ -101,7 +97,6 @@ results.forEach(({ pathParts, data }) => {
         { entity: 'SEO Playbook', attribute: 'Source Context', value: 'Strategic, role-based, and actionable SEO guidance' }
     ];
 
-    const topicalTerms = [...topicalEntities, ...topicalAttributes, ...topicalConcepts].filter(Boolean).join(', ');
     const enrichedDescription = `${description} Central Entity: SEO Playbook. Source Context: Strategic SEO Playbook for B2B. Central Search Intent: How can a ${title} achieve their core goals using SEO? ${topicalTerms ? `This page is semantically enriched for topical authority and entity-oriented SEO: ${topicalTerms}.` : ''}`;
     const enrichedSchema = Object.assign({}, schema, {
         keywords: topicalTerms,
@@ -112,7 +107,7 @@ results.forEach(({ pathParts, data }) => {
         eavTriples: eavTriples
     });
 
-    let mainContent = `<h1 class="font-heading text-3xl mb-4">${title}</h1>\n<p class="mb-6">${description} This guide empowers ${title.toLowerCase()}s to achieve business growth, visibility, and authority in the B2B landscape using advanced SEO strategies, proven frameworks, and actionable insights. Unlock new opportunities, attract qualified leads, and build a sustainable competitive advantage by mastering the core principles of search, content, and digital influence.</p>`;
+    let mainContent = `<h1 class="font-heading text-3xl mb-4">${title}</h1>\n<p class="mb-6">${description}</p>`;
     if (data.executionSteps) {
         mainContent += '<h2 class="font-heading text-2xl mt-8 mb-2">How to Succeed</h2><ol class="mb-6">';
         data.executionSteps.forEach(s => {
