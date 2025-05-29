@@ -17,21 +17,25 @@ function slugify(parts) {
         .join('-');
 }
 
-function collectResults(node, pathParts = [], results = []) {
+function collectPlaybookPaths(node, currentPath = [], collectedPaths = []) {
     if (node && typeof node === 'object') {
-        if (node.playbook || node.basePlaybook) {
-            results.push({
-                pathParts: [...pathParts],
-                data: node.playbook || node.basePlaybook
-            });
-        }
         for (const key in node) {
-            if (typeof node[key] === 'object') {
-                collectResults(node[key], [...pathParts, key], results);
+            if (!node.hasOwnProperty(key)) continue;
+
+            const newPath = [...currentPath, key];
+            if (key === 'playbook' || key === 'basePlaybook') {
+                if (node[key] && typeof node[key] === 'object' && (node[key].title || node[key].focus || node[key].introduction || node[key].actionableTasks || node[key].executionSteps)) {
+                    collectedPaths.push({
+                        pathParts: newPath, 
+                        data: node[key]
+                    });
+                }
+            } else if (typeof node[key] === 'object' && key !== 'meta' && key !== 'questionnaire') {
+                collectPlaybookPaths(node[key], newPath, collectedPaths);
             }
         }
     }
-    return results;
+    return collectedPaths;
 }
 
 const topicalAuthorityPath = path.join(__dirname, '{TA} Topical Authority Lessons-merged.md');
@@ -50,7 +54,7 @@ if (fs.existsSync(topicalAuthorityPath)) {
 }
 const topicalTerms = [...new Set([...topicalEntities, ...topicalAttributes, ...topicalConcepts])].join(', ');
 
-const results = collectResults(appData.content);
+const results = collectPlaybookPaths(appData.content.content || appData.content);
 
 const outputDir = path.join(__dirname, 'dist');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);

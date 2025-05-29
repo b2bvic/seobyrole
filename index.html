@@ -303,6 +303,13 @@
           }
         }
 
+        function slugify(parts) {
+            return parts
+                .filter(Boolean)
+                .map(p => p.toString().replace(/[^a-zA-Z0-9]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase())
+                .join('-');
+        }
+
         // Global app data
         window.appData = {
             content: {},
@@ -679,8 +686,13 @@
             }
             
             if (contentObject) {
-                renderContent(finalPathString); 
-                navigateToSection('contentDisplaySection', appData.uiState.selections);
+                const pathParts = finalPathString.split('.');
+                const slug = slugify(pathParts);
+                if (slug) {
+                    window.location.href = slug + '.html';
+                } else {
+                    window.location.href = 'index.html'; // Fallback if slug is empty
+                }
             } else {
                 const dynamicContentContainer = document.getElementById('dynamicContent');
                 if (dynamicContentContainer) {
@@ -705,10 +717,11 @@
                             if(ultimateFallbackContent) ultimateFallbackPath = deptBasePath;
                         }
                     }
-                    if(ultimateFallbackContent) { renderContent(ultimateFallbackPath); } else if (dynamicContentContainer.innerHTML.includes('Playbook Not Found')) { /* avoid double message */ }
-
+                    // For now, if no specific contentObject, redirect to home.
+                    // We can refine fallback static page redirection later if needed.
+                    window.location.href = 'index.html';
                 }
-                navigateToSection('contentDisplaySection', appData.uiState.selections);
+                // navigateToSection('contentDisplaySection', appData.uiState.selections); // No longer needed
             }
         }
 
