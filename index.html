@@ -448,9 +448,10 @@
                         allRolesHtml += `<div class="mb-6 p-6 border border-slate-200 rounded-xl bg-white shadow-lg"><h3 class="font-heading text-2xl font-black brand-text-blue mb-4">${deptKey}</h3><ul class="space-y-2">`;
                         Object.keys(department).forEach(roleKey => {  
                             if (roleKey !== "introduction" && department[roleKey] && department[roleKey].basePlaybook && department[roleKey].basePlaybook.title) {
-                                 const pathForSlug = `${deptKey}.${roleKey}.basePlaybook`;
-                                 const slug = slugify(pathForSlug.split('.'));
-                                 allRolesHtml += `<li><a href="base/${slug}.html" class="brand-text-pink brand-text-pink-hover underline font-medium">${department[roleKey].basePlaybook.title}</a></li>`;
+                                 const fullPathParts = `${deptKey}.${roleKey}.basePlaybook`.split('.');
+                                 const slugPartsForFile = fullPathParts.slice(0, -1); // Remove 'basePlaybook' for slug
+                                 const fileSlug = slugify(slugPartsForFile);
+                                 allRolesHtml += `<li><a href="base/${fileSlug}.html" class="brand-text-pink brand-text-pink-hover underline font-medium">${department[roleKey].basePlaybook.title}</a></li>`;
                             }
                         });
                         allRolesHtml += `</ul></div>`;
