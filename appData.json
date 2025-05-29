@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "The Strategic SEO Playbook",
+    "welcomeMessage": "Empowering Every Role for Organic Growth. Discover personalized SEO strategies tailored to your position.",
+    "ctaButton": "Find Your SEO Strategy"
+  },
+  "questionnaire": {
+    "initialQuestionId": "q_department",
+    "questions": {
+      "q_department": {
+        "text": "What is your primary professional department or area of work?",
+        "options": [
+          { "text": "Sales", "value": "Sales", "dimension": "department", "nextQuestionId": "q_seniority" },
+          { "text": "Marketing", "value": "Marketing", "dimension": "department", "nextQuestionId": "q_seniority" },
+          { "text": "Development/Tech", "value": "Development", "dimension": "department", "nextQuestionId": "q_seniority" },
+          { "text": "Creative/Design", "value": "Creative", "dimension": "department", "nextQuestionId": "q_seniority" },
+          { "text": "Product Management", "value": "Product", "dimension": "department", "nextQuestionId": "q_seniority" },
+          { "text": "Human Resources", "value": "HR", "dimension": "department", "nextQuestionId": "q_seniority" },
+          { "text": "C-Suite/Executive", "value": "CSuite", "dimension": "department", "nextQuestionId": "q_seniority" }
+        ]
+      },
+      "q_seniority": {
+        "text": "Which of the following best describes your current seniority level?",
+        "dimensionName": "Seniority",
+        "options": [
+          { "text": "Individual Contributor / Entry-Level", "value": "entry", "dimension": "seniority", "nextQuestionId": "q_common_goal" },
+          { "text": "Manager / Team Lead", "value": "manager", "dimension": "seniority", "nextQuestionId": "q_common_goal" },
+          { "text": "Director / VP / Executive", "value": "director", "dimension": "seniority", "nextQuestionId": "q_common_goal" }
+        ]
+      },
+      "q_common_goal": {
+        "text": "What is your primary SEO-related goal?",
+        "dimensionName": "Goal",
+        "options": [
+          { "text": "Increase Website Traffic", "value": "IncreaseTraffic", "dimension": "goal", "nextQuestionId": "q_common_niche" },
+          { "text": "Improve Search Rankings", "value": "ImproveRankings", "dimension": "goal", "nextQuestionId": "q_common_niche" },
+          { "text": "Generate More Leads", "value": "GenerateLeads", "dimension": "goal", "nextQuestionId": "q_common_niche" },
+          { "text": "Enhance Brand Visibility", "value": "EnhanceVisibility", "dimension": "goal", "nextQuestionId": "q_common_niche" }
+        ]
+      },
+      "q_common_niche": {
+        "text": "Which niche, industry, or business model best describes your focus?",
+        "dimensionName": "Niche/Industry",
+        "options": [
+          { "text": "E-commerce", "value": "Ecommerce", "dimension": "niche", "nextQuestionId": "q_common_cms" },
+          { "text": "SaaS / Technology", "value": "SaaS", "dimension": "niche", "nextQuestionId": "q_common_cms" },
+          { "text": "Local Business", "value": "LocalBusiness", "dimension": "niche", "nextQuestionId": "q_common_cms" },
+          { "text": "B2B Services", "value": "B2B", "dimension": "niche", "nextQuestionId": "q_common_cms" },
+          { "text": "Content Publisher / Blog", "value": "Publisher", "dimension": "niche", "nextQuestionId": "q_common_cms" },
+          { "text": "General / Not Specific", "value": "GeneralNiche", "dimension": "niche", "nextQuestionId": "q_common_cms" }
+        ]
+      },
+      "q_common_cms": {
+        "text": "Which Content Management System (CMS) are you primarily using or concerned with?",
+        "dimensionName": "CMS Platform",
+        "options": [
+          { "text": "WordPress", "value": "WordPress", "dimension": "cms", "isFinal": true },
+          { "text": "Shopify", "value": "Shopify", "dimension": "cms", "isFinal": true },
+          { "text": "HubSpot CMS", "value": "HubSpotCMS", "dimension": "cms", "isFinal": true },
+          { "text": "Custom Built / Other", "value": "Custom", "dimension": "cms", "isFinal": true },
+          { "text": "Not Applicable / Don't Know", "value": "NotApplicable", "dimension": "cms", "isFinal": true }
+        ]
+      }
+    }
+  }
+}
+

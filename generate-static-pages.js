@@ -6,36 +6,15 @@ const fs = require('fs');
 const path = require('path');
 
 
-const indexHtmlPath = path.join(__dirname, 'index.html');
-const indexHtml = fs.readFileSync(indexHtmlPath, 'utf8');
+const fs = require('fs');
+const path = require('path');
 
-
-const appDataStart = indexHtml.indexOf('const appData =');
-if (appDataStart === -1) {
-    console.error('Could not find appData in index.html');
-    process.exit(1);
-}
-const appDataBlockStart = indexHtml.indexOf('{', appDataStart);
-let braceCount = 0;
-let appDataEnd = -1;
-for (let i = appDataBlockStart; i < indexHtml.length; i++) {
-    if (indexHtml[i] === '{') braceCount++;
-    else if (indexHtml[i] === '}') braceCount--;
-    if (braceCount === 0) {
-        appDataEnd = i + 1;
-        break;
-    }
-}
-if (appDataEnd === -1) {
-    console.error('Could not parse appData block.');
-    process.exit(1);
-}
-const appDataString = indexHtml.slice(appDataBlockStart, appDataEnd);
+const appDataPath = path.join(__dirname, 'appData.json');
 let appData;
 try {
-    appData = eval('(' + appDataString + ')');
+    appData = JSON.parse(fs.readFileSync(appDataPath, 'utf8'));
 } catch (e) {
-    console.error('Error parsing appData:', e);
+    console.error('Error reading appData.json:', e);
     process.exit(1);
 }
 
