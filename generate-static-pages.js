@@ -108,11 +108,36 @@ results.forEach(({ pathParts, data }) => {
         eavTriples: eavTriples
     });
 
-    let mainContent = `<h1 class="font-heading text-3xl mb-4">${title}</h1>\n<p class="mb-6">${description}</p>`;
-    if (data.executionSteps) {
-        mainContent += '<h2 class="font-heading text-2xl mt-8 mb-2">How to Succeed</h2><ol class="mb-6">';
+    let mainContent = '';
+    if (data.title) {
+        mainContent += `<h1 class="font-heading text-4xl font-black brand-text-blue mb-6">${data.title}</h1>`;
+    }
+    if (data.introduction) { // General introduction for the playbook itself
+        mainContent += `<p class="brand-secondary-text mb-4">${data.introduction}</p>`;
+    }
+    // Department-specific intro could be added here if available and desired in static pages
+
+    if (data.focus) {
+        mainContent += `<div class="mb-6 p-6 brand-light-blue-bg rounded-lg shadow">
+                            <h3 class="font-heading text-2xl font-black text-blue-700 mb-2">Primary Focus:</h3>
+                            <p class="brand-secondary-text text-base">${data.focus}</p>
+                          </div>`;
+    }
+
+    if (data.actionableTasks && Array.isArray(data.actionableTasks) && data.actionableTasks.length > 0) {
+        mainContent += `<h3 class="font-heading text-2xl font-black text-blue-700 mt-8 mb-4">Actionable Tasks:</h3>`;
+        data.actionableTasks.forEach((task) => {
+            mainContent += `<div class="mb-4 border border-slate-200 rounded-lg shadow-md p-5 bg-slate-50">
+                                <h4 class="font-heading text-lg tracking-wider brand-dark-text mb-2">${task.title}</h4>
+                                <p class="brand-secondary-text text-base leading-relaxed">${task.description}</p>
+                             </div>`;
+        });
+    }
+
+    if (data.executionSteps && Array.isArray(data.executionSteps) && data.executionSteps.length > 0) {
+        mainContent += '<h3 class="font-heading text-2xl font-black text-blue-700 mt-10 mb-4">Detailed Execution Steps:</h3><ol class="execution-steps-list space-y-5 brand-secondary-text bg-slate-50 p-6 rounded-lg border border-slate-200 shadow">';
         data.executionSteps.forEach(s => {
-            mainContent += `<li class="mb-2"><strong>${s.step}</strong>: ${s.details}</li>`;
+            mainContent += `<li class="mb-3 pb-3 border-b border-slate-200 last:border-b-0 last:pb-0"><strong>${s.step || s.title}</strong>: ${s.details || s.description}</li>`;
         });
         mainContent += '</ol>';
     }
@@ -133,6 +158,38 @@ results.forEach(({ pathParts, data }) => {
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>${title}</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@500&family=Faster+One&display=swap" rel="stylesheet">
+        <style>
+            body {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 500; 
+            }
+            .font-display { 
+                font-family: 'Cruiser', 'Faster One', sans-serif; /* Fallback to Faster One then generic */
+            }
+            .font-heading {
+                font-family: 'Bebas Neue', sans-serif;
+                font-weight: normal; 
+                letter-spacing: 0.05em;
+            }
+            .brand-pink-bg { background-color: #FF69B4; }
+            .brand-blue-bg { background-color: #D1E9FF; }
+            .brand-light-blue-bg { background-color: #EBF5FF; }
+            .brand-text-pink { color: #FF1493; }
+            .brand-text-pink-hover:hover { color: #FF69B4; }
+            .brand-text-blue { color: #1E3A8A; }
+            .brand-dark-text { color: #172554; }
+            .brand-secondary-text { color: #475569; }
+            .content-section { display: none; } /* For SPA, not directly used by static but good for consistency if reusing JS */
+            .content-section.active { display: block; }
+            .question-step { display: none; } /* For SPA */
+            .question-step.active { display: block; } /* For SPA */
+            .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+            .accordion-content.open { max-height: 1000px;  transition: max-height 0.5s ease-in; }
+        </style>
         <meta name="description" content="${enrichedDescription}">
         <link rel="canonical" href="${canonical}">
         <meta name="robots" content="${robots}">
@@ -140,12 +197,13 @@ results.forEach(({ pathParts, data }) => {
             ${JSON.stringify(enrichedSchema)}
         </script>
     </head>
-    <body>
-        <div class="animate__animated animate__fadeInUp animate__fast">
-            ${mainContent}
+    <body class="bg-slate-50">
+        <div class="container mx-auto p-4 md:p-8 max-w-5xl brand-dark-text bg-white shadow-xl rounded-lg my-8">
+            <div class="animate__animated animate__fadeInUp animate__fast">
+                ${mainContent}
+            </div>
+        ${supplementaryContent && `<div class="animate__animated animate__fadeInUp animate__fast mt-12 border-t pt-8">${supplementaryContent.replace(/class="bg-white/g, 'class="bg-slate-50 p-4 rounded-lg shadow transition-all duration-300 hover:scale-105 hover:shadow-xl')} </div>`}
         </div>
-        ${supplementaryContent && `<div class="animate__animated animate__fadeInUp animate__fast">${supplementaryContent.replace(/class="bg-white/g, 'class="bg-white transition-all duration-300 hover:scale-105 hover:shadow-2xl')} </div>`}
-        
     </body>
     </html>
     `;
