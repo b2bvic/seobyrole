@@ -304,7 +304,7 @@
         }
 
         // Initialize appData in global scope
-        window.appData = window.appData || {};
+        window.appData = window.appData || { content: {}, uiState: {} };
         
         // Function to initialize the app once data is loaded
         function initializeApp(data) {
@@ -313,8 +313,19 @@
                 return;
             }
             
-            // Merge the loaded data into the global appData
-            window.appData = { ...window.appData, ...data };
+            // Deep merge the loaded data into the global appData
+            if (data.content) {
+                window.appData.content = { ...window.appData.content, ...data.content };
+            }
+            if (data.uiState) {
+                window.appData.uiState = { ...window.appData.uiState, ...data.uiState };
+            }
+            if (data.meta) {
+                window.appData.meta = { ...window.appData.meta, ...data.meta };
+            }
+            if (data.questionnaire) {
+                window.appData.questionnaire = { ...window.appData.questionnaire, ...data.questionnaire };
+            }
             
             // Initialize the application
             if (typeof initApp === 'function') {
@@ -385,16 +396,22 @@
             const currentYear = document.getElementById('currentYear');
             if (currentYear) currentYear.textContent = new Date().getFullYear();
             
+            // Ensure required objects exist
+            if (!window.appData) window.appData = {};
+            if (!window.appData.uiState) window.appData.uiState = { activeSection: 'welcomeSection' };
+            if (!window.appData.content) window.appData.content = {};
+            
             setupNavigation();
             loadStaticContent();
             
-            if (appData && appData.uiState && appData.uiState.activeSection) {
-                navigateToSection(appData.uiState.activeSection);
-            } else {
-                navigateToSection('welcomeSection');
-            }
+            // Navigate to the active section or default to welcome
+            const activeSection = (appData.uiState && appData.uiState.activeSection) || 'welcomeSection';
+            navigateToSection(activeSection);
             
-            updateBreadcrumbs();
+            // Initialize breadcrumbs if needed
+            if (typeof updateBreadcrumbs === 'function') {
+                updateBreadcrumbs();
+            }
         }
 
         function loadStaticContent() {
