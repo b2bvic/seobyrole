@@ -159,4 +159,7 @@ if (topicalAuthorityMd) {
     fs.writeFileSync(path.join(outputDir, 'topical-authority-lessons.html'), taHtml, 'utf8');
 }
 
+// Ensure appData.json is copied to dist for static hosting
+fs.copyFileSync(path.join(__dirname, 'appData.json'), path.join(outputDir, 'appData.json'));
+
 console.log('Static page generation complete!');
