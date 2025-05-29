@@ -350,33 +350,50 @@
                 });
         });
 
-        function initApp() {
-            document.getElementById('currentYear').textContent = new Date().getFullYear();
-            document.getElementById('startQuestionnaireButton').addEventListener('click', startQuestionnaire);
-            document.getElementById('resetQuestionnaireButton').addEventListener('click', resetQuestionnaire);
-            document.getElementById('prevQuestionButton').addEventListener('click', goToPreviousQuestion);
+        function setupNavigation() {
+            const startButton = document.getElementById('startQuestionnaireButton');
+            const resetButton = document.getElementById('resetQuestionnaireButton');
+            const prevButton = document.getElementById('prevQuestionButton');
             
-            const navButtons = document.querySelectorAll('.nav-button');
-            navButtons.forEach(button => {
-                button.addEventListener('click', () => {
+            if (startButton) startButton.onclick = startQuestionnaire;
+            if (resetButton) resetButton.onclick = resetQuestionnaire;
+            if (prevButton) prevButton.onclick = goToPreviousQuestion;
+            
+            document.querySelectorAll('.nav-button').forEach(button => {
+                button.onclick = () => {
                     const sectionId = button.getAttribute('data-section');
-                    navigateToSection(sectionId);
-                    const mobileMenu = document.getElementById('mobileMenu');
-                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
-                        mobileMenu.classList.add('hidden');
+                    if (sectionId) {
+                        navigateToSection(sectionId);
+                        const mobileMenu = document.getElementById('mobileMenu');
+                        if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
                     }
-                });
+                };
             });
 
             const mobileMenuButton = document.getElementById('mobileMenuButton');
-            if(mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', () => {
-                    document.getElementById('mobileMenu').classList.toggle('hidden');
-                });
+            if (mobileMenuButton) {
+                mobileMenuButton.onclick = () => {
+                    const menu = document.getElementById('mobileMenu');
+                    if (menu) menu.classList.toggle('hidden');
+                };
+            }
+        }
+
+        function initApp() {
+            const currentYear = document.getElementById('currentYear');
+            if (currentYear) currentYear.textContent = new Date().getFullYear();
+            
+            setupNavigation();
+            loadStaticContent();
+            
+            if (appData && appData.uiState && appData.uiState.activeSection) {
+                navigateToSection(appData.uiState.activeSection);
+            } else {
+                navigateToSection('welcomeSection');
             }
             
-            loadStaticContent();
-            navigateToSection(appData.uiState.activeSection);
             updateBreadcrumbs();
         }
 
@@ -434,22 +451,29 @@
                 });
                 allRolesContainer.innerHTML = allRolesHtml;
                 allRolesContainer.querySelectorAll('button[data-rolepath]').forEach(button => {
-                    button.addEventListener('click', (e) => {
+                    button.onclick = (e) => {
                         const path = e.target.getAttribute('data-rolepath');
-                        appData.uiState.selections = {}; 
-                        renderContent(path);
-                        navigateToSection('contentDisplaySection');
-                    });
+                        if (path) {
+                            if (!appData.uiState) appData.uiState = {};
+                            if (!appData.uiState.selections) appData.uiState.selections = {};
+                            renderContent(path);
+                            navigateToSection('contentDisplaySection');
+                        }
+                    };
                 });
             }
         }
 
         function navigateToSection(sectionId, selectionsForBreadcrumb = null) {
+            if (!sectionId) return;
+            
             document.querySelectorAll('.content-section').forEach(section => section.classList.remove('active'));
             const targetSection = document.getElementById(sectionId);
             if (targetSection) {
                 targetSection.classList.add('active');
             }
+            
+            if (!appData.uiState) appData.uiState = {};
             appData.uiState.activeSection = sectionId;
 
             let newBreadcrumbs = [{ text: "Home", section: "welcomeSection", selections: {} }];
