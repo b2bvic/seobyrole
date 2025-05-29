@@ -54,7 +54,7 @@ if (fs.existsSync(topicalAuthorityPath)) {
 }
 const topicalTerms = [...new Set([...topicalEntities, ...topicalAttributes, ...topicalConcepts])].join(', ');
 
-const results = collectPlaybookPaths(appData.content.content || appData.content);
+const results = collectPlaybookPaths(appData.content);
 
 const outputDir = path.join(__dirname, 'dist');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
