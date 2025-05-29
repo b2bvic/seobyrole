@@ -451,7 +451,7 @@
             if (allRolesContainer) {
                 let allRolesHtml = '';
                 Object.keys(appData.content).forEach(deptKey => {
-                    if (deptKey !== "corePrinciples" && deptKey !== "vision" && appData.content[deptKey] && appData.content[deptKey].introduction) {
+                    if (deptKey !== "corePrinciples" && deptKey !== "vision" && appData.content[deptKey]) {
                         const department = appData.content[deptKey];
                         allRolesHtml += `<div class="mb-6 p-6 border border-slate-200 rounded-xl bg-white shadow-lg"><h3 class="font-heading text-2xl font-black brand-text-blue mb-4">${deptKey}</h3><ul class="space-y-2">`;
                         Object.keys(department).forEach(roleKey => {  
