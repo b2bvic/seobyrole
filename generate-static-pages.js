@@ -5,10 +5,6 @@
 const fs = require('fs');
 const path = require('path');
 
-
-const fs = require('fs');
-const path = require('path');
-
 const appDataPath = path.join(__dirname, 'appData.json');
 let appData;
 try {
