@@ -448,24 +448,15 @@
                         allRolesHtml += `<div class="mb-6 p-6 border border-slate-200 rounded-xl bg-white shadow-lg"><h3 class="font-heading text-2xl font-black brand-text-blue mb-4">${deptKey}</h3><ul class="space-y-2">`;
                         Object.keys(department).forEach(roleKey => {  
                             if (roleKey !== "introduction" && department[roleKey] && department[roleKey].basePlaybook && department[roleKey].basePlaybook.title) {
-                                 allRolesHtml += `<li><button class="brand-text-pink brand-text-pink-hover underline font-medium" data-rolepath="${deptKey}.${roleKey}.basePlaybook">${department[roleKey].basePlaybook.title}</button></li>`;
+                                 const pathForSlug = `${deptKey}.${roleKey}.basePlaybook`;
+                                 const slug = slugify(pathForSlug.split('.'));
+                                 allRolesHtml += `<li><a href="base/${slug}.html" class="brand-text-pink brand-text-pink-hover underline font-medium">${department[roleKey].basePlaybook.title}</a></li>`;
                             }
                         });
                         allRolesHtml += `</ul></div>`;
                     }
                 });
                 allRolesContainer.innerHTML = allRolesHtml;
-                allRolesContainer.querySelectorAll('button[data-rolepath]').forEach(button => {
-                    button.onclick = (e) => {
-                        const path = e.target.getAttribute('data-rolepath');
-                        if (path) {
-                            if (!appData.uiState) appData.uiState = {};
-                            if (!appData.uiState.selections) appData.uiState.selections = {};
-                            renderContent(path);
-                            navigateToSection('contentDisplaySection');
-                        }
-                    };
-                });
             }
         }
 
@@ -687,12 +678,25 @@
             
             if (contentObject) {
                 const pathParts = finalPathString.split('.');
-                const slug = slugify(pathParts);
-                if (slug) {
-                    window.location.href = slug + '.html';
+                let redirectUrl;
+
+                if (pathParts[pathParts.length - 1] === 'basePlaybook') {
+                    const basePathSlug = slugify(pathParts.slice(0, -1)); // Slug from parts excluding 'basePlaybook'
+                    if (basePathSlug) {
+                        redirectUrl = `base/${basePathSlug}.html`;
+                    } else {
+                        redirectUrl = 'index.html'; // Fallback
+                    }
                 } else {
-                    window.location.href = 'index.html'; // Fallback if slug is empty
+                    const specificPlaybookSlug = slugify(pathParts);
+                    if (specificPlaybookSlug) {
+                        redirectUrl = `${specificPlaybookSlug}.html`;
+                    } else {
+                        redirectUrl = 'index.html'; // Fallback
+                    }
                 }
+                window.location.href = redirectUrl;
+                navigateToSection('contentDisplaySection', appData.uiState.selections); // Keep for UI state and breadcrumbs
             } else {
                 const dynamicContentContainer = document.getElementById('dynamicContent');
                 if (dynamicContentContainer) {

@@ -58,20 +58,34 @@ const results = collectPlaybookPaths(appData.content.content || appData.content)
 
 const outputDir = path.join(__dirname, 'dist');
 if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
+const baseOutputDir = path.join(outputDir, 'base');
+if (!fs.existsSync(baseOutputDir)) fs.mkdirSync(baseOutputDir);
 
 fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(outputDir, 'index.html'));
 
 const pagePaths = [];
 
 results.forEach(({ pathParts, data }) => {
-    const slug = slugify(pathParts);
-    const filename = slug + '.html';
-    const filePath = path.join(outputDir, filename);
-    pagePaths.push(filename);
+    let slug;
+    let filenameForSitemap;
+    let actualFilePath;
+    const isBasePlaybook = pathParts[pathParts.length - 1] === 'basePlaybook';
+
+    if (isBasePlaybook) {
+        const basePathParts = pathParts.slice(0, -1);
+        slug = slugify(basePathParts);
+        filenameForSitemap = `base/${slug}.html`;
+        actualFilePath = path.join(baseOutputDir, `${slug}.html`);
+    } else {
+        slug = slugify(pathParts);
+        filenameForSitemap = `${slug}.html`;
+        actualFilePath = path.join(outputDir, `${slug}.html`);
+    }
+    pagePaths.push(filenameForSitemap);
 
     const title = data.title || appData.meta.title;
     const description = data.focus || appData.meta.welcomeMessage;
-    const canonical = `https://YOUR_DOMAIN/${filename}`;
+    const canonical = `https://YOUR_DOMAIN/${filenameForSitemap}`;
     const robots = 'index, follow';
     const schema = {
         '@context': 'https://schema.org',
@@ -82,12 +96,26 @@ results.forEach(({ pathParts, data }) => {
         'mainEntityOfPage': canonical
     };
 
-    const relatedLinks = results.filter(r => slugify(r.pathParts) !== slug)
+    const relatedLinks = results.filter(r => {
+        const currentPathForComparison = isBasePlaybook ? pathParts.slice(0, -1).join('-') : pathParts.join('-');
+        const relatedPathForComparison = r.pathParts[r.pathParts.length - 1] === 'basePlaybook' ? r.pathParts.slice(0, -1).join('-') : r.pathParts.join('-');
+        return slugify(currentPathForComparison.split('-')) !== slugify(relatedPathForComparison.split('-'));
+    })
         .slice(0, 5)
         .map(r => {
-            const relSlug = slugify(r.pathParts);
-            const relTitle = (r.data.title || relSlug).replace(/</g, '&lt;').replace(/>/g, '&gt;');
-            return `<li><a href="${relSlug}.html" class="text-blue-700 underline">${relTitle}</a></li>`;
+            let relHref;
+            let relSlugForTitle;
+            const isRelatedBasePlaybook = r.pathParts[r.pathParts.length - 1] === 'basePlaybook';
+            if (isRelatedBasePlaybook) {
+                const relBasePathParts = r.pathParts.slice(0, -1);
+                relSlugForTitle = slugify(relBasePathParts);
+                relHref = `base/${relSlugForTitle}.html`;
+            } else {
+                relSlugForTitle = slugify(r.pathParts);
+                relHref = `${relSlugForTitle}.html`;
+            }
+            const relTitle = (r.data.title || relSlugForTitle).replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            return `<li><a href="${relHref}" class="text-blue-700 underline">${relTitle}</a></li>`;
         }).join('');
     const supplementarySection = relatedLinks ? `<section class="mt-12"><h2 class="font-heading text-xl mb-2">Related Playbooks</h2><ul>${relatedLinks}</ul></section>` : '';
 
@@ -207,8 +235,8 @@ results.forEach(({ pathParts, data }) => {
     </body>
     </html>
     `;
-    fs.writeFileSync(filePath, pageHtml, 'utf8');
-    console.log('Generated:', filename);
+    fs.writeFileSync(actualFilePath, pageHtml, 'utf8');
+    console.log('Generated:', filenameForSitemap);
 });
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${pagePaths.map(p => `  <url><loc>https://YOUR_DOMAIN/${p}</loc></url>`).join('\n')}\n</urlset>`;
