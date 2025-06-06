@@ -278,7 +278,7 @@ export default function Layout({
     <>
       <SEOHead {...seoProps} />
       <div className="flex w-full flex-col bg-white dark:bg-gray-900">
-        <Header />
+        {/* <Header /> */}
 
         <div className={`relative mx-auto flex w-full ${maxWidth} flex-auto justify-center sm:px-2 lg:px-8 xl:px-12`}>
           {showSidebar && <Sidebar />}
