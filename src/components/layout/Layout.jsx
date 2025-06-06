@@ -193,8 +193,7 @@ function Header() {
 }
 
 function Sidebar() {
-  // const navigation = getNavigationStructure()
-  const navigation = { main: [], departments: [] }
+  const navigation = getNavigationStructure()
   const router = useRouter()
 
   const isActiveLink = (href) => {

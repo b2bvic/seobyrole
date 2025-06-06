@@ -54,13 +54,17 @@ function generateMetaDescription(department, seniority, playbook) {
 
 // Get departments
 export function getDepartments() {
-  return Object.keys(appData.content).map(dept => ({
-    id: dept,
-    name: dept === 'CSuite' ? 'C-Suite' : dept,
-    slug: slugify(dept),
-    introduction: appData.content[dept].introduction,
-    metaDescription: `SEO strategies and playbooks for ${dept === 'CSuite' ? 'C-Suite' : dept} professionals. ${appData.content[dept].introduction.substring(0, 120)}...`
-  }))
+  return Object.keys(appData.content).map(dept => {
+    const introduction = appData.content[dept]?.introduction || '';
+    const name = dept === 'CSuite' ? 'C-Suite' : dept;
+    return {
+      id: dept,
+      name: name,
+      slug: slugify(dept),
+      introduction: introduction,
+      metaDescription: `SEO strategies and playbooks for ${name} professionals. ${introduction.substring(0, 120)}...`
+    }
+  })
 }
 
 // Get core content
