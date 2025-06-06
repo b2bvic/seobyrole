@@ -13,6 +13,7 @@ import {
 
 import SEOHead from '../seo/SEOHead'
 import SearchModal from '../ui/SearchModal'
+import ClientOnly from '../ClientOnly'
 import { getNavigationStructure } from '../../lib/playbooks'
 
 function Logo({ className = "h-8 w-auto" }) {
@@ -181,10 +182,12 @@ function Header() {
       )}
 
       {/* Search Modal */}
-      <SearchModal 
-        isOpen={searchModalOpen} 
-        onClose={() => setSearchModalOpen(false)} 
-      />
+      <ClientOnly>
+        <SearchModal 
+          isOpen={searchModalOpen} 
+          onClose={() => setSearchModalOpen(false)} 
+        />
+      </ClientOnly>
     </>
   )
 }

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { MagnifyingGlassIcon, DocumentTextIcon, UserGroupIcon, ChartBarIcon, SparklesIcon, BriefcaseIcon, PencilIcon, CodeBracketIcon, ChartPieIcon, UsersIcon } from '@heroicons/react/24/outline'
@@ -19,9 +19,10 @@ const departmentIcons = {
 
 export default function Home() {
   const [selectedDepartment, setSelectedDepartment] = useState('all')
+  const [playbooks, setPlaybooks] = useState([])
 
   // Process departments and create playbooks
-  const playbooks = useMemo(() => {
+  useEffect(() => {
     const allPlaybooks = []
     
     Object.entries(appData.content).forEach(([dept, deptData]) => {
@@ -44,7 +45,7 @@ export default function Home() {
       }
     })
     
-    return allPlaybooks
+    setPlaybooks(allPlaybooks)
   }, [])
 
   const filteredPlaybooks = selectedDepartment === 'all' 
