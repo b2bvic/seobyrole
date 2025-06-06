@@ -5,27 +5,8 @@ import SEOHead from '../../components/seo/SEOHead'
 import Layout from '../../components/layout/Layout'
 import appData from '../../../appData.json'
 
-// Generate static paths for all playbooks
-export async function getStaticPaths() {
-  const paths = []
-  
-  Object.entries(appData.content).forEach(([dept, deptData]) => {
-    if (deptData.introduction) {
-      ['entry', 'manager', 'director'].forEach(level => {
-        if (deptData[level]?.basePlaybook) {
-          paths.push({
-            params: { slug: `${dept.toLowerCase()}-${level}` }
-          })
-        }
-      })
-    }
-  })
-  
-  return { paths, fallback: false }
-}
-
-// Get playbook data
-export async function getStaticProps({ params }) {
+// Use server-side rendering to avoid build errors
+export async function getServerSideProps({ params }) {
   const { slug } = params
   const [department, level] = slug.split('-')
   

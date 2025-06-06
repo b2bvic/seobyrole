@@ -319,4 +319,9 @@ export default function Home() {
       </Layout>
     </>
   )
+}
+
+// Disable SSR/SSG to avoid build errors
+export const getServerSideProps = async () => {
+  return { props: {} }
 } 

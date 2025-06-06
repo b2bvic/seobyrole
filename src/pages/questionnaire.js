@@ -209,4 +209,9 @@ export default function Questionnaire() {
       </Layout>
     </>
   )
+}
+
+// Disable SSR to avoid build errors
+export const getServerSideProps = async () => {
+  return { props: {} }
 } 
