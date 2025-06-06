@@ -1,135 +1,329 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://seobyrole.com</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <loc>https://seobyrole.com/</loc>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/playbooks</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/questionnaire</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/core-principles</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/departments</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/goals</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/about</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/resources</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/contact</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/privacy</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/terms</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/sales-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/sales-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/sales-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/marketing-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/marketing-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/marketing-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/creative-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/creative-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/creative-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/development-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/development-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/development-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/product-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/product-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/product-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/hr-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/hr-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/hr-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/csuite-entry</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/csuite-manager</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://seobyrole.com/playbook/csuite-director</loc>
-    <lastmod>2025-06-06T01:24:35.063Z</lastmod>
+    <lastmod>2025-06-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/sales</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/marketing</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/creative</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/development</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/product</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/hr</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/department/csuite</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/goal/increase-website-traffic</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/goal/improve-search-rankings</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/goal/generate-more-leads</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/goal/build-brand-awareness</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/goal/improve-content-performance</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/industry/e-commerce</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/industry/b2b-services</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/industry/publishingmedia</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/industry/saastech</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/industry/agencyconsulting</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/industry/other</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/platform/wordpress</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/platform/shopify</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/platform/hubspot-cms</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://seobyrole.com/platform/custom-built-other</loc>
+    <lastmod>2025-06-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

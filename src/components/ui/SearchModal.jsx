@@ -4,70 +4,79 @@ import { MagnifyingGlassIcon, DocumentTextIcon } from '@heroicons/react/24/outli
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import { getAllPlaybooks, getCoreContent } from '../../lib/playbooks'
-import FlexSearch from 'flexsearch'
 import Highlighter from 'react-highlight-words'
 
 export default function SearchModal({ isOpen, onClose }) {
   const [query, setQuery] = useState('')
   const [results, setResults] = useState([])
   const [selectedIndex, setSelectedIndex] = useState(0)
+  const [searchIndex, setSearchIndex] = useState(null)
   const router = useRouter()
 
-  // Create search index
-  const searchIndex = useMemo(() => {
-    const index = new FlexSearch.Index({
-      tokenize: 'forward',
-      resolution: 9,
-      depth: 3,
-      bidirectional: true
-    })
+  // Create search index on client side only
+  useEffect(() => {
+    const initializeSearch = async () => {
+      // Only import and initialize FlexSearch on the client side
+      if (typeof window === 'undefined') return;
+      
+      const FlexSearch = (await import('flexsearch')).default;
+      
+      const index = new FlexSearch.Index({
+        tokenize: 'forward',
+        resolution: 9,
+        depth: 3,
+        bidirectional: true
+      })
 
-    // Index all playbooks
-    const playbooks = getAllPlaybooks()
-    const coreContent = getCoreContent()
+      // Index all playbooks
+      const playbooks = getAllPlaybooks()
+      const coreContent = getCoreContent()
 
-    const allContent = [
-      ...playbooks.map(playbook => ({
-        id: playbook.slug,
-        title: playbook.title,
-        content: playbook.searchableContent,
-        type: 'playbook',
-        path: playbook.path,
-        department: playbook.department,
-        description: playbook.description
-      })),
-      // Add core content
-      {
-        id: 'core-principles',
-        title: 'Core SEO Principles',
-        content: 'SEO fundamentals, best practices, search engine optimization principles',
-        type: 'guide',
-        path: '/core-principles',
-        department: 'Foundation',
-        description: 'Essential SEO principles every professional should know'
-      },
-      {
-        id: 'questionnaire',
-        title: 'Find My SEO Strategy',
-        content: 'personalized SEO strategy, questionnaire, role-based recommendations',
-        type: 'tool',
-        path: '/questionnaire',
-        department: 'Tools',
-        description: 'Take our questionnaire to get personalized SEO recommendations'
-      }
-    ]
+      const allContent = [
+        ...playbooks.map(playbook => ({
+          id: playbook.slug,
+          title: playbook.title,
+          content: playbook.searchableContent,
+          type: 'playbook',
+          path: playbook.path,
+          department: playbook.department,
+          description: playbook.description
+        })),
+        // Add core content
+        {
+          id: 'core-principles',
+          title: 'Core SEO Principles',
+          content: 'SEO fundamentals, best practices, search engine optimization principles',
+          type: 'guide',
+          path: '/core-principles',
+          department: 'Foundation',
+          description: 'Essential SEO principles every professional should know'
+        },
+        {
+          id: 'questionnaire',
+          title: 'Find My SEO Strategy',
+          content: 'personalized SEO strategy, questionnaire, role-based recommendations',
+          type: 'tool',
+          path: '/questionnaire',
+          department: 'Tools',
+          description: 'Take our questionnaire to get personalized SEO recommendations'
+        }
+      ]
 
-    // Add content to index
-    allContent.forEach((item, idx) => {
-      index.add(idx, `${item.title} ${item.content} ${item.department}`)
-    })
+      // Add content to index
+      allContent.forEach((item, idx) => {
+        index.add(idx, `${item.title} ${item.content} ${item.department}`)
+      })
 
-    return { index, content: allContent }
+      setSearchIndex({ index, content: allContent })
+    }
+
+    initializeSearch()
   }, [])
 
   // Search function
   const search = (searchQuery) => {
-    if (!searchQuery.trim()) {
+    if (!searchQuery.trim() || !searchIndex) {
       setResults([])
       return
     }

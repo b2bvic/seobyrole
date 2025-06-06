@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useTheme } from 'next-themes'
 import clsx from 'clsx'
 import { 
   Bars3Icon, 
@@ -23,32 +22,6 @@ function Logo({ className = "h-8 w-auto" }) {
         <span className="text-white font-bold text-sm">S</span>
       </div>
       <span className="font-bold text-xl text-gray-900 dark:text-white">SEO by Role</span>
-    </div>
-  )
-}
-
-function ThemeSelector() {
-  const { theme, setTheme } = useTheme()
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => setMounted(true), [])
-
-  if (!mounted) return null
-
-  return (
-    <div className="relative">
-      <button
-        type="button"
-        className="flex h-6 w-6 items-center justify-center rounded-md transition-colors hover:bg-gray-100 dark:hover:bg-gray-800"
-        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-        aria-label="Toggle theme"
-      >
-        {theme === 'dark' ? (
-          <SunIcon className="h-4 w-4 text-gray-600 dark:text-gray-400" />
-        ) : (
-          <MoonIcon className="h-4 w-4 text-gray-600 dark:text-gray-400" />
-        )}
-      </button>
     </div>
   )
 }
@@ -149,7 +122,6 @@ function Header() {
 
         {/* Actions */}
         <div className="relative flex basis-0 justify-end gap-4 sm:gap-6 md:grow">
-          <ThemeSelector />
           <Link
             href="/questionnaire"
             className="hidden rounded-md bg-primary-600 px-3 py-1.5 text-sm font-medium text-white transition-colors hover:bg-primary-700 sm:block"
