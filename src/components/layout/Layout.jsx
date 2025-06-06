@@ -12,6 +12,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 import SEOHead from '../seo/SEOHead'
+import SearchModal from '../ui/SearchModal'
 import ClientOnly from '../ClientOnly'
 import { getNavigationStructure } from '../../lib/playbooks'
 
@@ -181,12 +182,12 @@ function Header() {
       )}
 
       {/* Search Modal */}
-      {/* <ClientOnly>
+      <ClientOnly>
         <SearchModal 
           isOpen={searchModalOpen} 
           onClose={() => setSearchModalOpen(false)} 
         />
-      </ClientOnly> */}
+      </ClientOnly>
     </>
   )
 }
@@ -278,7 +279,7 @@ export default function Layout({
     <>
       <SEOHead {...seoProps} />
       <div className="flex w-full flex-col bg-white dark:bg-gray-900">
-        {/* <Header /> */}
+        <Header />
 
         <div className={`relative mx-auto flex w-full ${maxWidth} flex-auto justify-center sm:px-2 lg:px-8 xl:px-12`}>
           {showSidebar && <Sidebar />}
