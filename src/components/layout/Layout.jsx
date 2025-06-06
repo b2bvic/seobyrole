@@ -193,7 +193,8 @@ function Header() {
 }
 
 function Sidebar() {
-  const navigation = getNavigationStructure()
+  // const navigation = getNavigationStructure()
+  const navigation = { main: [], departments: [] }
   const router = useRouter()
 
   const isActiveLink = (href) => {
@@ -282,7 +283,7 @@ export default function Layout({
         <Header />
 
         <div className={`relative mx-auto flex w-full ${maxWidth} flex-auto justify-center sm:px-2 lg:px-8 xl:px-12`}>
-          {/* {showSidebar && <Sidebar />} */}
+          {showSidebar && <Sidebar />}
           <div className={clsx(
             'min-w-0 flex-auto',
             showSidebar ? 'max-w-2xl lg:max-w-none lg:pl-8 lg:pr-0 xl:px-16' : 'px-4 sm:px-6 lg:px-8'
