@@ -12,7 +12,6 @@ import {
 } from '@heroicons/react/24/outline'
 
 import SEOHead from '../seo/SEOHead'
-import SearchModal from '../ui/SearchModal'
 import ClientOnly from '../ClientOnly'
 import { getNavigationStructure } from '../../lib/playbooks'
 
@@ -182,12 +181,12 @@ function Header() {
       )}
 
       {/* Search Modal */}
-      <ClientOnly>
+      {/* <ClientOnly>
         <SearchModal 
           isOpen={searchModalOpen} 
           onClose={() => setSearchModalOpen(false)} 
         />
-      </ClientOnly>
+      </ClientOnly> */}
     </>
   )
 }

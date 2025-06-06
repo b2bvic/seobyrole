@@ -12,3 +12,6 @@ out/
 # Other build artifacts
 .vercel
 *.tsbuildinfo
+
+# Local Netlify folder
+.netlify
