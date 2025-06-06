@@ -1,57 +1,48 @@
-import slugify from '@sindresorhus/slugify'
-import appData from '../../appData.json'
+// Simple slugify function
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, '') // Remove special characters
+    .replace(/\s+/g, '-') // Replace spaces with -
+    .replace(/--+/g, '-') // Replace multiple - with single -
+    .trim()
+}
 
-// Transform the nested content structure into flat, SEO-friendly pages
+// Get all playbooks from appData
 export function getAllPlaybooks() {
-  const playbooks = []
-  
-  Object.entries(appData.content).forEach(([department, departmentData]) => {
-    // Skip non-department entries
-    if (department === 'corePrinciples' || department === 'vision') return
-    
-    Object.entries(departmentData).forEach(([role, roleData]) => {
-      // Skip introduction entries
-      if (role === 'introduction') return
-      
-      Object.entries(roleData).forEach(([seniority, seniorityData]) => {
-        if (seniorityData && typeof seniorityData === 'object' && seniorityData.title) {
-          const slug = slugify(`${department}-${role}-${seniority}`)
-          
-          playbooks.push({
-            slug,
-            title: seniorityData.title,
-            department: formatTitle(department),
-            role: formatTitle(role),
-            seniority: formatTitle(seniority),
-            focus: seniorityData.focus,
-            actionableTasks: seniorityData.actionableTasks || [],
-            executionSteps: seniorityData.executionSteps || [],
-            keyTakeaway: seniorityData.keyTakeaway,
-            path: `/playbooks/${slug}`,
-            // SEO metadata
-            description: seniorityData.focus ? seniorityData.focus.substring(0, 160) : '',
-            keywords: generateKeywords(department, role, seniority),
-            breadcrumbs: [
-              { name: 'Home', url: '/' },
-              { name: 'Playbooks', url: '/playbooks' },
-              { name: formatTitle(department), url: `/playbooks/${slugify(department)}` },
-              { name: seniorityData.title, url: `/playbooks/${slug}` }
-            ],
-            // Content for search indexing
-            searchableContent: [
-              seniorityData.title,
-              seniorityData.focus,
-              seniorityData.keyTakeaway,
-              ...(seniorityData.actionableTasks || []).map(task => `${task.title} ${task.description}`),
-              ...(seniorityData.executionSteps || []).map(step => `${step.step} ${step.details}`)
-            ].filter(Boolean).join(' ')
-          })
-        }
-      })
-    })
-  })
-  
-  return playbooks
+  // This would be populated from appData.json
+  // For now, return empty array since we're using appData directly in components
+  return []
+}
+
+// Get departments
+export function getDepartments() {
+  // This would be populated from appData.json
+  // For now, return empty array since we're using appData directly in components
+  return []
+}
+
+// Get core content
+export function getCoreContent() {
+  return {
+    principles: [
+      {
+        id: 'audience-intent',
+        title: 'Understand Your Audience\'s Search Intent',
+        description: 'Every role has unique insights into customer language and pain points.'
+      },
+      {
+        id: 'answer-questions',
+        title: 'Create Content That Answers Real Questions',
+        description: 'Transform internal knowledge into external value.'
+      },
+      {
+        id: 'measure-impact',
+        title: 'Measure Impact Beyond Rankings',
+        description: 'Define metrics that matter to your department\'s goals.'
+      }
+    ]
+  }
 }
 
 export function getPlaybookBySlug(slug) {
@@ -64,27 +55,6 @@ export function getPlaybooksByDepartment(department) {
   return playbooks.filter(playbook => 
     playbook.department.toLowerCase() === department.toLowerCase()
   )
-}
-
-export function getDepartments() {
-  const playbooks = getAllPlaybooks()
-  const departments = [...new Set(playbooks.map(p => p.department))]
-  
-  return departments.map(dept => ({
-    name: dept,
-    slug: slugify(dept),
-    count: playbooks.filter(p => p.department === dept).length,
-    description: getDepartmentDescription(dept),
-    path: `/playbooks/${slugify(dept)}`
-  }))
-}
-
-export function getCoreContent() {
-  return {
-    corePrinciples: appData.content.corePrinciples,
-    vision: appData.content.vision,
-    questionnaire: appData.questionnaire
-  }
 }
 
 // Helper functions
