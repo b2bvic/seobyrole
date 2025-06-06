@@ -3,18 +3,12 @@ import Link from 'next/link'
 import { ChevronRightIcon, CheckCircleIcon, PlayIcon, LightBulbIcon } from '@heroicons/react/24/outline'
 import SEOHead from '../../components/seo/SEOHead'
 import Layout from '../../components/layout/Layout'
-import fs from 'fs'
-import path from 'path'
+import appData from '../../../appData.json'
 
 // Use server-side rendering to avoid build errors
 export async function getServerSideProps({ params }) {
   const { slug } = params
   
-  // Read data from JSON file
-  const filePath = path.join(process.cwd(), 'appData.json');
-  const fileContent = fs.readFileSync(filePath, 'utf8');
-  const appData = JSON.parse(fileContent);
-
   const [department, level] = slug.split('-')
   
   // Find the correct department (case-insensitive)

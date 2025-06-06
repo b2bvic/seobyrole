@@ -4,8 +4,7 @@ import Link from 'next/link'
 import { MagnifyingGlassIcon, DocumentTextIcon, UserGroupIcon, ChartBarIcon, SparklesIcon, BriefcaseIcon, PencilIcon, CodeBracketIcon, ChartPieIcon, UsersIcon } from '@heroicons/react/24/outline'
 import SEOHead from '../components/seo/SEOHead'
 import Layout from '../components/layout/Layout'
-import fs from 'fs'
-import path from 'path'
+import appData from '../../appData.json'
 
 // Department icons mapping
 const departmentIcons = {
@@ -19,10 +18,6 @@ const departmentIcons = {
 }
 
 export async function getServerSideProps() {
-  const filePath = path.join(process.cwd(), 'appData.json');
-  const fileContent = fs.readFileSync(filePath, 'utf8');
-  const appData = JSON.parse(fileContent);
-
   const allPlaybooks = []
   Object.entries(appData.content).forEach(([dept, deptData]) => {
     if (deptData.introduction) {
