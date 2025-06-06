@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { MagnifyingGlassIcon, DocumentTextIcon, UserGroupIcon, ChartBarIcon, SparklesIcon, BriefcaseIcon, PencilIcon, CodeBracketIcon, ChartPieIcon, UsersIcon } from '@heroicons/react/24/outline'
 import SEOHead from '../components/seo/SEOHead'
 import Layout from '../components/layout/Layout'
-import appData from '../../appData.json'
+import fs from 'fs'
+import path from 'path'
 
 // Department icons mapping
 const departmentIcons = {
@@ -17,47 +18,54 @@ const departmentIcons = {
   CSuite: ChartPieIcon
 }
 
-export default function Home() {
-  const [selectedDepartment, setSelectedDepartment] = useState('all')
-  const [playbooks, setPlaybooks] = useState([])
+export async function getServerSideProps() {
+  const filePath = path.join(process.cwd(), 'appData.json');
+  const fileContent = fs.readFileSync(filePath, 'utf8');
+  const appData = JSON.parse(fileContent);
 
-  // Process departments and create playbooks
-  useEffect(() => {
-    const allPlaybooks = []
-    
-    Object.entries(appData.content).forEach(([dept, deptData]) => {
-      if (deptData.introduction) {
-        ['entry', 'manager', 'director'].forEach(level => {
-          if (deptData[level]?.basePlaybook) {
-            const playbook = deptData[level].basePlaybook
-            allPlaybooks.push({
-              slug: `${dept.toLowerCase()}-${level}`,
-              department: dept,
-              level: level,
-              title: playbook.title,
-              focus: playbook.focus.substring(0, 150) + '...',
-              keyTakeaway: playbook.keyTakeaway,
-              actionableTasks: playbook.actionableTasks || [],
-              executionSteps: playbook.executionSteps || []
-            })
-          }
-        })
-      }
-    })
-    
-    setPlaybooks(allPlaybooks)
-  }, [])
-
-  const filteredPlaybooks = selectedDepartment === 'all' 
-    ? playbooks 
-    : playbooks.filter(p => p.department === selectedDepartment)
+  const allPlaybooks = []
+  Object.entries(appData.content).forEach(([dept, deptData]) => {
+    if (deptData.introduction) {
+      ['entry', 'manager', 'director'].forEach(level => {
+        if (deptData[level]?.basePlaybook) {
+          const playbook = deptData[level].basePlaybook
+          allPlaybooks.push({
+            slug: `${dept.toLowerCase()}-${level}`,
+            department: dept,
+            level: level,
+            title: playbook.title,
+            focus: playbook.focus.substring(0, 150) + '...',
+            keyTakeaway: playbook.keyTakeaway,
+            actionableTasks: playbook.actionableTasks || [],
+            executionSteps: playbook.executionSteps || []
+          })
+        }
+      })
+    }
+  })
 
   const stats = {
-    totalPlaybooks: playbooks.length,
+    totalPlaybooks: allPlaybooks.length,
     departments: Object.keys(appData.content).length,
     seniorityLevels: 3,
-    actionableStrategies: playbooks.reduce((acc, p) => acc + (p.actionableTasks?.length || 0), 0)
+    actionableStrategies: allPlaybooks.reduce((acc, p) => acc + (p.actionableTasks?.length || 0), 0)
   }
+
+  return {
+    props: {
+      initialPlaybooks: allPlaybooks,
+      stats,
+      departments: Object.keys(appData.content)
+    }
+  }
+}
+
+export default function Home({ initialPlaybooks, stats, departments }) {
+  const [selectedDepartment, setSelectedDepartment] = useState('all')
+  
+  const filteredPlaybooks = selectedDepartment === 'all' 
+    ? initialPlaybooks
+    : initialPlaybooks.filter(p => p.department === selectedDepartment)
 
   return (
     <>
@@ -137,34 +145,30 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <button
-                onClick={() => setSelectedDepartment('all')}
-                className={`rounded-full px-6 py-2 text-sm font-medium transition-colors ${
-                  selectedDepartment === 'all'
-                    ? 'bg-primary-600 text-white'
-                    : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600'
-                }`}
-              >
-                All Departments
-              </button>
-              {Object.keys(appData.content).map(dept => {
-                const Icon = departmentIcons[dept] || DocumentTextIcon
-                return (
-                  <button
-                    key={dept}
-                    onClick={() => setSelectedDepartment(dept)}
-                    className={`flex items-center gap-2 rounded-full px-6 py-2 text-sm font-medium transition-colors ${
-                      selectedDepartment === dept
-                        ? 'bg-primary-600 text-white'
-                        : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-600'
-                    }`}
+            <div className="mt-12">
+              <div className="flex justify-center mb-8">
+                <div className="flex items-center bg-gray-100 dark:bg-gray-800 rounded-full p-1">
+                  <button 
+                    onClick={() => setSelectedDepartment('all')}
+                    className={`px-4 py-2 text-sm font-medium rounded-full transition-colors ${selectedDepartment === 'all' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400'}`}
                   >
-                    <Icon className="h-4 w-4" />
-                    {dept}
+                    All
                   </button>
-                )
-              })}
+                  {departments.map(dept => {
+                    const Icon = departmentIcons[dept] || DocumentTextIcon
+                    return (
+                      <button 
+                        key={dept}
+                        onClick={() => setSelectedDepartment(dept)}
+                        className={`flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition-colors ${selectedDepartment === dept ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white' : 'text-gray-600 dark:text-gray-400'}`}
+                      >
+                        <Icon className="h-4 w-4" />
+                        {dept}
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -319,9 +323,4 @@ export default function Home() {
       </Layout>
     </>
   )
-}
-
-// Disable SSR/SSG to avoid build errors
-export const getServerSideProps = async () => {
-  return { props: {} }
 } 
