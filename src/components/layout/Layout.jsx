@@ -277,7 +277,7 @@ export default function Layout({
 
   return (
     <>
-      <SEOHead {...seoProps} />
+      {/* <SEOHead {...seoProps} /> */}
       <div className="flex w-full flex-col bg-white dark:bg-gray-900">
         <Header />
 
