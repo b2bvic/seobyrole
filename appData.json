@@ -103,19 +103,19 @@
       },
       "director": {
         "basePlaybook": {
-          "title": "Strategic SEO for Sales Leadership",
-          "focus": "For sales directors, VPs, and CROs, the SEO focus is on aligning sales strategy with organic growth initiatives to drive predictable, scalable revenue. At this level, it's about recognizing SEO as a strategic lever for customer acquisition and ensuring the sales organization is structured to maximize the value of SEO-generated leads while providing the market intelligence needed to inform content and product strategies.",
+          "title": "SEO for Sales Leaders: Your Team Knows the Keywords—They Just Don't Know It",
+          "focus": "Here's a reality check: your sales team has conversations every day with prospects who tell them exactly what they're searching for—and almost none of that intelligence makes it back to marketing. The words your prospects use, the questions they ask, the objections they raise? Those are keywords. Those are content ideas. Those are ranking opportunities being flushed because nobody built a system to capture them. Meanwhile, your company pays agencies to guess at keywords your team already knows. That's expensive stupidity.",
           "actionableTasks": [
-            { "title": "Integrate SEO Performance into Sales Strategy", "description": "Make organic search performance a key component of your sales strategy. Understand which customer segments are most effectively reached through SEO and align your sales approach accordingly." },
-            { "title": "Champion the Sales-Marketing-Product Feedback Loop", "description": "Establish processes to ensure that insights from customer conversations systematically inform content strategy and product development, creating a virtuous cycle of improvement across all customer touchpoints." },
-            { "title": "Optimize the Lead Handoff Process", "description": "Work with marketing to refine the lead qualification and handoff process for SEO-generated leads, ensuring rapid follow-up and a seamless customer experience." }
+            { "title": "Build a Voice-of-Customer Keyword Pipeline", "description": "Create a structured system for capturing the exact language prospects use in sales calls. Not paraphrased. Not interpreted. Exact quotes. 'How do I...' 'What's the difference between...' 'Why should I...' These are search queries. Your sales team collects them daily. Start treating that like the asset it is." },
+            { "title": "Track Lead Quality by Content Source", "description": "Not all organic leads are equal. Which blog posts produce the best leads? Which ones waste time? Map content to closed-won deals, not just MQLs. If your attribution only goes to 'organic' as a category, you're flying blind. You need content-level attribution." },
+            { "title": "Demand Sales-Ready SEO Content", "description": "Stop accepting 'awareness content' that doesn't help you close deals. Every piece of SEO content should have a sales use case: comparison pages, objection-handling content, ROI case studies. If marketing is creating content your sales team never uses, that's a strategy problem." }
           ],
           "executionSteps": [
-            { "step": "Develop a Joint Sales-Marketing SLA for SEO Leads", "details": "Create a service-level agreement (SLA) that defines responsibilities and timelines for following up on SEO-generated leads, ensuring accountability and efficient lead management." },
-            { "step": "Incorporate SEO Insights into Sales Forecasting", "details": "Use organic search trend data and lead generation performance to inform sales forecasts and resource allocation, making your projections more accurate and data-driven." },
-            { "step": "Present SEO's Impact on Sales to Executive Leadership", "details": "Regularly report to the C-suite on how SEO initiatives are contributing to sales pipeline, revenue, and overall business growth, advocating for continued investment and strategic alignment." }
+            { "step": "Implement Call Intelligence Mining", "details": "If you're using call recording (Gong, Chorus, etc.), set up automated keyword extraction. Look for recurring phrases, questions, and objections. Share a monthly report with marketing/SEO. This is the highest-quality keyword research that exists—it comes from your actual buyers." },
+            { "step": "Create a 'Sales Questions' Content Queue", "details": "Every question your team answers repeatedly on calls should become content. Build a shared doc where reps log these. Prioritize for SEO based on search volume. Your sales team is doing content research every day—harvest it." },
+            { "step": "Close the Loop on Lead Quality", "details": "Monthly meeting: Marketing shows which content drove leads. Sales shows which leads closed. Connect the dots. If a certain content type generates high-volume, low-quality leads, that's data. If another type generates fewer leads that close at 40%, double down on that." }
           ],
-          "keyTakeaway": "As a sales leader, you play a critical role in ensuring that SEO is not just a marketing activity but a core driver of sales success. By strategically aligning your sales organization with organic growth initiatives, you can build a more predictable, scalable, and profitable revenue engine."
+          "keyTakeaway": "Your sales team is sitting on a goldmine of keyword intelligence they don't know they have. Every call, every email, every objection is data that should flow back to your content strategy. The companies dominating organic search aren't doing better keyword research—they're listening better to their sales calls."
         }
       }
     },
@@ -157,19 +157,19 @@
       },
       "director": {
         "basePlaybook": {
-          "title": "Strategic SEO for Marketing Directors / VPs / CMOs",
-          "focus": "For Marketing Directors, VPs, and CMOs, the SEO focus is on setting the overarching organic growth strategy, ensuring deep alignment between SEO initiatives and core business objectives, securing and allocating budget for SEO, building and nurturing an SEO-proficient marketing organization, and effectively communicating SEO's strategic value and ROI to executive leadership and the board.",
+          "title": "SEO for CMOs: Stop Burning Money on Channels You Don't Own",
+          "focus": "Here's the uncomfortable truth most CMOs won't admit: you're spending 70% of your marketing budget on rented land. Paid ads disappear the moment you stop paying. Social reach gets throttled quarterly. But organic search? That's real estate you own. The problem isn't that you don't know SEO matters—it's that you're treating it as a checkbox instead of a strategic weapon. Every dollar your competitors invest in SEO compounds. Every dollar you don't is ground you're ceding permanently.",
           "actionableTasks": [
-            { "title": "Define and Own the Strategic Vision for Organic Search", "description": "Develop and champion a clear, long-term strategic vision for organic search as a primary, sustainable, and profitable customer acquisition and brand-building channel. Ensure this vision is understood and supported across the organization." },
-            { "title": "Align SEO Strategy with Overarching Business Goals and Revenue Targets", "description": "Ensure that all SEO strategies, objectives, and KPIs are directly tied to and supportive of the company's broader business goals, such as revenue growth, market share expansion, new market entry, or customer retention." },
-            { "title": "Secure, Allocate, and Optimize SEO Budget and Resources", "description": "Advocate for and secure an appropriate budget for SEO initiatives, including talent (in-house or agency), tools, technology, and content creation. Ensure resources are strategically allocated to areas with the highest potential ROI." }
+            { "title": "Audit Your CAC By Channel (And Prepare to Be Horrified)", "description": "Pull your customer acquisition cost broken down by channel. Compare paid vs organic. If your organic CAC isn't 60-80% lower than paid, you have a content strategy problem, not an SEO problem. The website should be your highest-producing salesperson—if it isn't, you're paying for conversations Google would give you for free." },
+            { "title": "Kill the Vanity Metrics", "description": "Stop measuring SEO success by traffic or rankings. Those are inputs, not outputs. The only metrics that matter: organic revenue, organic pipeline contribution, and organic CAC. If your SEO team can't tie their work to these numbers, they're playing with toys, not running a revenue channel." },
+            { "title": "Integrate SEO Into Every Customer Touchpoint Decision", "description": "Every new product launch, every campaign, every landing page should start with the question: 'What are people searching for when they have this problem?' If you're building content without search intent data, you're guessing. Guessing is expensive." }
           ],
           "executionSteps": [
-            { "step": "Develop a 12-Month SEO Roadmap", "details": "Create a strategic roadmap outlining key SEO initiatives, goals, and resource requirements for the next year. Align this roadmap with overall marketing and business objectives, and present it to executive leadership for buy-in." },
-            { "step": "Establish Cross-Functional SEO Collaboration", "details": "Implement processes and regular meetings to foster collaboration between SEO, content, product, and development teams. Ensure SEO considerations are integrated into all relevant workflows and decision-making processes." },
-            { "step": "Create an SEO Performance Dashboard for Executive Reporting", "details": "Develop a concise, high-level dashboard that tracks key SEO performance indicators (KPIs) and their impact on business goals. Use this dashboard to regularly communicate SEO's value and progress to the C-suite and other stakeholders." }
+            { "step": "Build the Business Case in CFO Language", "details": "Model organic search as a compounding asset. Show: (1) current organic revenue, (2) cost to acquire same revenue through paid, (3) projected 24-month value if you invested 20% more in SEO. Present this as an investment thesis, not a marketing request." },
+            { "step": "Create a Cross-Functional SEO Accountability Structure", "details": "SEO isn't a marketing function—it's a company function. Product decisions affect SEO. Dev decisions affect SEO. Sales insights fuel SEO. Establish a quarterly SEO review with stakeholders from Product, Engineering, and Sales. Make organic growth everyone's problem." },
+            { "step": "Implement a 'Search-First' Content Planning Process", "details": "Before any content gets created, require keyword research and search intent analysis. No more creating content because someone had an idea—create content because data shows demand. This one change will 10x your content ROI." }
           ],
-          "keyTakeaway": "As a marketing leader, your responsibility is to elevate SEO from a tactical function to a strategic imperative. By integrating SEO deeply into your overall marketing strategy and demonstrating its tangible business impact, you can secure the resources and organizational support needed to drive significant, sustainable organic growth."
+          "keyTakeaway": "Your job isn't to 'do SEO.' Your job is to build an owned media asset that generates pipeline while you sleep. Stop treating organic search as a tactic and start treating it as infrastructure. The CMOs who win the next decade will be the ones who understood that Google is the largest lead generation engine on earth—and they own real estate on it."
         }
       }
     },
@@ -255,17 +255,19 @@
       },
       "director": {
         "basePlaybook": {
-          "title": "Strategic SEO for Engineering Directors",
-          "focus": "Engineering directors must champion SEO as a core technical requirement and ensure resources are allocated to maintain and improve technical SEO health.",
+          "title": "Technical SEO for Engineering Leaders: Your Code Is Your Ranking Factor",
+          "focus": "Let me be direct: your engineering decisions are making or breaking your company's search visibility, and nobody's telling you. Every migration, every framework choice, every performance optimization (or lack thereof) directly impacts whether Google can find, render, and rank your pages. The uncomfortable truth? Most engineering leaders treat SEO as 'marketing's problem' while unknowingly building sites that search engines can't properly crawl. Your React SPA might look beautiful, but if Googlebot can't render it, you've built a $500K invisible website.",
           "actionableTasks": [
-            { "title": "Advocate for SEO in Technical Roadmaps", "description": "Ensure that technical SEO initiatives are prioritized and included in long-term development roadmaps." },
-            { "title": "Foster a Culture of SEO Awareness", "description": "Promote understanding and appreciation for SEO across the engineering department through training and communication." }
+            { "title": "Run a Technical SEO Audit Before Any Major Release", "description": "Add technical SEO review to your deployment checklist. Before any major release: test crawlability with Screaming Frog, check Core Web Vitals in Lighthouse, verify server-side rendering is working. A single noindex tag or broken canonical can tank months of marketing work. This isn't optional anymore." },
+            { "title": "Own the Performance Conversation", "description": "Core Web Vitals are a ranking factor. Period. If your LCP is above 2.5s, your FID is above 100ms, or your CLS is above 0.1, you're actively hurting rankings. These aren't 'nice to haves'—Google literally demotes slow sites. Make performance a first-class citizen in sprint planning." },
+            { "title": "Build SEO Guardrails Into Your CI/CD Pipeline", "description": "Automated checks for: broken internal links, missing meta tags, noindex tags in production, orphaned pages, JavaScript rendering issues. Catch SEO regressions before they ship. Your SEO team shouldn't find out about problems after deployment." }
           ],
           "executionSteps": [
-            { "step": "1. Align Technical Roadmap with SEO Goals", "details": "Meet with SEO leadership to identify key technical SEO priorities for the next 6-12 months and integrate them into the roadmap." },
-            { "step": "2. Implement SEO Training for Developers", "details": "Develop or source SEO training materials specifically for developers and make it part of onboarding and ongoing education." }
+            { "step": "Establish an SEO-Engineering Partnership", "details": "Create a direct line between your team and SEO. Monthly sync minimum. When SEO files a ticket, it shouldn't sit in the backlog for 6 months. Technical SEO issues compound—a crawl budget problem today is a traffic crisis in 90 days." },
+            { "step": "Document Your Rendering Architecture for SEO Impact", "details": "Map out exactly how your pages render: CSR vs SSR vs ISR. Identify which pages rely on JavaScript. Document this for the SEO team so they understand what Google actually sees vs what users see. Many ranking problems start here." },
+            { "step": "Create a Technical SEO Incident Response Process", "details": "When rankings drop 20% overnight, who gets paged? What's the debug process? Create runbooks for common technical SEO issues: sitemap errors, canonical problems, indexation drops. Treat SEO regressions like you treat production incidents." }
           ],
-          "keyTakeaway": "Technical SEO is not just a feature but a fundamental aspect of web development that requires ongoing attention and resources."
+          "keyTakeaway": "Technical SEO isn't marketing's job—it's infrastructure. The sites that dominate search are the ones where engineering understands that crawlability, performance, and renderability are architectural requirements, not afterthoughts. You're not building websites anymore. You're building searchable, indexable, rankable systems. Act like it."
         }
       }
     },
@@ -399,17 +401,19 @@
       },
       "director": {
         "basePlaybook": {
-          "title": "Strategic SEO for C-Suite Executives",
-          "focus": "C-suite leaders must champion SEO as a core business strategy and ensure alignment between SEO initiatives and overall business objectives.",
+          "title": "SEO for Executives: The Channel Your Competitors Hope You Keep Ignoring",
+          "focus": "I'll cut to it: organic search is likely your lowest-cost, highest-intent acquisition channel, and you're probably underinvesting by 5-10x. Here's what your marketing team might not be telling you—the companies dominating your industry in 5 years will be the ones who built searchable, indexable, rankable content libraries while you were optimizing Facebook ad spend. Paid media is rented. SEO is owned. Every month you delay, your competitors compound their advantage. This isn't marketing philosophy. It's math.",
           "actionableTasks": [
-            { "title": "Champion SEO as a Business Imperative", "description": "Advocate for SEO at the highest levels of the organization and ensure it is recognized as a critical driver of business growth." },
-            { "title": "Ensure Adequate Investment in SEO", "description": "Secure and allocate sufficient budget and resources for SEO initiatives, including talent, technology, and content." }
+            { "title": "Demand the Right Metrics (Not the Vanity Ones)", "description": "Ask your marketing team one question: 'What percentage of our pipeline comes from organic search?' If they answer with traffic or rankings instead of revenue attribution, you have a measurement problem. SEO should be reported like a sales channel: pipeline contribution, close rates, and customer LTV from organic vs paid." },
+            { "title": "Compare Your Organic CAC to Paid CAC", "description": "Pull the data. What does it cost to acquire a customer through paid ads vs organic search? In most B2B companies, organic CAC is 60-80% lower—but gets 10% of the marketing budget. If the math doesn't make sense, neither does your budget allocation." },
+            { "title": "Ask About Your Competitive Position", "description": "Request a competitive analysis: how does your organic visibility compare to top 3 competitors? If they're outranking you on your core terms, they're getting the customers that should be finding you. That's not a marketing problem. That's a business problem." }
           ],
           "executionSteps": [
-            { "step": "1. Integrate SEO into Overall Business Strategy", "details": "Ensure that SEO goals and strategies are aligned with and support the company's overarching business objectives." },
-            { "step": "2. Regularly Review SEO's ROI and Business Impact", "details": "Establish a process for regularly reviewing the return on investment and overall business impact of SEO initiatives, and adjust strategy as needed." }
+            { "step": "Treat SEO Investment Like R&D", "details": "SEO compounds over time. Content published today generates leads for years. Model your SEO investment as a compounding asset, not an expense line. The ROI curve is back-loaded—month 1 looks bad, month 24 looks like a printing press. Make sure your finance team understands this." },
+            { "step": "Make Organic Growth a Cross-Functional Priority", "details": "SEO touches product, engineering, content, and sales. If it lives only in marketing, it fails. Create executive accountability for organic growth that spans functions. The CEO of any tech company with a website should care about how Google sees that website." },
+            { "step": "Set a 24-Month Organic Revenue Target", "details": "Put a number on it. 'We will generate $X in organic-attributed pipeline in 24 months.' Make it a company OKR. What gets measured gets managed. Organic search is too important to live without a target." }
           ],
-          "keyTakeaway": "SEO is not just a marketing tactic but a fundamental driver of business growth and competitive advantage."
+          "keyTakeaway": "SEO isn't a marketing channel—it's infrastructure. The companies winning today built their organic moats 3-5 years ago. Your competitors are building theirs now. The question isn't whether you can afford to invest in SEO. It's whether you can afford to let your competition own the search results for the problems you solve. They're getting the customers who should be finding you. That's the real cost of ignoring organic search."
         }
       }
     }
