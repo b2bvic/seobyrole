@@ -23,11 +23,22 @@ const lexend = localFont({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Docs',
-    default: 'CacheAdvance - Never miss the cache again.',
+    template: '%s | SEO by Role',
+    default: 'SEO by Role - SEO Guidance for Every Company Role',
   },
-  description:
-    'Cache every single thing your app could ever do ahead of time, so your code never even has to run at all.',
+  description: 'Role-specific SEO guidance for CMOs, developers, content teams, and executives. Learn what SEO means for your specific job function.',
+  metadataBase: new URL('https://seobyrole.com'),
+  authors: [{ name: 'Victor Valentine Romo', url: 'https://victorvalentineromo.com' }],
+  creator: 'Victor Valentine Romo',
+  openGraph: {
+    title: 'SEO by Role - SEO Guidance for Every Company Role',
+    description: 'Role-specific SEO guidance for CMOs, developers, content teams, and executives.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    creator: '@b2bvic',
+  },
 }
 
 export default function RootLayout({
