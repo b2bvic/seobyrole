@@ -1,0 +1,49 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "SEO education tailored to your role. Stop reading generic advice." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>{title} | SEO by Role</title>
+  </head>
+  <body class="h-full bg-white text-primary-900 antialiased">
+    <nav class="border-b border-primary-100">
+      <div class="mx-auto max-w-5xl px-6 py-4 flex items-center justify-between">
+        <a href="/" class="text-xl font-semibold text-primary-900">SEO by Role</a>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="/articles" class="text-primary-600 hover:text-primary-900 transition-colors">Articles</a>
+          <a href="/about" class="text-primary-600 hover:text-primary-900 transition-colors">About</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="border-t border-primary-100 mt-24">
+      <div class="mx-auto max-w-5xl px-6 py-12">
+        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div>
+            <p class="font-semibold text-primary-900">SEO by Role</p>
+            <p class="text-sm text-primary-500 mt-1">SEO education for your actual job.</p>
+          </div>
+          <p class="text-sm text-primary-400">&copy; {new Date().getFullYear()} Scale With Search</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

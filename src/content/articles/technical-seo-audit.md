@@ -1,13 +1,13 @@
 ---
-title:: Technical SEO Audits That Don't Require Developer Translation
-slug:: technical-seo-audit
-description:: How to run technical SEO audits without developer expertise using Screaming Frog and Google Search Console, prioritize fixes by impact, and communicate findings effectively.
-keywords:: technical SEO audit, SEO audit checklist, Screaming Frog audit, Google Search Console audit, crawl errors
-author:: Victor Valentine Romo
-domain:: seobyrole.com
-date:: 2026.01.19
-type:: pillar
-status:: draft
+title: Technical SEO Audits That Don't Require Developer Translation
+slug: technical-seo-audit
+description: How to run technical SEO audits without developer expertise using Screaming Frog and Google Search Console, prioritize fixes by impact, and communicate findings effectively.
+keywords: technical SEO audit, SEO audit checklist, Screaming Frog audit, Google Search Console audit, crawl errors
+author: Victor Valentine Romo
+domain: seobyrole.com
+date: 2026.01.19
+type: pillar
+status: draft
 ---
 
 # Technical SEO Audits That Don't Require Developer Translation

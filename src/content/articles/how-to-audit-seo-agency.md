@@ -1,11 +1,11 @@
 ---
-title:: How to Audit an SEO Agency When You're Not an SEO Expert
-focus_keyword:: SEO agency audit
-word_count_target:: 2,500
-status:: draft
-created:: 2026.01.19
-type:: pillar article
-framework:: Koray Contextual Vector
+title: How to Audit an SEO Agency When You're Not an SEO Expert
+focus_keyword: SEO agency audit
+word_count_target: 2,500
+status: draft
+created: 2026.01.19
+type: pillar article
+framework: Koray Contextual Vector
 ---
 
 # How to Audit an SEO Agency When You're Not an SEO Expert

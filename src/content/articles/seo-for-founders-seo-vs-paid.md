@@ -1,11 +1,11 @@
 ---
-title:: SEO for Founders—When to Invest in Organic vs Double Down on Paid
-focus_keyword:: SEO vs paid advertising
-word_count_target:: 2,900
-status:: draft
-created:: 2026.01.19
-type:: pillar article
-framework:: Koray Contextual Vector
+title: SEO for Founders—When to Invest in Organic vs Double Down on Paid
+focus_keyword: SEO vs paid advertising
+word_count_target: 2,900
+status: draft
+created: 2026.01.19
+type: pillar article
+framework: Koray Contextual Vector
 ---
 
 # SEO for Founders—When to Invest in Organic vs Double Down on Paid

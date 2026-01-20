@@ -1,12 +1,12 @@
 ---
-title:: SEO Forecasting That Survives Executive Scrutiny
-focus_keyword:: SEO traffic forecasting
-word_count_target:: 2,600
-status:: draft
-created:: 2026.01.19
-type:: pillar article
-framework:: Koray Contextual Vector
-named_entities:: Click-through rate modeling, search volume data, ranking probability, seasonality adjustments, confidence intervals, scenario planning, conservative estimates, competitive displacement
+title: SEO Forecasting That Survives Executive Scrutiny
+focus_keyword: SEO traffic forecasting
+word_count_target: 2,600
+status: draft
+created: 2026.01.19
+type: pillar article
+framework: Koray Contextual Vector
+named_entities: Click-through rate modeling, search volume data, ranking probability, seasonality adjustments, confidence intervals, scenario planning, conservative estimates, competitive displacement
 ---
 
 # SEO Forecasting That Survives Executive Scrutiny

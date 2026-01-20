@@ -1,11 +1,11 @@
 ---
-title:: SEO for Content Teams—Keyword Research That Doesn't Kill Creativity
-focus_keyword:: SEO content strategy
-word_count_target:: 3,100
-status:: draft
-created:: 2026.01.19
-type:: pillar article
-framework:: Koray Contextual Vector
+title: SEO for Content Teams—Keyword Research That Doesn't Kill Creativity
+focus_keyword: SEO content strategy
+word_count_target: 3,100
+status: draft
+created: 2026.01.19
+type: pillar article
+framework: Koray Contextual Vector
 ---
 
 # SEO for Content Teams—Keyword Research That Doesn't Kill Creativity

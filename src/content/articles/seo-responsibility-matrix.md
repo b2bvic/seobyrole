@@ -1,11 +1,11 @@
 ---
-title:: The SEO Responsibility Matrix—Who Owns What in Cross-Functional Teams
-description:: A framework for mapping SEO tasks to organizational roles using RACI methodology. Eliminates accountability gaps and clarifies ownership across product, engineering, content, and marketing.
-keywords:: SEO roles and responsibilities, RACI matrix SEO, SEO ownership, cross-functional SEO, SEO accountability, SEO project management
-author:: Victor Valentine Romo
-date:: 2026.01.19
-type:: pillar article
-status:: publication-ready
+title: The SEO Responsibility Matrix—Who Owns What in Cross-Functional Teams
+description: A framework for mapping SEO tasks to organizational roles using RACI methodology. Eliminates accountability gaps and clarifies ownership across product, engineering, content, and marketing.
+keywords: SEO roles and responsibilities, RACI matrix SEO, SEO ownership, cross-functional SEO, SEO accountability, SEO project management
+author: Victor Valentine Romo
+date: 2026.01.19
+type: pillar article
+status: publication-ready
 ---
 
 # The SEO Responsibility Matrix—Who Owns What in Cross-Functional Teams

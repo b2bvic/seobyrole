@@ -1,11 +1,11 @@
 ---
-title:: SEO for Developers—Technical Implementation Without the Marketing Jargon
-description:: A technical guide for developers covering Core Web Vitals, structured data, JavaScript SEO, and CI/CD integration—written in language engineers understand.
-keywords:: technical SEO for developers, Core Web Vitals, structured data implementation, JavaScript SEO, SEO CI/CD, Googlebot crawling
-author:: Victor Valentine Romo
-date:: 2026.01.19
-type:: pillar article
-status:: publication-ready
+title: SEO for Developers—Technical Implementation Without the Marketing Jargon
+description: A technical guide for developers covering Core Web Vitals, structured data, JavaScript SEO, and CI/CD integration—written in language engineers understand.
+keywords: technical SEO for developers, Core Web Vitals, structured data implementation, JavaScript SEO, SEO CI/CD, Googlebot crawling
+author: Victor Valentine Romo
+date: 2026.01.19
+type: pillar article
+status: publication-ready
 ---
 
 # SEO for Developers—Technical Implementation Without the Marketing Jargon

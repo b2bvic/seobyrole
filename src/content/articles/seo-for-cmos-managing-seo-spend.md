@@ -1,11 +1,11 @@
 ---
-title:: SEO for CMOs—Managing SEO Spend When You Can't Measure It Like Paid
-focus_keyword:: SEO budget allocation
-word_count_target:: 2,800
-status:: draft
-created:: 2026.01.19
-type:: pillar article
-framework:: Koray Contextual Vector
+title: SEO for CMOs—Managing SEO Spend When You Can't Measure It Like Paid
+focus_keyword: SEO budget allocation
+word_count_target: 2,800
+status: draft
+created: 2026.01.19
+type: pillar article
+framework: Koray Contextual Vector
 ---
 
 # SEO for CMOs—Managing SEO Spend When You Can't Measure It Like Paid

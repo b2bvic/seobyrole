@@ -1,11 +1,11 @@
 ---
-title:: SEO for Product Managers—Building the Business Case Without Getting Deprioritized
-description:: A practical framework for product managers to scope, prioritize, and ship SEO work without losing engineering goodwill or roadmap real estate.
-keywords:: SEO for product managers, SEO prioritization, product roadmap SEO, RICE scoring SEO, SEO user stories
-author:: Victor Valentine Romo
-date:: 2026.01.19
-type:: pillar article
-status:: publication-ready
+title: SEO for Product Managers—Building the Business Case Without Getting Deprioritized
+description: A practical framework for product managers to scope, prioritize, and ship SEO work without losing engineering goodwill or roadmap real estate.
+keywords: SEO for product managers, SEO prioritization, product roadmap SEO, RICE scoring SEO, SEO user stories
+author: Victor Valentine Romo
+date: 2026.01.19
+type: pillar article
+status: publication-ready
 ---
 
 # SEO for Product Managers—Building the Business Case Without Getting Deprioritized

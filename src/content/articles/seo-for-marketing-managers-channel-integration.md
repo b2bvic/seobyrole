@@ -1,11 +1,11 @@
 ---
-title:: SEO for Marketing Managers—Channel Integration Beyond Posting Everywhere
-focus_keyword:: integrated marketing strategy
-word_count_target:: 2,700
-status:: draft
-created:: 2026.01.19
-type:: pillar article
-framework:: Koray Contextual Vector
+title: SEO for Marketing Managers—Channel Integration Beyond Posting Everywhere
+focus_keyword: integrated marketing strategy
+word_count_target: 2,700
+status: draft
+created: 2026.01.19
+type: pillar article
+framework: Koray Contextual Vector
 ---
 
 # SEO for Marketing Managers—Channel Integration Beyond Posting Everywhere
