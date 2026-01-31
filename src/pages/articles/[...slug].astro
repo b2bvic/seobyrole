@@ -14,7 +14,7 @@ const { article } = Astro.props;
 const { Content } = await article.render();
 ---
 
-<Base title={article.data.title} description={article.data.description}>
+<Base title={article.data.title} description={article.data.description} articleData={{ title: article.data.title, description: article.data.description, date: article.data.date || article.data.created, author: article.data.author, slug: article.slug }}>
   <article class="mx-auto max-w-3xl px-6 py-16">
     <header class="mb-12">
       <div class="flex items-center gap-4 text-sm text-primary-400 mb-4">
