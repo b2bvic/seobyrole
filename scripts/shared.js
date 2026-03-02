@@ -91,6 +91,7 @@ function buildNav() {
       </li>
       <li><a href="/articles.html">All Articles</a></li>
       <li><a href="/#faq">FAQ</a></li>
+      <li><a href="https://scalewithsearch.com" class="nav-link-external">Scale With Search &rarr;</a></li>
       <li><a href="/#roles" class="nav-cta">Pick Your Role</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
@@ -135,7 +136,8 @@ function buildFooter() {
       <div class="footer-col">
         <h4>From Scale With Search</h4>
         <ul>
-          <li><a href="https://scalewithsearch.com" rel="me">Scale With Search</a></li>
+          <li><a href="https://scalewithsearch.com" rel="me" style="color: #84cc16; font-weight: 600;">Scale With Search &rarr;</a></li>
+          <li><a href="https://github.com/b2bvic/scale-with-search" style="color: #84cc16;">Open Source Repo</a></li>
           <li><a href="https://aifirstsearch.com" rel="me">AI First Search</a></li>
           <li><a href="https://browserprompt.com" rel="me">Browser Prompt</a></li>
           <li><a href="https://seobyrole.com" rel="me">SEO by Role</a></li>
@@ -143,8 +145,10 @@ function buildFooter() {
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; ${new Date().getFullYear()} SEO by Role. All rights reserved.</span>
+      <span>&copy; ${new Date().getFullYear()} SEO by Role. Part of the <a href="https://scalewithsearch.com" style="color: #84cc16;">Scale With Search</a> network.</span>
       <div class="entity-links">
+        <a href="https://scalewithsearch.com">Scale With Search</a>
+        <a href="https://github.com/b2bvic/scale-with-search">GitHub</a>
         <a href="/sitemap.xml">Sitemap</a>
         <a href="/articles.html">Articles</a>
       </div>

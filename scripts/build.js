@@ -103,6 +103,15 @@ ${shared.buildNav()}
     <div class="article-content">
       ${htmlBody}
     </div>
+
+    <div class="cta-box" style="margin-top: 3rem;">
+      <h2>This is one piece of the system.</h2>
+      <p>Built by Victor Romo (<a href="https://x.com/b2bvic" style="color: var(--color-cta);">@b2bvic</a>) &mdash; I build AI memory systems for businesses.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="https://scalewithsearch.com" class="btn btn-cta">See The Full System</a>
+        <a href="https://github.com/b2bvic/scale-with-search" class="btn btn-outline">View Repo</a>
+      </div>
+    </div>
   </div>
 </main>
 

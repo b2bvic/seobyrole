@@ -445,6 +445,18 @@ p { margin-bottom: 1.25em; }
   margin-top: 0.15rem;
 }
 
+.mega-nav .nav-link-external {
+  color: var(--color-accent-light);
+  font-weight: 600;
+  font-size: 0.85rem;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  transition: color 0.2s;
+}
+
+.mega-nav .nav-link-external:hover {
+  color: var(--color-accent);
+}
+
 .mega-nav .nav-cta {
   display: inline-flex;
   align-items: center;
