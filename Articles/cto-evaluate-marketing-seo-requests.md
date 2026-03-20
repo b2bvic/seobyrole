@@ -4,10 +4,16 @@ description:: Framework for CTOs assessing SEO implementation requests from mark
 focus_keyword:: cto evaluate seo requests
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # How CTOs Should Evaluate Marketing SEO Requests: Technical Feasibility vs Business Impact
+
+> **Quick Summary**
+> - **What this covers:** Framework for CTOs assessing SEO implementation requests from marketing teams. Prioritization criteria, effort estimation, and communication strategies for cross-functional technical decisions.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 CTOs fielding SEO requests from marketing teams must balance technical feasibility, engineering capacity, and business impact without deep SEO expertise. Marketing requests range from critical fixes affecting revenue ("our entire blog isn't indexing") to speculative optimizations with unclear ROI ("implement FAQ schema on 500 pages"). **Evaluating SEO requests** systematically prevents both over-investment in low-impact work and under-investment in critical search visibility issues.
 
@@ -368,3 +374,13 @@ Understand core concepts (indexing, rendering, structured data, performance) but
 ### What if SEO requests conflict with product roadmap priorities?
 
 Quantify trade-offs explicitly: "Implementing SSR for SEO requires 6 engineer-weeks, delaying [product feature] by one quarter. Marketing projects 15% organic traffic increase ($100K annual revenue). Product feature projected to drive $300K annual revenue. Recommendation: Delay SSR until Q3." Make trade-offs visible to leadership for informed decision.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

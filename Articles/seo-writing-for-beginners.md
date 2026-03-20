@@ -3,9 +3,15 @@ description:: A beginner's guide to SEO writing covering keyword placement, head
 focus_keyword:: SEO writing for beginners
 category:: content-creators
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO Writing Fundamentals: Keyword Placement, Headers, and Meta Optimization
+
+> **Quick Summary**
+> - **What this covers:** seo-writing-for-beginners
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO writing for beginners starts with one principle: write content that answers the searcher's question thoroughly, then optimize the technical elements that help search engines understand what the content is about. The writing comes first. The optimization refines the signal.
 
@@ -274,3 +280,13 @@ Meta descriptions don't directly influence rankings. They influence click-throug
 ### Can AI write SEO content effectively?
 
 AI tools (**ChatGPT**, **Claude**, **Jasper**) produce serviceable first drafts, but the content requires human editing for accuracy, voice, and originality. [AI-generated content that's published without human refinement](/articles/ai-content-seo-optimization.html) tends to be generic, which means it provides no competitive advantage in search results where every competitor can produce the same generic content.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

@@ -4,10 +4,16 @@ description:: Most SEO proposals get rejected because they list services instead
 focus_keyword:: freelance seo proposal template
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Freelance SEO Proposal Template: The Framework That Closes 60% of Qualified Leads
+
+> **Quick Summary**
+> - **What this covers:** Most SEO proposals get rejected because they list services instead of solving problems. This proposal architecture addresses objections, demonstrates value, and structures pricing that clients accept.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 The average freelance SEO proposal closes 25-30% of opportunities. That means 70-75% of prospects who requested a proposal say no.
 
@@ -381,3 +387,13 @@ After. Never send a proposal without understanding the prospect's business, goal
 50-60% for warm leads (referrals, inbound inquiries). 20-30% for cold outreach. If your close rate is below 20%, your qualification process is broken—you're pitching the wrong prospects.
 
 A proposal isn't a document—it's a selling tool. Every section should address an objection, build trust, or move the prospect closer to "yes." Design it like a sales page, not like a contract, and your close rate will double.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

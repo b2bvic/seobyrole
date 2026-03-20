@@ -3,9 +3,15 @@ description:: A step-by-step methodology for keyword gap analysis that identifie
 focus_keyword:: keyword gap analysis
 category:: analysts
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Keyword Gap Analysis Methodology: Finding Competitor Blind Spots
+
+> **Quick Summary**
+> - **What this covers:** keyword-gap-analysis
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Keyword gap analysis identifies the high-value search queries where competitors generate organic traffic and you do not. The methodology exposes two types of opportunities: keywords where competitors are weak (low-ranking or thin content) that you can capture quickly, and keywords where competitors are strong but your absence represents a strategic vulnerability.
 
@@ -232,3 +238,13 @@ Yes. If you rank for keywords that competitors don't target and those keywords g
 ### How do I handle a gap analysis that reveals thousands of keyword opportunities?
 
 This is normal — the raw output is always overwhelming. The scoring and prioritization model exists precisely to reduce thousands of keywords to dozens of actionable clusters. Filter aggressively: remove branded competitor terms, remove keywords outside your intent profile, cluster by topic, score by the composite model, and present only the top 20-30 clusters to stakeholders. The remaining keywords stay in the database for future reference but don't enter the active roadmap. An analyst who presents 5,000 keywords has done extraction. An analyst who presents 25 prioritized clusters with resource estimates has done analysis.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

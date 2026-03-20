@@ -4,10 +4,16 @@ description:: Navigate brand migrations without destroying SEO value. Domain cha
 focus_keyword:: SEO during rebrand
 category:: Strategy
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # SEO During Rebrand: Executive Guide to Protecting Organic Traffic
+
+> **Quick Summary**
+> - **What this covers:** Navigate brand migrations without destroying SEO value. Domain changes, URL restructuring, and brand positioning shifts require careful planning and execution.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Rebrands present existential SEO risks when domain changes, URL restructuring, or brand positioning shifts disrupt search engine indexing and rankings. Poorly executed rebrands commonly destroy 30-50% of organic traffic permanently. Strategic rebrand planning, conservative technical execution, and intensive post-launch monitoring protect SEO value through transitions.
 
@@ -260,3 +266,13 @@ Push back strongly. Changing brand name AND domain AND content strategy AND desi
 Hire specialized migration agency or consultant if lacking prior migration experience. Domain migrations are high-risk, low-frequency events—experience matters immensely. Budget $50K-200K for agency support on $10M+ revenue businesses. In-house teams confident in technical abilities can execute with consultant oversight ($10K-30K for advisory vs. full agency engagement). Small businesses (<$1M revenue) may accept higher DIY risk given lower absolute dollar impact.
 
 Related reading: [seo-due-diligence-mergers-acquisitions.html](seo-due-diligence-mergers-acquisitions.html), [seo-communication-templates-by-role.html](seo-communication-templates-by-role.html), [seo-campaign-planning-quarterly.html](seo-campaign-planning-quarterly.html)
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

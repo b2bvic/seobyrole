@@ -4,10 +4,16 @@ description:: Content strategists creating articles without analyzing search int
 focus_keyword:: search intent content strategy
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Search Intent and Content Strategy: Matching Content to User Needs
+
+> **Quick Summary**
+> - **What this covers:** Content strategists creating articles without analyzing search intent produce content that ranks poorly or attracts low-converting traffic. Learn how to decode query intent types, map content formats to intent, and structure pages that satisfy user expectations at each funnel stage.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **Content strategists** optimizing for keywords without understanding **search intent** create mismatched content: comprehensive 3,000-word guides targeting queries users want answered in 2 paragraphs, product comparison pages targeting informational queries, or blog posts targeting transactional searches. The content quality is high, the keyword targeting is accurate, but **Google** doesn't rank it because intent alignment fails.
 
@@ -312,3 +318,13 @@ Depends. If current page ranks well (top 5) but is slight mismatch, optimize/exp
 **How often does search intent change for the same keyword?**
 
 Rarely, but Google's interpretation can shift. Regularly audit top-ranking pages (quarterly) to see if dominant content format changed, indicating Google's intent understanding evolved. Adjust content accordingly.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

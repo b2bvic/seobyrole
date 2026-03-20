@@ -4,10 +4,16 @@ description:: Systematic content audit methodology scoring pages for refresh, co
 focus_keyword:: SEO content audit
 category:: Content Strategy
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # SEO Content Audit Guide: Identify, Refresh, and Retire Underperforming Pages
+
+> **Quick Summary**
+> - **What this covers:** Systematic content audit methodology scoring pages for refresh, consolidation, or removal. Improve site quality and organic performance through pruning.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO content audits systematically evaluate existing pages, identifying high-potential content needing updates, low-quality pages to consolidate or remove, and top performers to amplify. Regular auditing prevents content rot—the gradual accumulation of outdated, thin, or irrelevant pages that dilutes site quality and wastes crawl budget.
 
@@ -228,3 +234,13 @@ Mark regulated content in audit inventory as "Retain - Compliance" regardless of
 Depends on topic and business relevance. Refresh if topic remains relevant but content grew stale (technology articles, statistics-heavy content, how-to guides for evolving tools). Let decline if topic lost relevance (outdated products, superseded technologies, fad topics). Calculate refresh ROI: content creation cost versus projected traffic recovery × average conversion value. Refresh when ROI exceeds 3:1.
 
 Related reading: [seo-campaign-planning-quarterly.html](seo-campaign-planning-quarterly.html), [seo-competitor-analysis-framework.html](seo-competitor-analysis-framework.html), [seo-analytics-setup-guide.html](seo-analytics-setup-guide.html)
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

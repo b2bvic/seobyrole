@@ -4,10 +4,16 @@ description:: How to resolve CMO-CTO conflicts over SEO priorities, technical de
 focus_keyword:: marketing vs engineering SEO
 category:: executive
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 ---
 
 # CMO vs CTO: Resolving SEO Conflicts Between Marketing and Engineering
+
+> **Quick Summary**
+> - **What this covers:** How to resolve CMO-CTO conflicts over SEO priorities, technical debt, resource allocation, and implementation timelines. Framework for marketing-engineering alignment.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **Marketing-engineering SEO conflicts** emerge from fundamentally different organizational priorities, success metrics, risk tolerances, and timelines. Marketing measures SEO success through traffic growth, rankings, and conversions—outcomes visible in weeks to months. Engineering measures success through system stability, code quality, technical debt management, and security—concerns spanning quarters to years. When **CMO priorities** (rapid SEO implementation, aggressive content publishing, third-party tool integration) clash with **CTO priorities** (architectural integrity, performance budgets, security reviews, technical debt reduction), SEO initiatives stall in endless approval cycles, technical implementations languish unbuilt, and both teams blame the other for missed targets.
 
@@ -353,3 +359,13 @@ Industry benchmark: 10-20% of engineering sprint capacity for marketing-driven i
 ### What technical SEO tasks can marketing own without engineering?
 
 Content optimization (meta tags, headings, internal linking), content publishing, lightweight schema markup using plugins, Google Search Console monitoring, analytics review, competitive research. What requires engineering: site architecture changes, performance optimization, server configuration, complex technical implementations, security-sensitive integrations. Related division of labor in [SEO responsibility matrix](seo-responsibility-matrix.html).
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

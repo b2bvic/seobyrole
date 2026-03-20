@@ -3,9 +3,15 @@ description:: How to build an SEO budget proposal that survives board scrutiny. 
 focus_keyword:: SEO budget justification
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO Budget Justification: Building the Business Case for the Board
+
+> **Quick Summary**
+> - **What this covers:** seo-budget-justification-board
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 The board will fund SEO when it looks like every other investment they approve: clear inputs, projected outputs, risk-adjusted scenarios, and a timeline to return.
 
@@ -181,3 +187,13 @@ Mature programs typically deliver 5:1 to 10:1 returns measured over a 24-month h
 ### How frequently should I report SEO investment returns to the board?
 
 Quarterly, aligned with the regular board meeting cadence. Monthly reporting to the board is excessive for a channel with 6-12 month payback periods. The [executive reporting template](/articles/executive-seo-reporting-template.html) provides specific formats designed for quarterly board updates.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

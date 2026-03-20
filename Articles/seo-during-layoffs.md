@@ -4,10 +4,16 @@ description:: Prioritize SEO maintenance when teams shrink. Protect existing ran
 focus_keyword:: SEO during layoffs
 category:: Strategy
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # SEO During Layoffs: Maintaining Rankings with Reduced Resources
+
+> **Quick Summary**
+> - **What this covers:** Prioritize SEO maintenance when teams shrink. Protect existing rankings, automate repetitive work, and focus resources on high-impact activities.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO teams facing layoffs must triage ruthlessly, protecting existing rankings while pausing growth initiatives until resources stabilize. Strategic prioritization prevents traffic collapse during headcount reductions, maintaining organic acquisition while other channels scale back and providing stability for business recovery.
 
@@ -278,3 +284,13 @@ Keep SEO specialist if technical debt exists, site architecture is complex, or m
 Evaluate agency deliverables versus cost. If agency produces 20 articles monthly at $8,000 retainer ($400/article), compare to freelance writers at $200-300/article. Often agencies provide value through strategy and project management beyond pure deliverables. Keep agencies if they multiply small in-house team's impact. Cut agencies if they deliver commodity work (content, link building) you can source cheaper directly. Technical SEO consultants ($150-250/hour) often more cost-effective than technical SEO agencies post-layoffs.
 
 Related reading: [seo-campaign-planning-quarterly.html](seo-campaign-planning-quarterly.html), [seo-communication-templates-by-role.html](seo-communication-templates-by-role.html), [seo-content-audit-guide.html](seo-content-audit-guide.html)
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

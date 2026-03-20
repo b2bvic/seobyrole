@@ -3,9 +3,15 @@ description:: How product managers and SEO teams write user stories for SEO work
 focus_keyword:: SEO user stories
 category:: product-managers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Writing SEO User Stories That Developers Won't Reject
+
+> **Quick Summary**
+> - **What this covers:** seo-user-stories-engineering
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Engineering teams reject SEO work for predictable reasons: the requirements are vague, the business justification is absent, the acceptance criteria are untestable, and the tickets read like marketing wishlists rather than engineering specifications.
 
@@ -230,3 +236,13 @@ One to two SEO stories per sprint is a sustainable pace for most teams. This rep
 ### How do I handle SEO requirements that span multiple teams?
 
 Write separate user stories for each team's contribution and link them in the project management tool as dependencies. A structured data implementation might require a backend story (generate JSON-LD from data layer), a frontend story (inject the script tag in the template), and a QA story (validate across page types). Each team gets a story sized for their capacity with clear dependency chains.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

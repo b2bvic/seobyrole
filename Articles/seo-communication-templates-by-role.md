@@ -4,10 +4,16 @@ description:: Pre-written communication frameworks for explaining SEO requiremen
 focus_keyword:: SEO communication templates
 category:: Communication
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # SEO Communication Templates by Role: Developers, Executives, Clients
+
+> **Quick Summary**
+> - **What this covers:** Pre-written communication frameworks for explaining SEO requirements to technical teams, reporting to executives, and managing client expectations.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO communication templates standardize recurring conversations, reducing time spent crafting explanations and improving clarity across stakeholder groups. Effective templates translate technical concepts into language appropriate for each audience—developers need implementation specifics, executives need business impact, clients need progress demonstrations.
 
@@ -284,6 +290,16 @@ If results don't materialize by Month 6, we'll [specific plan—reallocate budge
 Happy to discuss further or provide additional detail.
 
 [Your Name]
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.
 
 ---
 

@@ -3,9 +3,15 @@ description:: How demand gen marketers integrate SEO into pipeline strategy. Cov
 focus_keyword:: SEO for demand generation
 category:: marketers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Integrating SEO Into Demand Generation: Pipeline Attribution and Content Mapping
+
+> **Quick Summary**
+> - **What this covers:** seo-for-demand-gen
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO for demand generation is the practice of aligning organic search strategy with pipeline creation — mapping keyword intent to funnel stages so that organic traffic enters as qualified prospects rather than anonymous visitors. When done correctly, SEO becomes the most cost-efficient source of marketing-qualified leads in the demand gen stack.
 
@@ -204,3 +210,13 @@ Track two metrics. First, assisted conversions: in **GA4**, view the Conversion 
 ### Should demand gen teams own SEO, or should SEO be a separate function?
 
 The ideal structure: SEO operates as a shared service that supports demand generation (among other functions), with the demand gen team providing input on target keywords, content priorities, and conversion requirements. Demand gen owns the pipeline targets. SEO owns the organic channel strategy. They collaborate on the content calendar and conversion path design. When SEO reports directly into demand gen, technical SEO and non-demand-gen content get deprioritized. When SEO operates independently of demand gen, the organic traffic generated may not align with pipeline objectives. The shared service model with tight coordination produces the best results.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

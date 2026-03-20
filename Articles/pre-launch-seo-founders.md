@@ -4,10 +4,16 @@ description:: Founders launching products discover them invisible in search resu
 focus_keyword:: pre-launch SEO founders
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Pre-Launch SEO for Founders: Build Discoverability Before You Launch
+
+> **Quick Summary**
+> - **What this covers:** Founders launching products discover them invisible in search results—months wasted building features nobody can find. Learn the pre-launch SEO foundation that ensures day-one discoverability and compounds organic growth from launch forward.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **Founders** building products in stealth mode often delay SEO until post-launch, reasoning that "we'll optimize for search once we have something to show." This sequencing error costs 6-12 months of organic growth opportunity—the exact window where early traction determines survival.
 
@@ -182,3 +188,13 @@ You can, but you're sacrificing early growth. Users validate fit, but SEO takes 
 **How much should I budget for pre-launch SEO?**
 
 Minimum: $0 (DIY content, free tools). Realistic: $2K-5K for content production, basic tools (Ahrefs/Semrush: ~$100/month), and technical setup. Optimal: $10K+ including professional SEO consultation, high-quality content, and link building. Budget scales with ambition and available resources.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

@@ -3,9 +3,15 @@ description:: A developer's guide to optimizing Core Web Vitals. Covers LCP redu
 focus_keyword:: Core Web Vitals engineering
 category:: developers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Engineering Core Web Vitals: LCP, INP, and CLS Optimization Patterns
+
+> **Quick Summary**
+> - **What this covers:** core-web-vitals-engineering
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Core Web Vitals engineering is the practice of optimizing Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift through code-level changes rather than content or design modifications. These three metrics are **Google** ranking signals, but more practically, they measure whether your site feels fast, responsive, and stable to real users.
 
@@ -367,3 +373,13 @@ The relationship is documented but variable by industry. A **Google** study foun
 ### Should we optimize for desktop or mobile Core Web Vitals?
 
 Mobile, decisively. **Google** uses mobile-first indexing, meaning mobile CWV scores are the ones that affect rankings. Mobile devices also present the harder optimization challenge — slower processors, smaller memory, variable network conditions — so achieving mobile CWV compliance typically implies desktop compliance. Test on real mid-range Android devices (not just Chrome DevTools mobile simulation) to understand actual user experience. The **Samsung Galaxy A** series and **Google Pixel** mid-range phones represent the hardware profile of typical mobile search users.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

@@ -3,9 +3,15 @@ description:: How to assess SEO value during acquisitions. Covers organic traffi
 focus_keyword:: SEO due diligence acquisitions
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO Due Diligence in M&A: What to Audit Before Buying a Company
+
+> **Quick Summary**
+> - **What this covers:** seo-due-diligence-acquisitions
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO due diligence in acquisitions determines whether the organic traffic claimed in a pitch deck actually exists, whether it's sustainable, and whether it survives the acquisition. Companies routinely overvalue organic search assets because buyers don't know what to audit, and sellers have no incentive to disclose fragility.
 
@@ -201,3 +207,13 @@ Yes, and it's often preferable. An auditor who understands your existing organic
 ### What happens to SEO value if we rebrand the acquired company?
 
 Rebranding introduces additional risk. The acquired domain's branded search volume — people searching for the old brand name — doesn't transfer automatically to the new brand. You maintain the traffic through redirects, but the branded search behavior itself takes 12-18 months to shift. During that transition, some branded searchers will not find the rebranded entity, resulting in lost traffic and potential customer confusion. Factor this branded search transition into the integration timeline and support it with marketing campaigns that bridge old brand recognition to new brand awareness.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

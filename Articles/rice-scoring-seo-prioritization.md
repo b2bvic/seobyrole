@@ -3,9 +3,15 @@ description:: How to apply RICE scoring to SEO initiatives so they compete fairl
 focus_keyword:: RICE scoring SEO
 category:: product-managers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # RICE Scoring for SEO: Prioritizing Organic Against the Product Roadmap
+
+> **Quick Summary**
+> - **What this covers:** rice-scoring-seo-prioritization
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO initiatives die in the backlog because they cannot compete with feature requests on prioritization criteria. Engineering leadership compares "implement structured data markup" against "launch pricing tier feature" and the pricing tier wins every time — it has revenue projections, sales team urgency, and executive visibility.
 
@@ -173,3 +179,13 @@ Adjust the Reach timeframe. Instead of measuring Reach as "users affected this m
 ### What if leadership disagrees with the RICE score for an SEO initiative?
 
 The score is a starting point for discussion, not a decree. If leadership disagrees, identify which dimension they dispute — Reach, Impact, Confidence, or Effort. Discuss the underlying data. Adjust the score based on new information. The value of RICE is not that the score is infallible; it is that disagreements become specific and data-driven rather than abstract and political.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

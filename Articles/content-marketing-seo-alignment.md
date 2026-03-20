@@ -3,9 +3,15 @@ description:: How to build editorial calendars that satisfy both SEO objectives 
 focus_keyword:: content marketing SEO alignment
 category:: marketers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Aligning Content Marketing with SEO: Editorial Calendars That Rank
+
+> **Quick Summary**
+> - **What this covers:** content-marketing-seo-alignment
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Content marketing SEO alignment means building editorial calendars where every piece serves a search intent and every keyword target serves a marketing objective. The two disciplines are not competing priorities — they're the same priority expressed in different languages.
 
@@ -218,3 +224,13 @@ Use a structured evaluation. When SEO data suggests a topic and the editorial te
 Quantitative signals: 25-40% of published content should rank on page 1 for at least one target keyword within 90 days of publication (up from the typical 10-15% for unaligned content). Organic traffic should grow 15-25% over the 6-month period. The percentage of published content that generates zero organic traffic within 90 days should decline to under 20%.
 
 Qualitative signals: both teams reference the same editorial calendar. Content briefs include both SEO requirements and editorial direction. Monthly reviews are attended by both teams without friction. The phrase "SEO content" as a separate category has been replaced by "content" — because all content now serves organic search and audience needs simultaneously.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

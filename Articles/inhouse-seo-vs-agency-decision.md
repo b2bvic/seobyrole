@@ -3,9 +3,15 @@ description:: A decision framework for choosing between in-house SEO teams, agen
 focus_keyword:: in-house SEO vs agency
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # In-House SEO Team vs Agency: Decision Framework for Executives
+
+> **Quick Summary**
+> - **What this covers:** inhouse-seo-vs-agency-decision
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 The question is not which option is better. The question is which option is better for your specific company at your specific stage with your specific constraints.
 
@@ -160,3 +166,13 @@ Hire at the level that matches your expected scope of authority. If the hire wil
 ### How do I prevent my agency from holding my SEO program hostage?
 
 Ensure your company owns all assets: domain, **Google Search Console** access, **Google Analytics** property, content files, backlink relationship data, and strategy documentation. Include an IP and knowledge transfer clause in your agency contract. Conduct annual knowledge documentation reviews. If switching agencies requires rebuilding from scratch because the current agency owns the strategy documentation, you are in a vulnerable position that should be corrected immediately.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

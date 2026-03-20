@@ -3,9 +3,15 @@ description:: The essential SEO metrics CEOs need on their monthly dashboard to 
 focus_keyword:: SEO metrics for CEOs
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO Metrics Every CEO Should Track Monthly
+
+> **Quick Summary**
+> - **What this covers:** ceo-seo-dashboard-metrics
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 You do not need to understand SEO to evaluate whether it is working. You need five numbers on a dashboard, the discipline to read them monthly, and the context to know what each one means for revenue.
 
@@ -193,3 +199,13 @@ This is a red flag. Agencies that cannot connect their work to revenue either la
 ### Is organic traffic still growing as a channel, or is AI search reducing its value?
 
 Organic traffic remains the largest single source of website traffic across most industries, generating over 50% of all web visits according to recent research. **Google's** AI Overviews and other AI-powered search features are changing click patterns for informational queries, but commercial and transactional queries still drive substantial organic click-through. The channel is evolving, not dying.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

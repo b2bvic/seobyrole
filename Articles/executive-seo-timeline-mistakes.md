@@ -3,9 +3,15 @@ description:: Why SEO takes longer than executives expect and how to set realist
 focus_keyword:: how long does SEO take
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # What Executives Get Wrong About SEO Timelines
+
+> **Quick Summary**
+> - **What this covers:** executive-seo-timeline-mistakes
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 The most common reason SEO programs get cancelled is not poor execution. It is mismatched expectations about when results appear.
 
@@ -164,3 +170,13 @@ Directly and significantly. Ranking for "best CRM software" against **Salesforce
 ### What is the biggest risk to SEO timelines?
 
 Execution inconsistency. Programs that publish content sporadically, skip months, or change strategy every quarter never build the momentum that produces compounding results. The SEO programs that hit their timeline milestones are the ones that execute consistently for 12+ months without significant interruptions. Consistency matters more than intensity.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

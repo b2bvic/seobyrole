@@ -3,9 +3,15 @@ description:: A CEO's framework for evaluating SEO ROI—what metrics matter, re
 focus_keyword:: SEO ROI for CEOs
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # How CEOs Should Evaluate SEO Investment: Metrics, Timeline, and Benchmarks
+
+> **Quick Summary**
+> - **What this covers:** seo-roi-for-ceos
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO ROI for CEOs comes down to three questions: how much does organic search reduce your customer acquisition cost, how long before that reduction materializes, and what benchmarks prove the investment is working. Every other metric is decoration.
 
@@ -198,3 +204,13 @@ Mature SEO programs typically produce the lowest customer acquisition cost of an
 ### Should the CEO be involved in SEO strategy directly?
 
 The CEO should set expectations, protect budget, and demand business-outcome reporting — but should not direct SEO tactics. The most productive CEO involvement is asking the right questions in quarterly reviews: "What's our organic CAC trending toward? How does organic revenue share compare to last year? What's the competitive landscape doing?" These questions maintain accountability without micromanaging execution. CEOs who involve themselves in keyword selection or content approval slow the process without improving outcomes.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

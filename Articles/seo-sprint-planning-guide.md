@@ -3,9 +3,15 @@ description:: How to integrate SEO work into agile sprint cycles without disrupt
 focus_keyword:: SEO sprint planning
 category:: product-managers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO Sprint Planning: Fitting Organic Work Into Two-Week Cycles
+
+> **Quick Summary**
+> - **What this covers:** seo-sprint-planning-guide
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO does not fit neatly into two-week sprints because organic results take months to materialize. You cannot demo ranking improvements at a sprint review. You cannot point to a traffic graph and claim the spike came from last sprint's work. The feedback loop is measured in quarters, not iterations.
 
@@ -214,3 +220,13 @@ The PM writes SEO stories based on audit findings, **Google Search Console** dat
 ### How do I balance SEO work between content-heavy and engineering-heavy sprints?
 
 Alternate emphasis based on backlog composition and team availability. Sprints with available engineering capacity absorb technical SEO stories. Sprints where engineering is fully committed to features can still include content-focused SEO stories that do not require engineering time (content briefs, keyword research, content refresh planning). This keeps SEO progress moving regardless of engineering capacity constraints.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

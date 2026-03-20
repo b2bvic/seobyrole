@@ -4,10 +4,16 @@ description:: Execute high-ROI SEO tactics without agencies or engineers. Tactic
 focus_keyword:: founder-seo-quick-wins
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Founder's SEO Quick Wins - 90-Day Playbook for Bootstrapped Growth
+
+> **Quick Summary**
+> - **What this covers:** Execute high-ROI SEO tactics without agencies or engineers. Tactical guide for founders at $100K-$2M ARR who need organic traction fast.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 You're a founder at $500K ARR. Paid acquisition costs $150 per customer. You need cheaper distribution, but you can't afford a $10K/month agency or a full-time SEO hire.
 
@@ -521,3 +527,13 @@ A: Before. Quick wins prove SEO works for your business. Use results to justify 
 
 **Q: Which quick win delivers the most ROI?**
 A: Quick Win #2 (optimize top 10 pages). It directly improves your highest-traffic pages with minimal effort.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

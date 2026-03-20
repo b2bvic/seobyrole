@@ -4,10 +4,16 @@ description:: Technical roadmap for SEO implementation. Priority frameworks for 
 focus_keyword:: seo engineering priorities
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # CTO Guide to SEO Engineering Priorities: What to Build First
+
+> **Quick Summary**
+> - **What this covers:** Technical roadmap for SEO implementation. Priority frameworks for CTOs balancing performance, infrastructure, and search visibility improvements across product development cycles.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **SEO engineering priorities** determine which technical implementations deliver maximum search visibility gains relative to engineering investment. CTOs managing product roadmaps must sequence SEO work strategically — fixing fundamental indexation issues before micro-optimizations, establishing performance foundations before advanced schema implementations, and automating repetitive tasks before one-off customizations.
 
@@ -444,3 +450,13 @@ Engineering. Technical SEO role requires engineering credibility, access to code
 ### How do we prevent SEO technical debt accumulation?
 
 Build SEO requirements into definition of done for new features. Allocate 20% of SEO engineering capacity to maintenance and debt reduction. Conduct quarterly technical SEO audits identifying accumulating issues. Automate regression detection (Core Web Vitals monitoring, schema validation). Make technical debt visible in backlog and prioritize alongside new work.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

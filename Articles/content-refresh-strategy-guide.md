@@ -4,10 +4,16 @@ description:: Decision framework for content refresh prioritization. Systematic 
 focus_keyword:: content refresh strategy
 category:: content-teams
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Content Refresh Strategy: When to Update, Rewrite, or Delete Old Posts
+
+> **Quick Summary**
+> - **What this covers:** Decision framework for content refresh prioritization. Systematic approach to identifying declining content, determining refresh depth, and executing updates that recover rankings and traffic.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Content portfolios accumulate faster than teams maintain them. Publish 4 articles weekly for two years—416 articles exist, many decaying through outdated statistics, broken links, competitive displacement, or search intent shifts. **Content refresh strategy** determines which articles merit updates, which need rewrites, and which should be deleted—resource allocation decisions that compound into sustained organic performance or gradual traffic erosion.
 
@@ -78,3 +84,13 @@ Prioritize ruthlessly—focus only on highest-impact pages. Batch similar refres
 ### Can AI tools help with content refresh?
 
 Yes for specific tasks: identifying outdated statistics, generating additional sections addressing gaps, rewriting dated examples. However, AI cannot determine refresh strategy, assess competitive landscape strategically, or ensure brand voice consistency. Use AI to accelerate execution of well-defined refresh plans, not to replace strategic planning.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

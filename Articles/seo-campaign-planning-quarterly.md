@@ -4,10 +4,16 @@ description:: Structure quarterly SEO campaigns with objectives, deliverables, a
 focus_keyword:: quarterly SEO planning
 category:: Strategy
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # SEO Campaign Planning: Quarterly Planning Framework for Teams
+
+> **Quick Summary**
+> - **What this covers:** Structure quarterly SEO campaigns with objectives, deliverables, and success metrics. Balance quick wins, technical debt, and long-term content plays.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Quarterly SEO campaign planning synchronizes cross-functional efforts around defined objectives, preventing reactive firefighting that characterizes teams without strategic frameworks. Structured planning balances quick-win optimizations, technical infrastructure improvements, and long-term content initiatives that compound over multiple quarters.
 
@@ -186,3 +192,13 @@ Reprioritize ruthlessly. If executive leadership shifts focus to new market segm
 Separate SEO plans into "owned" work (content, outreach, optimization within marketing control) and "dependent" work (technical changes requiring engineering). For dependent work, treat engineering capacity as external dependency—secure commitments early, have backup plans if commitments slip, and document business impact when engineering can't support SEO work to justify future prioritization or additional engineering capacity.
 
 Related reading: [seo-analytics-setup-guide.html](seo-analytics-setup-guide.html), [seo-communication-templates-by-role.html](seo-communication-templates-by-role.html), [seo-content-audit-guide.html](seo-content-audit-guide.html)
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

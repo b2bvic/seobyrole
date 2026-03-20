@@ -4,10 +4,16 @@ description:: Build mobile experiences that satisfy users and search engines. Le
 focus_keyword:: mobile-first design SEO
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Mobile-First Design Principles That Actually Improve Rankings
+
+> **Quick Summary**
+> - **What this covers:** Build mobile experiences that satisfy users and search engines. Learn responsive framework patterns, touch target optimization, mobile Core Web Vitals, and progressive enhancement strategies.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **Mobile-first indexing** isn't coming. It arrived in 2019. Google ranks your site based on its mobile version, even for desktop searches. If your mobile site lacks content that exists on desktop, Google doesn't see it. If your mobile navigation hides critical category pages behind a hamburger menu three levels deep, Google's crawler may never discover them. If your mobile images load at 3000px wide on a 375px screen, your **Core Web Vitals** fail and your rankings suffer.
 
@@ -279,3 +285,30 @@ Apps don't rank in Google search (except in app-specific results). If your traff
 **Can I use AMP for mobile SEO?**
 
 **AMP (Accelerated Mobile Pages)** no longer provides ranking benefits. Google removed AMP from Top Stories requirements in 2021. AMP pages load fast, which helps Core Web Vitals, but you can achieve the same speed with optimized regular pages. Unless you're a news publisher targeting Top Stories, AMP isn't necessary. Focus on Core Web Vitals optimization instead.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.
+
+---
+
+## Frequently Asked Questions
+
+### Is this relevant to my specific SEO role?
+
+This article addresses patterns that apply across SEO specializations. Whether you manage technical SEO, content strategy, or client-facing audits, the frameworks here adapt to your workflow. Role-specific implementation details are called out where they diverge.
+
+### How do I prioritize these recommendations?
+
+Start with the diagnostic framework in the first section to identify which recommendations match your current situation. Not everything applies to every site. Prioritize by expected impact relative to implementation effort — the article flags which tactics are quick wins versus long-term investments.
+
+### Can I share this with my team or clients?
+
+Yes. The frameworks are designed to be communicable. The comparison tables and checklists work well in client presentations or team documentation. Adapt the specific numbers to your data when presenting recommendations.
+

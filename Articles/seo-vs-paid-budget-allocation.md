@@ -3,9 +3,15 @@ description:: When to invest in SEO versus paid search. A structured decision fr
 focus_keyword:: SEO vs PPC budget allocation
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO vs PPC Budget Allocation: A Decision Framework for Leadership
+
+> **Quick Summary**
+> - **What this covers:** seo-vs-paid-budget-allocation
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO vs PPC budget allocation is not a binary choice — it's a portfolio decision. The right split depends on your growth stage, competitive position, and how quickly revenue needs to materialize. Executives who frame this as either/or leave money on the table in both channels.
 
@@ -204,3 +210,13 @@ Reframe the relationship as symbiotic, not competitive. PPC data validates SEO t
 ### What if my industry has extremely high CPCs?
 
 High-CPC industries — legal, insurance, finance, SaaS — benefit most from SEO investment because the arbitrage is largest. If a click costs $50 on **Google Ads**, an organic ranking for the same keyword generates $50 in equivalent value per click at zero marginal cost. Industries with $2 CPCs have less dramatic SEO arbitrage. Calculate your specific opportunity: multiply your target keyword portfolio's average CPC by the realistic organic traffic projection. That's the annual value of the SEO investment at maturity.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

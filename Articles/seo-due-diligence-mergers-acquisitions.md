@@ -4,10 +4,16 @@ description:: Pre-acquisition SEO assessment identifying traffic sustainability,
 focus_keyword:: SEO due diligence M&A
 category:: Strategy
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # SEO Due Diligence for M&A: Evaluating Organic Traffic Risk and Value
+
+> **Quick Summary**
+> - **What this covers:** Pre-acquisition SEO assessment identifying traffic sustainability, technical debt, penalty risks, and integration challenges affecting deal valuation.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 SEO due diligence during mergers and acquisitions evaluates organic traffic sustainability, identifies hidden penalties or technical risks, and estimates integration costs affecting deal economics. Thorough SEO assessment prevents overpaying for traffic built on black-hat tactics or at risk from pending algorithm updates, while identifying opportunities to grow acquired assets post-acquisition.
 
@@ -230,3 +236,13 @@ Include earnout provisions tying final payment to traffic maintenance (e.g., 30%
 Minimum: Experienced technical SEO consultant (not in-house if lacking enterprise experience) conducting 40+ hour audit costing $8K-20K. Larger deals: Retain specialized M&A SEO advisory firm ($25K-100K+) providing comprehensive assessment and testimony. Include SEO perspective in integration planning—technical teams unfamiliar with SEO commonly make migration decisions destroying organic traffic. Budget $15K-50K for SEO advisory during 3-6 month diligence period.
 
 Related reading: [seo-competitive-moat-founders.html](seo-competitive-moat-founders.html), [seo-during-rebrand-executives.html](seo-during-rebrand-executives.html), [seo-analytics-setup-guide.html](seo-analytics-setup-guide.html)
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

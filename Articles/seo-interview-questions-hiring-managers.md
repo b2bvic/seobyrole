@@ -3,9 +3,15 @@ description:: Structured interview questions to evaluate SEO candidates when you
 focus_keyword:: SEO interview questions
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # SEO Interview Questions for Hiring Managers Who Don't Know SEO
+
+> **Quick Summary**
+> - **What this covers:** seo-interview-questions-hiring-managers
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 You need to evaluate an SEO candidate. You do not understand SEO well enough to assess technical competence directly. This is not a problem — it is a constraint that can be designed around.
 
@@ -164,3 +170,13 @@ Highly appropriate. Provide sanitized **Google Search Console** and **Google Ana
 ### How do I verify an SEO candidate's claimed results?
 
 Ask for specifics: which URLs, which keywords, what time period, and through which tools was the result measured? Request references from direct managers or clients who can verify the claims. Strong candidates welcome verification because their results are real. Weak candidates become vague when pressed for details.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

@@ -4,10 +4,16 @@ description:: Content writers who add SEO optimization command 2-3X higher rates
 focus_keyword:: freelance writers add seo services
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # How Freelance Writers Can Add SEO Services (And Double Their Rates)
+
+> **Quick Summary**
+> - **What this covers:** Content writers who add SEO optimization command 2-3X higher rates than generalist writers. Here's the exact skillset to learn, how to position it, and how to package SEO writing services that clients pay premium rates for.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 The average freelance writer charges $0.10-$0.25 per word. That's $100-$250 for a 1,000-word article.
 
@@ -339,3 +345,13 @@ Per article or retainer. Per-word pricing commoditizes you. Per-hour pricing cap
 Gradual works. Keep existing generalist clients while building SEO portfolio. Transition fully once SEO income exceeds generalist income (typically 6-12 months).
 
 Content writers who add SEO don't just increase rates—they increase **value perception**. You're no longer a commodity wordsmith competing on Upwork. You're a growth partner clients retain for years because your content generates measurable ROI.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

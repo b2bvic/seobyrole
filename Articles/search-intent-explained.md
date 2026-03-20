@@ -4,10 +4,16 @@ description:: Marketers targeting keywords without understanding search intent c
 focus_keyword:: search intent explained
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Search Intent Explained: What Users Really Want When They Google
+
+> **Quick Summary**
+> - **What this covers:** Marketers targeting keywords without understanding search intent create content that ranks poorly despite perfect optimization. Learn how Google interprets query intent, the difference between explicit and implicit intent, and why content-format matching determines rankings.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **Search intent** is the "why" behind a query—the actual goal motivating someone to type words into **Google**. A user searching "running shoes" might want to buy shoes (transactional intent), research the best brands (commercial intent), or learn how running shoes are made (informational intent). Same two words, three completely different expectations.
 
@@ -272,3 +278,13 @@ Quarterly for high-value pages. Google's intent interpretation evolves as user b
 **Can I rank for informational queries with product pages?**
 
 Rarely. If 95% of top results are blog posts/guides, Google has decided the query is informational. Product pages might rank for informational queries only if they contain extensive educational content (e.g., product pages with comprehensive FAQs, tutorials, or buying guides embedded).
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

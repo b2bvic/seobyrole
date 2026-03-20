@@ -3,9 +3,15 @@ description:: Templates and frameworks for SEO reporting that executives engage 
 focus_keyword:: SEO reporting for executives
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Executive SEO Reporting: Dashboards Leadership Will Actually Read
+
+> **Quick Summary**
+> - **What this covers:** executive-seo-reporting-template
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Most SEO reports fail not because the data is wrong but because the format is wrong for the audience. SEO teams report what they did. Executives want to know what happened to the business.
 
@@ -194,3 +200,13 @@ Three to five competitors maximum. One share of voice chart and one comparison t
 ### What tools make executive SEO reporting easiest?
 
 **Google Looker Studio** for automated data visualization connecting to GA4 and Search Console. **Ahrefs** or **SEMrush** for competitive data. **Google Slides** or **Notion** for the commentary and narrative layer. The dashboard automates; the narrative contextualizes. Total setup time for a functioning executive report pipeline is approximately 8-12 hours, after which monthly updates require 2-3 hours of commentary writing.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

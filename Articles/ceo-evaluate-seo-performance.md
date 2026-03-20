@@ -3,9 +3,15 @@ description:: A decision framework for CEOs to assess SEO program health using b
 focus_keyword:: how to tell if SEO is working
 category:: executives
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # How CEOs Evaluate Whether SEO Is Working Without Understanding SEO
+
+> **Quick Summary**
+> - **What this covers:** ceo-evaluate-seo-performance
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Your SEO team or agency tells you things are going well. Traffic is up. Rankings are improving. Content is being published. The reports arrive monthly with green arrows and optimistic commentary.
 
@@ -174,3 +180,13 @@ No. Attend the monthly dashboard review. Attend the annual strategy discussion w
 ### How do I know if my SEO agency is actually doing the work?
 
 Request monthly deliverables reports that list specific actions taken: pages published (with URLs), technical issues resolved (with before/after evidence), links acquired (with source URLs). Vague summaries like "continued optimization work" are insufficient. Agencies doing substantive work can document it specifically.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

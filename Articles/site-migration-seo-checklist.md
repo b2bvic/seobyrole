@@ -3,9 +3,15 @@ description:: A developer's checklist for site migrations that preserve SEO valu
 focus_keyword:: site migration SEO checklist
 category:: developers
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 
 # Developer's Checklist for SEO-Safe Site Migrations
+
+> **Quick Summary**
+> - **What this covers:** site-migration-seo-checklist
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 A site migration SEO checklist prevents the most common cause of catastrophic organic traffic loss: changes to URL structure, domain, or platform executed without redirect mapping, content preservation, and technical validation. The typical site migration, executed without SEO planning, loses 20-40% of organic traffic. Some never recover.
 
@@ -337,3 +343,13 @@ If the old site used URL parameters for filtering, sorting, or tracking (e.g., `
 ### Should we maintain the old site's analytics property or create a new one?
 
 Maintain the existing **Google Analytics 4** property and update the tracking code on the new site. Creating a new property destroys historical comparison data. If you're changing domains, add the new domain to the existing GA4 data stream or create an additional stream within the same property. This preserves year-over-year comparison capability, which is essential for measuring migration impact and long-term organic performance trends.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

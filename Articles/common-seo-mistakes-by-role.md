@@ -4,10 +4,16 @@ description:: Role-specific SEO mistakes made by executives, managers, developer
 focus_keyword:: common SEO mistakes
 category:: cross-functional
 author:: Victor Valentine Romo
-date:: 2026.02.07
+date:: 2026.03.20
 ---
 
 # Common SEO Mistakes by Role: What Each Team Member Gets Wrong
+
+> **Quick Summary**
+> - **What this covers:** Role-specific SEO mistakes made by executives, managers, developers, content teams, and agencies. Learn what each role typically gets wrong and how to avoid it.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 **SEO mistakes cluster by role** because each organizational function approaches search optimization through the lens of their domain expertise, creating predictable blind spots. Executives over-focus on vanity metrics while ignoring technical foundations. Managers chase algorithmic tactics while neglecting content quality. Developers optimize for technical perfection while breaking user experience. Content teams write for search engines instead of humans. Agencies implement best practices without understanding client business context. Understanding role-specific failure patterns prevents wasting time, budget, and credibility on approaches destined to underperform.
 
@@ -529,3 +535,13 @@ This framework documents the most frequent SEO mistakes made by executives, SEO 
 ### Can these mistakes be fixed, or is damage permanent?
 
 **Most mistakes are fixable.** Technical issues, thin content, missing internal links can all be corrected. URL migrations with broken redirects take 6-12 months to fully recover but do recover with proper fixes. The unfixable mistake: years of SEO neglect while competitors build authority. That requires 2-3x investment to catch up, but is still achievable. Start fixing today.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.

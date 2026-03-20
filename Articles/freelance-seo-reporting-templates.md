@@ -4,10 +4,16 @@ description:: 62% of clients who churn cite "unclear ROI" as a reason. Here's th
 focus_keyword:: freelance seo reporting templates
 category:: seo-roles
 author:: Victor Valentine Romo
-date:: 2026.02.08
+date:: 2026.03.20
 ---
 
 # Freelance SEO Reporting Templates: Dashboards That Justify Retainers and Prevent Churn
+
+> **Quick Summary**
+> - **What this covers:** 62% of clients who churn cite "unclear ROI" as a reason. Here's the reporting architecture that visualizes value, prevents misalignment, and turns data into narratives that justify continued investment.
+> - **Who it's for:** SEO practitioners at every career stage
+> - **Key takeaway:** Read the first section for the core framework, then use the specific tactics that match your situation.
+
 
 Clients don't churn because SEO isn't working. They churn because they can't *see* it working.
 
@@ -319,3 +325,13 @@ No. Customize by audience:
 - **Operations/Product:** Technical details (page speed, crawl errors, schema implementation)
 
 Your reporting isn't just accountability—it's your retention tool. Clients who see clear ROI in every report stay for years. Clients who don't churn at month 6.
+
+---
+
+## When This Approach Isn't Right
+
+This guidance may not fit if:
+
+- **You're brand new to SEO.** Some frameworks here assume working knowledge of crawling, indexing, and ranking fundamentals. Start with the basics first — this article builds on them.
+- **Your site has fewer than 50 indexed pages.** Some strategies (like cannibalization audits or hub-and-spoke restructuring) require a minimum content base. Focus on content creation before optimization.
+- **You're working on a site with active penalties.** Manual actions require a different playbook. Resolve the penalty first, then apply these optimization frameworks.
