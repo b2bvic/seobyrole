@@ -84,6 +84,7 @@ function buildArticlePage(article) {
 <head>
 ${head}
 ${jsonLdBlocks.join('\n')}
+${shared.ENTITY_SCHEMAS_HTML || ''}
 </head>
 <body>
 ${shared.buildNav()}

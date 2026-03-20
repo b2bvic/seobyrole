@@ -13,28 +13,6 @@ const SITE = {
 };
 
 const ROLES = [
-
-// ── Entity SEO (network-wide) ─────────────────────────────────
-const ENTITY_PERSON_SCHEMA = '{"@type":"Person","@id":"https://victorvalentineromo.com/#person","name":"Victor Valentine Romo","url":"https://victorvalentineromo.com","jobTitle":"Knowledge Systems Architect","sameAs":["https://linkedin.com/in/b2bvic","https://twitter.com/b2bvic","https://github.com/b2bvic"]}';
-const ENTITY_ORG_SCHEMA = '{"@type":"Organization","@id":"https://scalewithsearch.com/#org","name":"Scale With Search","url":"https://scalewithsearch.com","founder":{"@id":"https://victorvalentineromo.com/#person"},"logo":{"@type":"ImageObject","url":"https://scalewithsearch.com/og-image.png"}}';
-const ENTITY_WEBSITE_SCHEMA = '{"@context":"https://schema.org","@type":"WebSite","@id":"https://seobyrole.com/#website","name":"SEO by Role","url":"https://seobyrole.com","description":"Role-specific SEO strategy for every career stage.","publisher":{"@id":"https://scalewithsearch.com/#org"},"creator":{"@id":"https://victorvalentineromo.com/#person"},"inLanguage":"en-US"}';
-const ENTITY_SCHEMAS_HTML = `
-  <script type="application/ld+json">${ENTITY_PERSON_SCHEMA}</script>
-  <script type="application/ld+json">${ENTITY_ORG_SCHEMA}</script>
-  <script type="application/ld+json">${ENTITY_WEBSITE_SCHEMA}</script>
-  <link rel="author" href="https://victorvalentineromo.com">
-  <link rel="me" href="https://scalewithsearch.com">
-  <link rel="me" href="https://aifirstsearch.com">
-  <link rel="me" href="https://browserprompt.com">
-  <link rel="me" href="https://polytraffic.com">
-  <link rel="me" href="https://quickfixseo.com">
-  <link rel="me" href="https://tattooremovalnear.com">
-  <link rel="me" href="https://victorvalentineromo.com">
-  <link rel="me" href="https://linkedin.com/in/b2bvic">
-  <link rel="me" href="https://twitter.com/b2bvic">
-  <link rel="me" href="https://github.com/b2bvic">
-`;
-
   { slug: 'executives', label: 'Executives', icon: '👔', color: '#f59e0b', tint: '#fef3c7', sub: 'SEO for C-Suite', tagColor: '#92400e' },
   { slug: 'product-managers', label: 'Product Managers', icon: '📋', color: '#3b82f6', tint: '#dbeafe', sub: 'SEO in the Product Roadmap', tagColor: '#1e40af' },
   { slug: 'developers', label: 'Developers', icon: '⚙️', color: '#10b981', tint: '#d1fae5', sub: 'Technical SEO Implementation', tagColor: '#065f46' },
@@ -293,7 +271,24 @@ function faqJsonLd(faqs) {
   };
 }
 
+
+// ── Entity SEO (network-wide) ─────────────────────────────────
+const ENTITY_PERSON_SCHEMA = '{"@type":"Person","@id":"https://victorvalentineromo.com/#person","name":"Victor Valentine Romo","url":"https://victorvalentineromo.com","jobTitle":"Knowledge Systems Architect","sameAs":["https://linkedin.com/in/b2bvic","https://twitter.com/b2bvic","https://github.com/b2bvic"]}';
+const ENTITY_ORG_SCHEMA = '{"@type":"Organization","@id":"https://scalewithsearch.com/#org","name":"Scale With Search","url":"https://scalewithsearch.com","founder":{"@id":"https://victorvalentineromo.com/#person"}}';
+const ENTITY_WEBSITE_SCHEMA = '{"@context":"https://schema.org","@type":"WebSite","@id":"https://seobyrole.com/#website","name":"SEO by Role","url":"https://seobyrole.com","description":"Role-specific SEO strategy for every career stage.","publisher":{"@id":"https://scalewithsearch.com/#org"},"creator":{"@id":"https://victorvalentineromo.com/#person"},"inLanguage":"en-US"}';
+const ENTITY_SCHEMAS_HTML = `
+  <script type="application/ld+json">${ENTITY_PERSON_SCHEMA}</script>
+  <script type="application/ld+json">${ENTITY_ORG_SCHEMA}</script>
+  <script type="application/ld+json">${ENTITY_WEBSITE_SCHEMA}</script>
+  <link rel="author" href="https://victorvalentineromo.com">
+  <link rel="me" href="https://linkedin.com/in/b2bvic">
+  <link rel="me" href="https://twitter.com/b2bvic">
+  <link rel="me" href="https://github.com/b2bvic">
+`;
+
+
 module.exports = {
+  ENTITY_SCHEMAS_HTML,
   SITE,
   ROLES,
   getRoleMeta,
