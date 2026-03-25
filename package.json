@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "SEO by Role — Role-specific SEO education",
   "scripts": {
-    "build": "node scripts/build.js && node scripts/generate-indexes.js && node scripts/generate-sitemap.js",
+    "build": "node scripts/generate-images.js && node scripts/build.js && node scripts/generate-indexes.js && node scripts/generate-sitemap.js",
     "build:articles": "node scripts/build.js",
     "build:indexes": "node scripts/generate-indexes.js",
     "build:sitemap": "node scripts/generate-sitemap.js",
@@ -11,5 +11,9 @@
     "dev": "npx serve dist"
   },
   "author": "Victor Valentine Romo",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.26.0"
+  }
 }

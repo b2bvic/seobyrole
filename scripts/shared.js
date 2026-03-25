@@ -30,7 +30,7 @@ function getRoleLabel(slug) {
   return role ? role.label : slug;
 }
 
-function buildHead({ title, description, url, type = 'website', role = null, article = null }) {
+function buildHead({ title, description, url, type = 'website', role = null, article = null, slug = null }) {
   const canonical = url || SITE.url;
   const pageTitle = title ? `${title} | ${SITE.name}` : SITE.name;
   const desc = description || SITE.description;
@@ -44,10 +44,27 @@ function buildHead({ title, description, url, type = 'website', role = null, art
 <meta property="og:title" content="${pageTitle}">
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${canonical}">
-<meta property="og:site_name" content="${SITE.name}">
+<meta property="og:site_name" content="${SITE.name}">`;
+
+  if (slug) {
+    const imgUrl = `${SITE.url}/images/articles/${slug}.png`;
+    head += `
+<meta property="og:image" content="${imgUrl}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">`;
+  }
+
+  head += `
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${pageTitle}">
-<meta name="twitter:description" content="${desc}">
+<meta name="twitter:description" content="${desc}">`;
+
+  if (slug) {
+    head += `
+<meta name="twitter:image" content="${SITE.url}/images/articles/${slug}.png">`;
+  }
+
+  head += `
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Karla:wght@400;500&display=swap" rel="stylesheet">
@@ -230,8 +247,8 @@ function organizationJsonLd() {
   };
 }
 
-function articleJsonLd({ title, description, url, datePublished, author }) {
-  return {
+function articleJsonLd({ title, description, url, datePublished, author, slug }) {
+  const schema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: title,
@@ -241,6 +258,17 @@ function articleJsonLd({ title, description, url, datePublished, author }) {
     author: { '@type': 'Person', name: author || SITE.author },
     publisher: { '@type': 'Organization', name: SITE.org, url: 'https://scalewithsearch.com' },
   };
+
+  if (slug) {
+    schema.image = {
+      '@type': 'ImageObject',
+      url: `${SITE.url}/images/articles/${slug}.png`,
+      width: 1200,
+      height: 675,
+    };
+  }
+
+  return schema;
 }
 
 function breadcrumbJsonLd(items) {

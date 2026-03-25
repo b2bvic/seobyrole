@@ -55,6 +55,7 @@ function buildArticlePage(article) {
     url,
     type: 'article',
     role,
+    slug,
   });
 
   const jsonLdBlocks = [
@@ -64,6 +65,7 @@ function buildArticlePage(article) {
       url,
       datePublished: meta.date ? meta.date.replace(/\./g, '-') : '2026-01-19',
       author: meta.author,
+      slug,
     })),
     shared.buildJsonLd(shared.breadcrumbJsonLd(breadcrumbs)),
   ];
@@ -79,6 +81,8 @@ function buildArticlePage(article) {
     ? `<span class="article-role-tag" style="background-color: ${roleMeta.tint}; color: ${roleMeta.tagColor};">${roleMeta.label}</span>`
     : '';
 
+  const altText = (meta.title || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,6 +96,9 @@ ${shared.buildNav()}
 <main>
   <div class="container-narrow">
     ${breadcrumbHtml}
+    <div class="article-hero">
+      <img src="/images/articles/${slug}.png" alt="${altText}" width="1200" height="675" loading="eager" />
+    </div>
     <div class="article-header">
       ${roleTag}
       <h1>${meta.title}</h1>

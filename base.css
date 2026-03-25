@@ -621,6 +621,20 @@ p { margin-bottom: 1.25em; }
   color: #cbd5e1;
 }
 
+/* --- Article Hero Image --- */
+.article-hero {
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.article-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 /* --- Article Content --- */
 .article-header {
   padding: 3rem 0 2rem;
