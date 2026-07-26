@@ -124,7 +124,7 @@ curl -X POST https://api.indexnow.org/indexnow \
   -H "Content-Type: application/json" \
   -d '{
     "host": "example.com",
-    "key": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+    "key": "<INDEXNOW_KEY>",
     "urlList": [
       "https://example.com/new-page",
       "https://example.com/updated-page"
@@ -135,7 +135,7 @@ curl -X POST https://api.indexnow.org/indexnow \
 **Example (GET):**
 
 ```bash
-curl "https://api.indexnow.org/indexnow?url=https://example.com/new-page&key=a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6"
+curl "https://api.indexnow.org/indexnow?url=https://example.com/new-page&key=<INDEXNOW_KEY>"
 ```
 
 **Response:**
@@ -167,7 +167,7 @@ npm install axios
 const axios = require('axios');
 
 async function submitToIndexNow(urls) {
-  const API_KEY = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6';
+  const API_KEY = process.env.INDEXNOW_KEY;
   const HOST = 'example.com';
 
   try {
@@ -198,10 +198,11 @@ pip install requests
 
 **Function to submit URLs:**
 ```python
+import os
 import requests
 
 def submit_to_indexnow(urls):
-    API_KEY = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6'
+    API_KEY = os.environ['INDEXNOW_KEY']
     HOST = 'example.com'
 
     payload = {
@@ -226,7 +227,7 @@ submit_to_indexnow([
 
 ```php
 function submit_to_indexnow($urls) {
-    $api_key = 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6';
+    $api_key = getenv('INDEXNOW_KEY');
     $host = 'example.com';
 
     $payload = json_encode([

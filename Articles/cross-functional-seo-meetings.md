@@ -365,7 +365,7 @@ Distributed teams require adjusted meeting structures for timezone and asynchron
 Meeting: [Name]
 Date: [Date]
 Attendees: [Names]
-Recording: [Link]
+Recording: add the meeting recording URL when available
 
 Key Decisions:
 1. [Decision with context and implications]
